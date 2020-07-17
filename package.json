@@ -1,5 +1,5 @@
 {
-  "name": "gen-x",
+  "name": "@gen-x/core",
   "version": "0.0.0",
   "description": "Anything to anything",
   "main": "dist/gen-x.js",
