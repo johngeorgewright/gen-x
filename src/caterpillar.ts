@@ -21,7 +21,7 @@ export default function caterpillar<I, O1, O2, O3>(
   s2: Segment<O1, O2>,
   s3: Segment<O2, O3>
 ): (input: I) => AsyncGenerator<O3>
-export default function caterpillar(...segments: any[]) {
+export default function caterpillar(...segments: Segment<any, any>[]) {
   return async function* (input: any) {
     let value = input
 
@@ -31,7 +31,7 @@ export default function caterpillar(...segments: any[]) {
       if (isPromise(value)) {
         value = await value
       } else if (isGenerator(value)) {
-        const rest = segments.slice(i + 1) as [any] // Hack cast as TS doesn't know the length
+        const rest = segments.slice(i + 1) as [Segment<any, any>] // Hack cast as TS doesn't know the length
         const pipe = caterpillar(...rest)
 
         for (const item of value) {
@@ -40,7 +40,7 @@ export default function caterpillar(...segments: any[]) {
 
         return
       } else if (isAsyncGenerator(value)) {
-        const rest = segments.slice(i + 1) as [any] // Hack cast as TS doesn't know the length
+        const rest = segments.slice(i + 1) as [Segment<any, any>] // Hack cast as TS doesn't know the length
         const pipe = caterpillar(...rest)
 
         for await (const item of value) {
