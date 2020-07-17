@@ -5,7 +5,7 @@
 ## Installation
 
 ```
-npm install gen-x
+npm install @gen-x/core
 ```
 
 ## Usage
