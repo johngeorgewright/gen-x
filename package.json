@@ -9,6 +9,7 @@
     "postbuild": "npm run clean:tests",
     "clean": "rimraf dist",
     "clean:tests": "rimraf 'dist/**/?(__tests__|__mocks__)'",
+    "prepublishOnly": "npm run build",
     "start": "tsc --watch --preserveWatchOutput",
     "test": "jest"
   },
