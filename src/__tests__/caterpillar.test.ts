@@ -1,5 +1,12 @@
 import cat from '../caterpillar'
 
+test('no operators', async () => {
+  const iterator = cat()('hello world')
+
+  expect(await iterator.next()).toEqual({ value: 'hello world', done: false })
+  expect(await iterator.next()).toEqual({ done: true })
+})
+
 test('fuctions', async () => {
   const iterator = cat(
     (x: number) => x + 2,
