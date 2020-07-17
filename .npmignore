@@ -1,0 +1,6 @@
+.github
+jest.config.json
+*.log
+node_modules
+prettier.config.js
+tsconfig.json
