@@ -21,6 +21,69 @@ export default function genX<I, O1, O2, O3>(
   s2: Segment<O1, O2>,
   s3: Segment<O2, O3>
 ): (input: I) => AsyncGenerator<O3>
+export default function genX<I, O1, O2, O3, O4>(
+  s1: Segment<I, O1>,
+  s2: Segment<O1, O2>,
+  s3: Segment<O2, O3>,
+  s4: Segment<O3, O4>
+): (input: I) => AsyncGenerator<O4>
+export default function genX<I, O1, O2, O3, O4, O5>(
+  s1: Segment<I, O1>,
+  s2: Segment<O1, O2>,
+  s3: Segment<O2, O3>,
+  s4: Segment<O3, O4>,
+  s5: Segment<O4, O5>
+): (input: I) => AsyncGenerator<O5>
+export default function genX<I, O1, O2, O3, O4, O5, O6>(
+  s1: Segment<I, O1>,
+  s2: Segment<O1, O2>,
+  s3: Segment<O2, O3>,
+  s4: Segment<O3, O4>,
+  s5: Segment<O4, O5>,
+  s6: Segment<O5, O6>
+): (input: I) => AsyncGenerator<O6>
+export default function genX<I, O1, O2, O3, O4, O5, O6, O7>(
+  s1: Segment<I, O1>,
+  s2: Segment<O1, O2>,
+  s3: Segment<O2, O3>,
+  s4: Segment<O3, O4>,
+  s5: Segment<O4, O5>,
+  s6: Segment<O5, O6>,
+  s7: Segment<O6, O7>
+): (input: I) => AsyncGenerator<O7>
+export default function genX<I, O1, O2, O3, O4, O5, O6, O7, O8>(
+  s1: Segment<I, O1>,
+  s2: Segment<O1, O2>,
+  s3: Segment<O2, O3>,
+  s4: Segment<O3, O4>,
+  s5: Segment<O4, O5>,
+  s6: Segment<O5, O6>,
+  s7: Segment<O6, O7>,
+  s8: Segment<O7, O8>
+): (input: I) => AsyncGenerator<O8>
+export default function genX<I, O1, O2, O3, O4, O5, O6, O7, O8, O9>(
+  s1: Segment<I, O1>,
+  s2: Segment<O1, O2>,
+  s3: Segment<O2, O3>,
+  s4: Segment<O3, O4>,
+  s5: Segment<O4, O5>,
+  s6: Segment<O5, O6>,
+  s7: Segment<O6, O7>,
+  s8: Segment<O7, O8>,
+  s9: Segment<O8, O9>
+): (input: I) => AsyncGenerator<O9>
+export default function genX<I, O1, O2, O3, O4, O5, O6, O7, O8, O9, O10>(
+  s1: Segment<I, O1>,
+  s2: Segment<O1, O2>,
+  s3: Segment<O2, O3>,
+  s4: Segment<O3, O4>,
+  s5: Segment<O4, O5>,
+  s6: Segment<O5, O6>,
+  s7: Segment<O6, O7>,
+  s8: Segment<O7, O8>,
+  s9: Segment<O8, O9>,
+  s10: Segment<O9, O10>
+): (input: I) => AsyncGenerator<O10>
 export default function genX(...segments: Segment<any, any>[]) {
   return async function* (input: any) {
     let value = input
