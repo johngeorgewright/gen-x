@@ -8,20 +8,20 @@ type SegmentInput<T> = T extends AsyncGenerator<infer V>
 
 type Segment<I, O> = (input: SegmentInput<I>) => O
 
-export default function caterpillar<I, O1>(): (input: I) => AsyncGenerator<O1>
-export default function caterpillar<I, O1>(
+export default function genX<I, O1>(): (input: I) => AsyncGenerator<O1>
+export default function genX<I, O1>(
   s1: Segment<I, O1>
 ): (input: I) => AsyncGenerator<O1>
-export default function caterpillar<I, O1, O2>(
+export default function genX<I, O1, O2>(
   s1: Segment<I, O1>,
   s2: Segment<O1, O2>
 ): (input: I) => AsyncGenerator<O2>
-export default function caterpillar<I, O1, O2, O3>(
+export default function genX<I, O1, O2, O3>(
   s1: Segment<I, O1>,
   s2: Segment<O1, O2>,
   s3: Segment<O2, O3>
 ): (input: I) => AsyncGenerator<O3>
-export default function caterpillar(...segments: Segment<any, any>[]) {
+export default function genX(...segments: Segment<any, any>[]) {
   return async function* (input: any) {
     let value = input
 
@@ -32,7 +32,7 @@ export default function caterpillar(...segments: Segment<any, any>[]) {
         value = await value
       } else if (isGenerator(value)) {
         const rest = segments.slice(i + 1) as [Segment<any, any>] // Hack cast as TS doesn't know the length
-        const pipe = caterpillar(...rest)
+        const pipe = genX(...rest)
 
         for (const item of value) {
           yield* pipe(item)
@@ -41,7 +41,7 @@ export default function caterpillar(...segments: Segment<any, any>[]) {
         return
       } else if (isAsyncGenerator(value)) {
         const rest = segments.slice(i + 1) as [Segment<any, any>] // Hack cast as TS doesn't know the length
-        const pipe = caterpillar(...rest)
+        const pipe = genX(...rest)
 
         for await (const item of value) {
           yield* pipe(item)
