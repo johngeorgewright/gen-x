@@ -2,7 +2,7 @@
   "name": "caterpillar",
   "version": "0.0.0",
   "description": "Anything to anything",
-  "main": "dist/index.js",
+  "main": "dist/caterpillar.js",
   "scripts": {
     "prebuild": "npm run clean",
     "build": "tsc",
