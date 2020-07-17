@@ -1,4 +1,4 @@
-import cat from '../caterpillar'
+import cat from '../gen-x'
 
 test('no operators', async () => {
   const iterator = cat()('hello world')
