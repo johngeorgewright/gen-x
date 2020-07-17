@@ -1,6 +1,6 @@
 {
   "name": "@gen-x/core",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Anything to anything",
   "main": "dist/gen-x.js",
   "scripts": {
