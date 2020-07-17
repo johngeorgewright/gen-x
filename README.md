@@ -81,3 +81,22 @@ for await (const value of hello('you)) {
 // "o"
 // "u"
 ```
+
+Async Generators can also be returned from maps, just like iterators:
+
+```javascript
+import pipe from 'gen-x'
+
+const greetEveryone = pipe(
+  async function* () {
+    for (const user of await User.all()) {
+      yield user
+    }
+  },
+  ({ name }) => `hello ${name}`
+)
+
+for await (const greeting of greetEveryone()) {
+  console.info(greeting)
+}
+```
