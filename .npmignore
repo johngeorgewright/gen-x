@@ -3,4 +3,6 @@ jest.config.json
 *.log
 node_modules
 prettier.config.js
+src/**/__mocks__
+src/**/__tests__
 tsconfig.json
