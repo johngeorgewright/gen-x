@@ -89,9 +89,7 @@ import pipe from 'gen-x'
 
 const greetEveryone = pipe(
   async function* () {
-    for (const user of await User.all()) {
-      yield user
-    }
+    yield* await User.all()
   },
   ({ name }) => `hello ${name}`
 )
