@@ -32,17 +32,19 @@ export default function caterpillar(...segments: any[]) {
         value = await value
       } else if (isGenerator(value)) {
         const rest = segments.slice(i + 1) as [any] // Hack cast as TS doesn't know the length
+        const pipe = caterpillar(...rest)
 
         for (const item of value) {
-          yield* caterpillar(...rest)(item)
+          yield* pipe(item)
         }
 
         return
       } else if (isAsyncGenerator(value)) {
         const rest = segments.slice(i + 1) as [any] // Hack cast as TS doesn't know the length
+        const pipe = caterpillar(...rest)
 
         for await (const item of value) {
-          yield* caterpillar(...rest)(item)
+          yield* pipe(item)
         }
 
         return

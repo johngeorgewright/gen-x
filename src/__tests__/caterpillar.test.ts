@@ -67,3 +67,19 @@ test('async generators', async () => {
   expect(await iterator.next()).toEqual({ value: 24, done: false })
   expect(await iterator.next()).toEqual({ done: true })
 })
+
+test('caterpillars', async () => {
+  const iterator = cat(
+    cat(
+      (x: number) => x + 2,
+      (x) => x * 2
+    ),
+    cat(
+      (x: number) => Promise.resolve(x + 2),
+      async (x) => x * 2
+    )
+  )(1)
+
+  expect(await iterator.next()).toEqual({ value: 16, done: false })
+  expect(await iterator.next()).toEqual({ done: true })
+})
