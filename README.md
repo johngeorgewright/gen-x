@@ -1,11 +1,11 @@
-# Caterpillar.js
+# Gen-X
 
 > Iterate anything.
 
 ## Installation
 
 ```
-npm install caterpillar
+npm install gen-x
 ```
 
 ## Usage
@@ -13,9 +13,9 @@ npm install caterpillar
 In it's most basic form it just turns a value in to an iterator:
 
 ```javascript
-import cat from 'caterpillar'
+import pipe from 'gen-x'
 
-for await (const value of cat()('hello world')) {
+for await (const value of pipe()('hello world')) {
   console.info(value)
 }
 
@@ -25,9 +25,9 @@ for await (const value of cat()('hello world')) {
 But we can map the iterator's value into anything:
 
 ```javascript
-import cat from 'caterpillar'
+import pipe from 'gen-x'
 
-const hello = cat((name) => `hello ${name}`)
+const hello = pipe((name) => `hello ${name}`)
 
 for await (const value of hello('you')) {
   console.info(value)
@@ -39,9 +39,9 @@ for await (const value of hello('you')) {
 The map functions can return promises:
 
 ```javascript
-import cat from 'caterpillar'
+import pipe from 'gen-x'
 
-const hello = cat(
+const hello = pipe(
   async (id) => getUser(id),
   ({ name }) => `hello ${name}`
 )
@@ -56,9 +56,9 @@ for await (const value of hello('007')) {
 You can also map iterators, which in turn will call all subsequent maps with each iterated item:
 
 ```javascript
-import cat from 'caterpillar'
+import pipe from 'gen-x'
 
-const hello = cat(
+const hello = pipe(
   name => `hello ${name}`,
   function* (greeting) {
     for (const letter of [...greeting]) {
