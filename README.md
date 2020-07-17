@@ -59,15 +59,13 @@ You can also map iterators, which in turn will call all subsequent maps with eac
 import pipe from 'gen-x'
 
 const hello = pipe(
-  name => `hello ${name}`,
+  (name) => `hello ${name}`,
   function* (greeting) {
-    for (const letter of [...greeting]) {
-      yield letter
-    }
+    yield* [...greeting]
   }
 )
 
-for await (const value of hello('you)) {
+for await (const value of hello('you')) {
   console.info(value)
 }
 
