@@ -1,14 +1,14 @@
-import cat from '../gen-x'
+import genX from '../gen-x'
 
 test('no operators', async () => {
-  const iterator = cat()('hello world')
+  const iterator = genX()('hello world')
 
   expect(await iterator.next()).toEqual({ value: 'hello world', done: false })
   expect(await iterator.next()).toEqual({ done: true })
 })
 
 test('fuctions', async () => {
-  const iterator = cat(
+  const iterator = genX(
     (x: number) => x + 2,
     (x) => x * 2
   )(1)
@@ -18,7 +18,7 @@ test('fuctions', async () => {
 })
 
 test('async functions', async () => {
-  const iterator = cat(
+  const iterator = genX(
     (x: number) => Promise.resolve(x + 2),
     async (x) => x * 2
   )(1)
@@ -28,7 +28,7 @@ test('async functions', async () => {
 })
 
 test('generators', async () => {
-  const iterator = cat(
+  const iterator = genX(
     function* (x: number) {
       yield x + 1
       yield x + 2
@@ -51,7 +51,7 @@ test('generators', async () => {
 })
 
 test('async generators', async () => {
-  const iterator = cat(
+  const iterator = genX(
     async function* (x: number) {
       yield await Promise.resolve(x + 1)
       yield await Promise.resolve(x + 2)
@@ -75,13 +75,13 @@ test('async generators', async () => {
   expect(await iterator.next()).toEqual({ done: true })
 })
 
-test('caterpillars', async () => {
-  const iterator = cat(
-    cat(
+test('gen-x', async () => {
+  const iterator = genX(
+    genX(
       (x: number) => x + 2,
       (x) => x * 2
     ),
-    cat(
+    genX(
       (x: number) => Promise.resolve(x + 2),
       async (x) => x * 2
     )
