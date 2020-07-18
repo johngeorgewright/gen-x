@@ -4,7 +4,7 @@
   "description": "Anything to anything",
   "main": "dist/index.js",
   "scripts": {
-    "prebuild": "npm run clean",
+    "prebuild": "npm run clean && npm run generate:genXType",
     "build": "tsc",
     "postbuild": "npm run clean:tests && npm run clean:scripts",
     "clean": "rimraf dist",
@@ -12,6 +12,7 @@
     "clean:scripts": "rimraf dist/scripts",
     "generate:genXType": "ts-node src/scripts/generateGenXTypings",
     "prepublishOnly": "npm run build",
+    "prestart": "npm run generate:genXType",
     "start": "tsc --watch --preserveWatchOutput",
     "test": "jest"
   },
