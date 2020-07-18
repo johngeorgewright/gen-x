@@ -5,4 +5,6 @@ node_modules
 prettier.config.js
 src/**/__mocks__
 src/**/__tests__
+src/scripts
+src/types/GenX.ts.ejs
 tsconfig.json
