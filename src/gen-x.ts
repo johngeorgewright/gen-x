@@ -12,10 +12,7 @@ const genX: GenX['genX'] = (...operators: Operator<any, any>[]) => {
       if (isPromise(value)) {
         value = await value
       } else if (isIterable(value)) {
-        // Hack cast as TS doesn't know the length
-        // "Expected 0-10 arguments, but got 0 or more."
-        const rest = operators.slice(i + 1) as [Operator<any, any>]
-        const pipe = genX(...rest)
+        const pipe = pipeRest(i, operators)
 
         for (const item of value) {
           yield* pipe(item)
@@ -23,10 +20,7 @@ const genX: GenX['genX'] = (...operators: Operator<any, any>[]) => {
 
         return
       } else if (isAsyncIterable(value)) {
-        // Hack cast as TS doesn't know the length
-        // "Expected 0-10 arguments, but got 0 or more."
-        const rest = operators.slice(i + 1) as [Operator<any, any>]
-        const pipe = genX(...rest)
+        const pipe = pipeRest(i, operators)
 
         for await (const item of value) {
           yield* pipe(item)
@@ -34,8 +28,7 @@ const genX: GenX['genX'] = (...operators: Operator<any, any>[]) => {
 
         return
       } else if (isReadableStream(value)) {
-        const rest = operators.slice(i + 1) as [Operator<any, any>]
-        const pipe = genX(...rest)
+        const pipe = pipeRest(i, operators)
         const reader = value.getReader()
         yield* await reader
           .read()
@@ -56,6 +49,13 @@ const genX: GenX['genX'] = (...operators: Operator<any, any>[]) => {
 }
 
 export default genX
+
+function pipeRest(index: number, operators: Operator<any, any>[]) {
+  // Hack cast as TS doesn't know the length
+  // "Expected 0-10 arguments, but got 0 or more."
+  const rest = operators.slice(index + 1) as [Operator<any, any>]
+  return genX(...rest)
+}
 
 function isIterable(x: any): x is Iterable<any> {
   return !!x[Symbol.iterator]
