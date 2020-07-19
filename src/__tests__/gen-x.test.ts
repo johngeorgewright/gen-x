@@ -1,4 +1,5 @@
 import genX from '../gen-x'
+import { ReadableStream } from 'web-streams-polyfill/ponyfill'
 
 test('no operators', async () => {
   const iterator = genX()('hello world')
@@ -72,6 +73,26 @@ test('async generators', async () => {
   expect(await iterator.next()).toEqual({ value: 18, done: false })
   expect(await iterator.next()).toEqual({ value: 16, done: false })
   expect(await iterator.next()).toEqual({ value: 24, done: false })
+  expect(await iterator.next()).toEqual({ done: true })
+})
+
+test('ReadableStream', async () => {
+  const iterator = genX(
+    () =>
+      new ReadableStream<number>({
+        start(controller) {
+          controller.enqueue(1)
+          controller.enqueue(2)
+          controller.enqueue(3)
+          controller.close()
+        },
+      }),
+    (x) => x + 1
+  )()
+
+  expect(await iterator.next()).toEqual({ value: 2, done: false })
+  expect(await iterator.next()).toEqual({ value: 3, done: false })
+  expect(await iterator.next()).toEqual({ value: 4, done: false })
   expect(await iterator.next()).toEqual({ done: true })
 })
 
