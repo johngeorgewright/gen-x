@@ -1,8 +1,8 @@
 import { Operator } from './types/Operator'
 import GenX from './types/GenX'
 
-const genX: GenX['genX'] = (...operators: Operator<any, any>[]) => {
-  return async function* (input?: any) {
+const genX: GenX['genX'] = (...operators: Operator<any, any>[]) =>
+  async function* (input?: any) {
     let value = input
 
     for (let i = 0; i < operators.length; i++) {
@@ -40,7 +40,6 @@ const genX: GenX['genX'] = (...operators: Operator<any, any>[]) => {
 
     yield value
   }
-}
 
 export default genX
 
