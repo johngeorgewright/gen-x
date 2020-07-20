@@ -1,6 +1,5 @@
 import { Operator } from './types/Operator'
 import GenX from './types/GenX'
-import { ReadableStream } from 'web-streams-polyfill/ponyfill'
 
 const genX: GenX['genX'] = (...operators: Operator<any, any>[]) => {
   return async function* (input: any) {

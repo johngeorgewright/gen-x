@@ -96,3 +96,31 @@ for await (const greeting of greetEveryone()) {
   console.info(greeting)
 }
 ```
+
+ReadableStreams can be returned from operators:
+
+```javascript
+import pipe from 'gen-x'
+
+const streamExample = pipe(
+  () =>
+    new ReadableStream({
+      start(controller) {
+        controller.enqueue(1)
+        controller.enqueue(2)
+        controller.enqueue(3)
+        controller.close()
+      },
+    }),
+  (x) => x + 1,
+  (x) => x * 2
+)
+
+for await (const value of streamExample()) {
+  console.info(value)
+}
+
+// 4
+// 6
+// 8
+```

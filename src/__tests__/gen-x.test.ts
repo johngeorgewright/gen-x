@@ -1,5 +1,4 @@
 import genX from '../gen-x'
-import { ReadableStream } from 'web-streams-polyfill/ponyfill'
 
 test('no operators', async () => {
   const iterator = genX()('hello world')
