@@ -1,6 +1,6 @@
 # Gen-X
 
-> Iterate anything.
+> Compose anything, iterate everything
 
 ## Installation
 
@@ -9,6 +9,14 @@ npm install @gen-x/core
 ```
 
 ## Usage
+
+The primary purpose of GenX is to compose a list of functions of which their returned values will generate new values for the next.
+
+Returning a basic string, number or object will simply give the next function that value.
+
+Returning a promise will pass the resolved value to the next function.
+
+Returning an iterable (or an async iterable) will pipe all the values through the next functions.
 
 In it's most basic form it just turns a value in to an iterator:
 
