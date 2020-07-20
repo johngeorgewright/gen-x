@@ -95,6 +95,26 @@ test('ReadableStream', async () => {
   expect(await iterator.next()).toEqual({ done: true })
 })
 
+test('ReadableStreamReader', async () => {
+  const iterator = genX(
+    () =>
+      new ReadableStream<number>({
+        start(controller) {
+          controller.enqueue(1)
+          controller.enqueue(2)
+          controller.enqueue(3)
+          controller.close()
+        },
+      }).getReader(),
+    (x) => x + 1
+  )()
+
+  expect(await iterator.next()).toEqual({ value: 2, done: false })
+  expect(await iterator.next()).toEqual({ value: 3, done: false })
+  expect(await iterator.next()).toEqual({ value: 4, done: false })
+  expect(await iterator.next()).toEqual({ done: true })
+})
+
 test('gen-x', async () => {
   const iterator = genX(
     genX(

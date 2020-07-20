@@ -124,3 +124,18 @@ for await (const value of streamExample()) {
 // 6
 // 8
 ```
+
+Or from a stream reader:
+
+```javascript
+import pipe from 'gen-x'
+
+const readerExample = pipe(
+  (id: number) => fetch(`https://my.api/${id}`),
+  (resp) => resp.body.getReader()
+)
+
+for await (const chunk of readerExample(1)) {
+  console.info(chunk)
+}
+```

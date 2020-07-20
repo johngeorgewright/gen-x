@@ -27,18 +27,13 @@ const genX: GenX['genX'] = (...operators: Operator<any, any>[]) => {
 
         return
       } else if (isReadableStream(value)) {
-        const pipe = pipeRest(i, operators)
-        const reader = value.getReader()
-        yield* await reader
-          .read()
-          .then(async function* process({ done, value }): AsyncGenerator {
-            if (done) {
-              return
-            }
-
-            yield pipe(value)
-            yield* await reader.read().then(process)
-          })
+        yield* await generateFromReader(
+          pipeRest(i, operators),
+          value.getReader()
+        )
+        return
+      } else if (isReader(value)) {
+        yield* await generateFromReader(pipeRest(i, operators), value)
         return
       }
     }
@@ -56,6 +51,22 @@ function pipeRest(index: number, operators: Operator<any, any>[]) {
   return genX(...rest)
 }
 
+async function generateFromReader<T>(
+  pipe: (input?: any) => AsyncGenerator<T>,
+  reader: ReadableStreamReader<T>
+) {
+  return reader
+    .read()
+    .then(async function* process({ done, value }): AsyncGenerator {
+      if (done) {
+        return
+      }
+
+      yield* pipe(value)
+      yield* await reader.read().then(process)
+    })
+}
+
 function isIterable(x: any): x is Iterable<any> {
   return !!x[Symbol.iterator]
 }
@@ -70,4 +81,12 @@ function isPromise(x: any): x is Promise<any> {
 
 function isReadableStream(x: any): x is ReadableStream {
   return x instanceof ReadableStream
+}
+
+function isReader(x: any): x is ReadableStreamReader {
+  return (
+    typeof x.cancel === 'function' &&
+    typeof x.read === 'function' &&
+    typeof x.releaseLock === 'function'
+  )
 }
