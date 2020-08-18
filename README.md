@@ -18,6 +18,8 @@ Returning a promise will pass the resolved value to the next function.
 
 Returning an iterable (or an async iterable) will pipe all the values through the next functions.
 
+Returning a stream will pipe all the values emitted to through the next functions.
+
 In it's most basic form it just turns a value in to an iterator:
 
 ```javascript
