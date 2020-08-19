@@ -10,11 +10,7 @@ const genX: GenX['genX'] = (...operators: Operator<any, any>[]) =>
 
       if (isPromise(value)) {
         value = await value
-      } else if (
-        isIterable(value) &&
-        !Array.isArray(value) &&
-        typeof value !== 'string'
-      ) {
+      } else if (isIterable(value) && typeof value !== 'string') {
         const pipe = pipeRest(i, operators)
 
         for (const item of value) {
@@ -71,23 +67,24 @@ async function generateFromReader<T>(
 }
 
 function isIterable(x: any): x is Iterable<any> {
-  return !!x[Symbol.iterator]
+  return x && !!x[Symbol.iterator]
 }
 
 function isAsyncIterable(x: any): x is AsyncIterable<any> {
-  return !!x[Symbol.asyncIterator]
+  return x && !!x[Symbol.asyncIterator]
 }
 
 function isPromise(x: any): x is Promise<any> {
-  return typeof x.then === 'function'
+  return x && typeof x.then === 'function'
 }
 
 function isReadableStream(x: any): x is ReadableStream {
-  return x instanceof ReadableStream
+  return x && x instanceof ReadableStream
 }
 
 function isReadableStreamReader(x: any): x is ReadableStreamReader {
   return (
+    x &&
     typeof x.cancel === 'function' &&
     typeof x.read === 'function' &&
     typeof x.releaseLock === 'function'
