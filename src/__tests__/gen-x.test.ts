@@ -133,6 +133,20 @@ test('Node.JS Readable streams', async () => {
   expect(await iterator.next()).toEqual({ done: true })
 })
 
+test('strings dont iterate', async () => {
+  const iterator = genX(() => "I don't iterate")()
+
+  expect(await iterator.next()).toEqual({
+    value: "I don't iterate",
+    done: false,
+  })
+})
+
+test('arrays dont iterate', async () => {
+  const iterator = genX(() => [1, 2, 3, 4, 5])()
+  expect(await iterator.next()).toEqual({ value: [1, 2, 3, 4, 5], done: false })
+})
+
 test('gen-x', async () => {
   const iterator = genX(
     genX(
