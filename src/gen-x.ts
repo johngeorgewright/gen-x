@@ -32,7 +32,7 @@ const genX: GenX['genX'] = (...operators: Operator<any, any>[]) =>
           value.getReader()
         )
         return
-      } else if (isReader(value)) {
+      } else if (isReadableStreamReader(value)) {
         yield* await generateFromReader(pipeRest(i, operators), value)
         return
       }
@@ -82,7 +82,7 @@ function isReadableStream(x: any): x is ReadableStream {
   return x instanceof ReadableStream
 }
 
-function isReader(x: any): x is ReadableStreamReader {
+function isReadableStreamReader(x: any): x is ReadableStreamReader {
   return (
     typeof x.cancel === 'function' &&
     typeof x.read === 'function' &&

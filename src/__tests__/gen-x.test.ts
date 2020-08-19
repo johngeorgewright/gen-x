@@ -1,4 +1,5 @@
 import genX from '../gen-x'
+import { Readable as NodeJSReadableStream } from 'stream'
 
 test('no operators', async () => {
   const iterator = genX()('hello world')
@@ -112,6 +113,23 @@ test('ReadableStreamReader', async () => {
   expect(await iterator.next()).toEqual({ value: 2, done: false })
   expect(await iterator.next()).toEqual({ value: 3, done: false })
   expect(await iterator.next()).toEqual({ value: 4, done: false })
+  expect(await iterator.next()).toEqual({ done: true })
+})
+
+test('Node.JS Readable streams', async () => {
+  const iterator = genX(
+    () =>
+      new NodeJSReadableStream({
+        read() {
+          this.push('1')
+          this.push('2')
+          this.push(null)
+        },
+      }),
+    Number
+  )()
+
+  expect(await iterator.next()).toEqual({ value: 12, done: false })
   expect(await iterator.next()).toEqual({ done: true })
 })
 
