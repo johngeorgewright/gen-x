@@ -45,7 +45,7 @@ export default genX
 
 function pipeRest(index: number, operators: Operator<any, any>[]) {
   // Hack cast as TS doesn't know the length
-  // "Expected 0-10 arguments, but got 0 or more."
+  // "Expected 0-100 arguments, but got 0 or more."
   const rest = operators.slice(index + 1) as [Operator<any, any>]
   return genX(...rest)
 }

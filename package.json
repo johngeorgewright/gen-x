@@ -7,14 +7,15 @@
     "prebuild": "npm run clean && npm run generate:genXType",
     "build": "tsc",
     "postbuild": "npm run clean:tests && npm run clean:scripts",
+    "watch:build": "tsc --watch --preserveWatchOutput",
+    "watch:test": "jest src --watch",
     "clean": "rimraf dist",
-    "clean:tests": "rimraf 'dist/**/?(__tests__|__mocks__)'",
+    "clean:tests": "rimraf 'dist/**/?(__tests__|__mocks__|__setup__)'",
     "clean:scripts": "rimraf dist/scripts",
     "generate:genXType": "ts-node src/scripts/generateGenXTypings",
-    "prepublishOnly": "npm run build",
     "prestart": "npm run generate:genXType",
-    "start": "tsc --watch --preserveWatchOutput",
-    "test": "jest"
+    "start": "concurrently npm:watch:*",
+    "test": "jest src"
   },
   "repository": {
     "type": "git",
@@ -39,6 +40,7 @@
     "@types/jest": "^26.0.10",
     "@types/lodash.range": "^3.2.6",
     "commitizen": "^4.1.2",
+    "concurrently": "^5.3.0",
     "cz-conventional-changelog": "^3.2.0",
     "ejs": "^3.1.5",
     "husky": "^4.2.5",
