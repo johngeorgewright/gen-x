@@ -8,6 +8,7 @@
     "outDir": "./dist",
     "downlevelIteration": true,
     "strict": true,
+    "jsx": "react",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,

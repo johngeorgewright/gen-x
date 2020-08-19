@@ -9,7 +9,7 @@ const numRange = range(1, 101).map((num) => range(1, num + 1))
 writeFileSync(
   outputFile,
   `
-  import { Operator } from './Operator'
+  import { Extract, Operator } from './Operator'
 
   export default interface GenX {
     genX<I, O1>(): (input?: I) => AsyncGenerator<O1>
@@ -20,12 +20,12 @@ writeFileSync(
     genX<${Os(nums)}>(
       operator1: () => O1,
       ${otherAguments(nums)}
-    ): () => AsyncGenerator<O${last(nums)}>
+    ): () => AsyncGenerator<Extract<O${last(nums)}>>
 
     genX<I, ${Os(nums)}>(
       operator1: (input: I) => O1,
       ${otherAguments(nums)}
-    ): (input: I) => AsyncGenerator<O${last(nums)}>
+    ): (input: I) => AsyncGenerator<Extract<O${last(nums)}>>
     `
       )
       .join('')}
