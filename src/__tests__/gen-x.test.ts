@@ -142,11 +142,6 @@ test('strings dont iterate', async () => {
   })
 })
 
-test('arrays dont iterate', async () => {
-  const iterator = genX(() => [1, 2, 3, 4, 5])()
-  expect(await iterator.next()).toEqual({ value: [1, 2, 3, 4, 5], done: false })
-})
-
 test('gen-x', async () => {
   const iterator = genX(
     genX(
