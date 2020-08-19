@@ -40,9 +40,6 @@ function Os(nums: number[]) {
 function otherAguments(nums: number[]) {
   return nums
     .slice(1)
-    .map(
-      (num) =>
-        `operator${num}: Operator<${num === 1 ? 'I' : `O${num - 1}`}, O${num}>,`
-    )
+    .map((num) => `operator${num}: Operator<O${num - 1}, O${num}>,`)
     .join('\n')
 }
