@@ -1,0 +1,52 @@
+{
+  "name": "@gen-x/core",
+  "version": "1.0.1",
+  "description": "Anything to anything",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "npm run clean && npm run generate:genXType",
+    "build": "tsc",
+    "postbuild": "npm run clean:tests && npm run clean:scripts",
+    "watch:build": "tsc --watch --preserveWatchOutput",
+    "watch:test": "jest src --watch",
+    "clean": "rimraf dist",
+    "clean:tests": "rimraf 'dist/**/?(__tests__|__mocks__|__setup__)'",
+    "clean:scripts": "rimraf dist/scripts",
+    "generate:genXType": "ts-node src/scripts/generateGenXTypings",
+    "prestart": "npm run generate:genXType",
+    "start": "concurrently npm:watch:*",
+    "test": "jest src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johngeorgewright/caterpillar.git"
+  },
+  "keywords": [
+    "pipe",
+    "promise",
+    "generator",
+    "stream"
+  ],
+  "author": "John Wright <johngeorgewright@gmmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johngeorgewright/caterpillar/issues"
+  },
+  "homepage": "https://github.com/johngeorgewright/caterpillar#readme",
+  "devDependencies": {
+    "@types/ejs": "^3.0.4",
+    "@types/jest": "^26.0.14",
+    "@types/lodash.last": "^3.0.6",
+    "@types/lodash.range": "^3.2.6",
+    "concurrently": "^5.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "jest": "^26.4.2",
+    "lodash.last": "^3.0.0",
+    "lodash.range": "^3.2.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.4.0",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3",
+    "web-streams-polyfill": "^3.0.0"
+  }
+}
