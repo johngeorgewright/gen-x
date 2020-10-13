@@ -7,7 +7,9 @@
     "prebuild": "rimraf dist",
     "build": "tsc",
     "postbuild": "rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
-    "start": "tsc --watch --preserveWatchOutput",
+    "start": "concurrently npm:start:*",
+    "start:build": "tsc --watch --preserveWatchOutput",
+    "start:test": "jest src --watch",
     "test": "jest"
   },
   "author": "",
@@ -19,6 +21,7 @@
   "devDependencies": {
     "@gen-x/core": "^1.0.1",
     "@types/jest": "^26.0.3",
+    "concurrently": "^5.3.0",
     "jest": "^26.1.0",
     "redux": "^4.0.5",
     "redux-event": "^1.0.0",
