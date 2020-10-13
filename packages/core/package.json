@@ -7,14 +7,14 @@
     "prebuild": "npm run clean && npm run generate:genXType",
     "build": "tsc",
     "postbuild": "npm run clean:tests && npm run clean:scripts",
-    "watch:build": "tsc --watch --preserveWatchOutput",
-    "watch:test": "jest src --watch",
     "clean": "rimraf dist",
     "clean:tests": "rimraf 'dist/**/?(__tests__|__mocks__|__setup__)'",
     "clean:scripts": "rimraf dist/scripts",
     "generate:genXType": "ts-node src/scripts/generateGenXTypings",
     "prestart": "npm run generate:genXType",
-    "start": "concurrently npm:watch:*",
+    "start": "concurrently npm:start:*",
+    "start:build": "tsc --watch --preserveWatchOutput",
+    "start:test": "jest src --watch",
     "test": "jest src"
   },
   "repository": {
