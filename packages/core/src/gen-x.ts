@@ -8,7 +8,9 @@ const genX: GenX['genX'] = (...operators: Operator<any, any>[]) =>
     for (let i = 0; i < operators.length; i++) {
       value = operators[i](value)
 
-      if (isPromise(value)) {
+      if (isNone(value)) {
+        continue
+      } else if (isPromise(value)) {
         value = await value
       } else if (
         isIterable(value) &&
@@ -92,4 +94,8 @@ function isReadableStreamReader(x: any): x is ReadableStreamReader {
     typeof x.read === 'function' &&
     typeof x.releaseLock === 'function'
   )
+}
+
+function isNone(x: any): x is null | undefined {
+  return typeof x === 'undefined' || x === null
 }
