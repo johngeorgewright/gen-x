@@ -1,0 +1,6 @@
+jest.config.json
+*.log
+node_modules
+src/**/__mocks__
+src/**/__tests__
+src/scripts
