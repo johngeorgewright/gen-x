@@ -30,7 +30,7 @@ const genX: GenX['genX'] = (...operators: Operator<any, any>[]) =>
         }
 
         return
-      } else if (isReadableStream(value)) {
+      } else if (global.ReadableStream && isReadableStream(value)) {
         yield* await generateFromReader(
           pipeRest(i, operators),
           value.getReader()
