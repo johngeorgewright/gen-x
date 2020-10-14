@@ -12,11 +12,7 @@ const genX: GenX['genX'] = (...operators: Operator<any, any>[]) =>
         continue
       } else if (isPromise(value)) {
         value = await value
-      } else if (
-        isIterable(value) &&
-        !Array.isArray(value) &&
-        typeof value !== 'string'
-      ) {
+      } else if (isIterable(value) && typeof value !== 'string') {
         const pipe = pipeRest(i, operators)
 
         for (const item of value) {
