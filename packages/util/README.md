@@ -36,18 +36,36 @@ for await (const x of iterate()) {
 // {values: [1, 2, 3, 4]}
 ```
 
-There are also utilities for traversing/manipulating a list
+There are also utilities for traversing/manipulating a list, which are named the same as Array.prototype functions
 
+- `concat`
 - `every`
 - `filter`
+- `find`
+- `findIndex`
 - `forEach`
+- `from`
+- `includes`
+- `indexOf`
+- `join`
+- `keys`
+- `lastIndexOf`
 - `map`
+- `pop`
+- `push`
+- `reduce`
 - `reverse`
+- `shift`
+- `slice`
 - `some`
+- `sort`
+- `splice`
+- `unshift`
 
 Apart from being non-iterable, there are a couple of main differences:
 
-1. `forEach`'s iteration can be stopped by returning `List.BREAK`
+1. Lists are immutable. All functions will return a new list.
+1. `forEach`'s iteration can be stopped by returning `list.Break`
 
    ```typescript
    import { list } from '@gen-x/util'
@@ -65,7 +83,6 @@ Apart from being non-iterable, there are a couple of main differences:
    ```
 
 1. There is a `list.toArray()` function which will return the list as an array
-
 1. You'll need to use the `list.get()` function to access a property by index:
    ```typescript
    import { create, get } from '@gen-x/util'
