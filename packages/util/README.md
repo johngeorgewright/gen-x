@@ -53,7 +53,7 @@ Apart from being non-iterable, there are a couple of main differences:
    import { list } from '@gen-x/util'
    const l = list.create(1, 2, 3, 4)
 
-   forEach(l, (x) => {
+   list.forEach(l, (x) => {
      if (x >= 3) {
        return list.Break
      }
