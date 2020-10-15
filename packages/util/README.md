@@ -25,18 +25,18 @@ If you want to return a collection of items without it being iterated on, you co
 
 ```typescript
 import genX from '@gen-x/core'
-import { List } from '@gen-x/util'
+import { list } from '@gen-x/util'
 
-const iterate = genX(() => new List(1, 2, 3, 4))
+const iterate = genX(() => list(1, 2, 3, 4))
 
 for await (const x of iterate()) {
   console.info(x)
 }
 
-// List { 1, 2, 3, 4 }
+// {values: [1, 2, 3, 4]}
 ```
 
-A `List` has similar methods to an array:
+There are also utilities for traversing/manipulating a list
 
 - `every`
 - `filter`
@@ -50,11 +50,12 @@ Apart from being non-iterable, there are a couple of main differences:
 1. `forEach`'s iteration can be stopped by returning `List.BREAK`
 
    ```typescript
-   const list = new List(1, 2, 3, 4)
+   import { list } from '@gen-x/util'
+   const l = list.create(1, 2, 3, 4)
 
-   list.forEach((x) => {
+   forEach(l, (x) => {
      if (x >= 3) {
-       return List.BREAK
+       return list.Break
      }
      console.info(`${x} is less than 3`)
    })
@@ -63,12 +64,13 @@ Apart from being non-iterable, there are a couple of main differences:
    // 2 is less than 3
    ```
 
-1. There is a `toArray()` method which will return the list as an array
+1. There is a `list.toArray()` function which will return the list as an array
 
-1. You'll need to use the `get()` method to access a property by index:
+1. You'll need to use the `list.get()` function to access a property by index:
    ```typescript
-   const list = new List(1, 2, 3, 4)
-   console.info(list.get(1))
+   import { create, get } from '@gen-x/util'
+   const l = list.create(1, 2, 3, 4)
+   console.info(list.get(l, 1))
    // 2
    ```
 
