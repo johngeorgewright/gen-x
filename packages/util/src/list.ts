@@ -12,7 +12,7 @@ export function create<T>(...items: T[]): List<T> {
 
 export function concat<T>({ items }: List<T>, ...listsRest: List<T>[]) {
   const itemsRest = listsRest.map(({ items }) => items)
-  return create(items.concat(...itemsRest))
+  return create(...items.concat(...itemsRest))
 }
 
 export function every<T>(
