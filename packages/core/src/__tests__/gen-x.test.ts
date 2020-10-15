@@ -8,6 +8,23 @@ test('no operators', async () => {
   expect(await iterator.next()).toEqual({ done: true })
 })
 
+test('"none" values', async () => {
+  const iterator = genX(
+    () => [undefined, null],
+    (x) => (x === undefined ? 'undefined' : 'null')
+  )()
+
+  expect(await iterator.next()).toEqual({
+    value: 'undefined',
+    done: false,
+  })
+  expect(await iterator.next()).toEqual({
+    value: 'null',
+    done: false,
+  })
+  expect(await iterator.next()).toEqual({ done: true })
+})
+
 test('fuctions', async () => {
   const iterator = genX(
     (x: number) => x + 2,
