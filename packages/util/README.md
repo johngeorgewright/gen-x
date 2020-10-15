@@ -44,6 +44,7 @@ There are also utilities for traversing/manipulating a list, which are named the
 - `find`
 - `findIndex`
 - `forEach`
+- `from`
 - `includes`
 - `indexOf`
 - `join`

@@ -89,16 +89,12 @@ export function map<T, X>(
   return create(...items.map(fn))
 }
 
-export function pop<T>({ items }: List<T>) {
-  const array = [...items]
-  array.pop()
-  return create(...array)
+export function pop<T>(list: List<T>) {
+  return slice(list, 0, -1)
 }
 
 export function push<T>({ items }: List<T>, item: T) {
-  const array = [...items]
-  array.push(item)
-  return create(...array)
+  return create(...items, item)
 }
 
 export function reduce<T, X>(
@@ -154,7 +150,5 @@ export function toArray<T>({ items }: List<T>) {
 }
 
 export function unshift<T>({ items }: List<T>, item: T) {
-  const array = [...items]
-  array.unshift(item)
-  return create(...array)
+  return create(item, ...items)
 }
