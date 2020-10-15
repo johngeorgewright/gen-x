@@ -28,6 +28,18 @@ test('async functions', async () => {
   expect(await iterator.next()).toEqual({ done: true })
 })
 
+test('nested arrays', async () => {
+  const iterator = genX(
+    () => [1, 2],
+    (x) => Array(x).fill(x)
+  )()
+
+  expect(await iterator.next()).toEqual({ value: 1, done: false })
+  expect(await iterator.next()).toEqual({ value: 2, done: false })
+  expect(await iterator.next()).toEqual({ value: 2, done: false })
+  expect(await iterator.next()).toEqual({ done: true })
+})
+
 test('generators', async () => {
   const iterator = genX(
     function* (x: number) {
