@@ -36,7 +36,7 @@ test('generators', async () => {
       yield x + 3
     },
     (x) => x * 2,
-    function* (x: number) {
+    function* (x) {
       yield x * 2
       yield x * 3
     }
@@ -61,7 +61,7 @@ test('async generators', async () => {
     (x) => {
       return x * 2
     },
-    function* (x: number) {
+    function* (x) {
       yield x * 2
       yield x * 3
     }
