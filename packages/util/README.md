@@ -50,12 +50,12 @@ Apart from being non-iterable, there are a couple of main differences:
 1. `forEach`'s iteration can be stopped by returning `List.BREAK`
 
    ```typescript
-   import list, { Break, forEach } from '@gen-x/util/list'
-   const l = list(1, 2, 3, 4)
+   import { list } from '@gen-x/util'
+   const l = list.create(1, 2, 3, 4)
 
-   forEach(l, (x) => {
+   list.forEach(l, (x) => {
      if (x >= 3) {
-       return Break
+       return list.Break
      }
      console.info(`${x} is less than 3`)
    })
@@ -64,13 +64,13 @@ Apart from being non-iterable, there are a couple of main differences:
    // 2 is less than 3
    ```
 
-1. There is a `toArray()` function which will return the list as an array
+1. There is a `list.toArray()` function which will return the list as an array
 
-1. You'll need to use the `get()` function to access a property by index:
+1. You'll need to use the `list.get()` function to access a property by index:
    ```typescript
-   import list, { get } from '@gen-x/util/list'
-   const l = list(1, 2, 3, 4)
-   console.info(get(l, 1))
+   import { create, get } from '@gen-x/util'
+   const l = list.create(1, 2, 3, 4)
+   console.info(list.get(l, 1))
    // 2
    ```
 

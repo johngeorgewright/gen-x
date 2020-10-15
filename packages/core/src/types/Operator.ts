@@ -1,8 +1,8 @@
 import type { Readable as NodeJSReadableStream } from 'stream'
 
-export type OperatorInput<T> = T extends AsyncGenerator<infer V>
+export type OperatorInput<T> = T extends Iterable<infer V>
   ? V
-  : T extends Generator<infer V>
+  : T extends AsyncGenerator<infer V>
   ? V
   : T extends Promise<infer V>
   ? V

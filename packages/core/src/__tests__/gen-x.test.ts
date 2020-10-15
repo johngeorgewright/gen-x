@@ -8,6 +8,23 @@ test('no operators', async () => {
   expect(await iterator.next()).toEqual({ done: true })
 })
 
+test('"none" values', async () => {
+  const iterator = genX(
+    () => [undefined, null],
+    (x) => (x === undefined ? 'undefined' : 'null')
+  )()
+
+  expect(await iterator.next()).toEqual({
+    value: 'undefined',
+    done: false,
+  })
+  expect(await iterator.next()).toEqual({
+    value: 'null',
+    done: false,
+  })
+  expect(await iterator.next()).toEqual({ done: true })
+})
+
 test('fuctions', async () => {
   const iterator = genX(
     (x: number) => x + 2,
@@ -28,6 +45,18 @@ test('async functions', async () => {
   expect(await iterator.next()).toEqual({ done: true })
 })
 
+test('nested arrays', async () => {
+  const iterator = genX(
+    () => [1, 2],
+    (x) => Array(x).fill(x)
+  )()
+
+  expect(await iterator.next()).toEqual({ value: 1, done: false })
+  expect(await iterator.next()).toEqual({ value: 2, done: false })
+  expect(await iterator.next()).toEqual({ value: 2, done: false })
+  expect(await iterator.next()).toEqual({ done: true })
+})
+
 test('generators', async () => {
   const iterator = genX(
     function* (x: number) {
@@ -36,7 +65,7 @@ test('generators', async () => {
       yield x + 3
     },
     (x) => x * 2,
-    function* (x: number) {
+    function* (x) {
       yield x * 2
       yield x * 3
     }
@@ -61,7 +90,7 @@ test('async generators', async () => {
     (x) => {
       return x * 2
     },
-    function* (x: number) {
+    function* (x) {
       yield x * 2
       yield x * 3
     }

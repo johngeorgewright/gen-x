@@ -9,10 +9,10 @@ test('list.create', async () => {
       "done": false,
       "value": Object {
         "items": Array [
+          1,
           2,
           3,
           4,
-          5,
         ],
       },
     }
