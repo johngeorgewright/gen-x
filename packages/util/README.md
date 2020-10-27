@@ -143,6 +143,64 @@ run(iterate, 1)
 // 2
 ```
 
+## silo
+
+A storage utility for accessing data as a stack.
+
+```typescript
+import genX from '@gen-x/core'
+import { run, silo } from '@gen-x/util'
+;(async () => {
+  const data = silo<nuymber>()
+
+  const storeData = genX(() => [1, 2, 3, 4], data.in)
+
+  await run(storeData)
+
+  const iterate2 = genX(data.out, (x) => x * 2, console.info)
+
+  await run(iterate2)
+  // 2
+  // 4
+  // 6
+  // 8
+})()
+```
+
+**IMPORTANT**: The data is used just like a stack. Once the data has been extracted using the `.out` generator, the silo will be empty.
+
+## forkableSilo
+
+Similar to a normal silo, however, the output of data can be forked muiltiple times.
+**WARNING**: A fork must be created **before** data is added.
+
+```typescript
+import genX from '@gen-x/core'
+import { forkableSilo, run } from '@gen-x/util'
+;(async () => {
+  const data = forkableSilo<nuymber>()
+  const dataIn = data.in()
+  const dataOut1 = data.fork()
+  const dataOut2 = data.fork()
+  const storeData = genX(() => [1, 2, 3, 4], dataIn)
+  const iterate2 = genX(dataOut1, (x) => x * 2, console.info)
+  const iterate3 = genX(dataOut2, (x) => x * 3, console.info)
+
+  await run(storeData)
+  await run(iterate2)
+  // 2
+  // 4
+  // 6
+  // 8
+
+  await run(iterate3)
+  // 3
+  // 6
+  // 9
+  // 12
+})()
+```
+
 ## uniq
 
 The `uniq` utility makes sure that only uniq items are yielded in the pipeline.
