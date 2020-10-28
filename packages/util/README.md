@@ -1,4 +1,4 @@
-# @gen-x/util
+# DEPRECATED - @gen-x/util
 
 > GenX Utitilies
 
