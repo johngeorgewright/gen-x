@@ -1,5 +1,5 @@
 import genX from '@gen-x/core'
-import { list } from '../../util/src'
+import * as list from './list'
 
 test('list.create', async () => {
   const iterator = genX(() => list.create(1, 2, 3, 4))()
