@@ -1,0 +1,27 @@
+{
+  "name": "@gen-x/list",
+  "version": "0.0.0",
+  "description": "list handling for gen-x",
+  "main": "dist/list.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "postbuild": "rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
+    "start": "tsc --watch --preserveWatchOutput",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johngeorgewright/gen-x/issues"
+  },
+  "homepage": "https://github.com/johngeorgewright/gen-x#readme",
+  "devDependencies": {
+    "@gen-x/core": "^2.0.1",
+    "@types/jest": "^26.0.3",
+    "jest": "^26.1.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.5"
+  }
+}
