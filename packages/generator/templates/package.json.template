@@ -1,5 +1,6 @@
 {
-  "name": "@gen-x/<%= name %>",
+  "name": "@gen-x/<%= name %>",<% if (!public) { %>
+  "private": true,<% } %>
   "version": "0.0.0",
   "description": "<%= description %>",
   "main": "dist/index.js",
