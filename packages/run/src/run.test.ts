@@ -1,4 +1,4 @@
-import { run } from '.'
+import run from './run'
 import genX from '@gen-x/core'
 
 test('run()', async () => {
