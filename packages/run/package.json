@@ -2,7 +2,7 @@
   "name": "@gen-x/run",
   "version": "0.0.0",
   "description": "run a gen-x pipeline",
-  "main": "dist/index.js",
+  "main": "dist/run.js",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc",
