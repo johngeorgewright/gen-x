@@ -1,5 +1,5 @@
 import genX from '@gen-x/core'
-import { filter } from '.'
+import filter from './filter'
 
 test('filter', async () => {
   const iterator = genX(
