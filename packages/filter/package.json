@@ -1,8 +1,8 @@
 {
-  "name": "@gen-x/<%= name %>",
+  "name": "@gen-x/filter",
   "version": "0.0.0",
-  "description": "<%= description %>",
-  "main": "dist/index.js",
+  "description": "Filter results in a gen-x pipeline",
+  "main": "dist/filter.js",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc",
@@ -17,10 +17,9 @@
   },
   "homepage": "https://github.com/johngeorgewright/gen-x#readme",
   "devDependencies": {
+    "@gen-x/core": "^2.0.1",
     "@types/jest": "^26.0.3",
     "jest": "^26.1.0",
-    "redux": "^4.0.5",
-    "redux-event": "^1.0.0",
     "rimraf": "^3.0.2",
     "ts-jest": "^26.1.1",
     "typescript": "^3.9.5"
