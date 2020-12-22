@@ -31,5 +31,6 @@
   },
   "peerDependencies": {
     "@gen-x/core": "^2.0.1"
-  }
+  },
+  "dependencies": {}
 }
