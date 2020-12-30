@@ -1,0 +1,24 @@
+{
+  "name": "@gen-x/curry",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Curry function",
+  "main": "src/curry.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "John Wright <johngeorge.wright@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johngeorgewright/gen-x/issues"
+  },
+  "homepage": "https://github.com/johngeorgewright/gen-x#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.3",
+    "jest": "^26.1.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.1.1",
+    "ts-toolbelt": "^8.0.7",
+    "typescript": "^4.1.3"
+  }
+}
