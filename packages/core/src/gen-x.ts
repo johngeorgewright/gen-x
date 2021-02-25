@@ -58,7 +58,7 @@ async function generateFromReader<T>(
 ) {
   return reader
     .read()
-    .then(async function* process({ done, value }): AsyncGenerator {
+    .then(async function* process({ done, value }): AsyncGenerator<T> {
       if (done) {
         return
       }
@@ -76,15 +76,15 @@ function isAsyncIterable(x: any): x is AsyncIterable<any> {
   return !!x[Symbol.asyncIterator]
 }
 
-function isPromise(x: any): x is Promise<any> {
+function isPromise<T>(x: any): x is Promise<T> {
   return typeof x.then === 'function'
 }
 
-function isReadableStream(x: any): x is ReadableStream {
+function isReadableStream<T>(x: any): x is ReadableStream<T> {
   return x instanceof ReadableStream
 }
 
-function isReadableStreamReader(x: any): x is ReadableStreamReader {
+function isReadableStreamReader<T>(x: any): x is ReadableStreamReader<T> {
   return (
     typeof x.cancel === 'function' &&
     typeof x.read === 'function' &&
