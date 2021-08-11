@@ -35,7 +35,7 @@
   "homepage": "https://github.com/johngeorgewright/gen-x/tree/master/packages/core#readme",
   "devDependencies": {
     "@types/ejs": "^3.0.4",
-    "@types/jest": "^26.0.14",
+    "@types/jest": "^27.0.0",
     "@types/lodash.last": "^3.0.6",
     "@types/lodash.range": "^3.2.6",
     "concurrently": "^6.0.0",
