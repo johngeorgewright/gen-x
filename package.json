@@ -21,18 +21,18 @@
   },
   "homepage": "https://github.com/johngeorgewright/gen-x#readme",
   "devDependencies": {
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
-    "@commitlint/config-lerna-scopes": "^11.0.0",
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@commitlint/config-lerna-scopes": "^13.1.0",
     "commitizen": "^4.2.1",
     "cz-lerna-changelog": "^2.0.3",
-    "husky": "^4.3.0",
+    "husky": "^7.0.1",
     "lerna": "^3.22.1",
-    "lint-staged": "^10.4.0",
+    "lint-staged": "^11.1.2",
     "prettier": "^2.1.2",
-    "semantic-release": "^17.1.2",
+    "semantic-release": "^18.0.0",
     "semantic-release-monorepo": "^7.0.3",
-    "yo": "^3.1.1"
+    "yo": "^4.3.0"
   },
   "config": {
     "commitizen": {

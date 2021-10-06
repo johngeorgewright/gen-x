@@ -31,7 +31,7 @@ for await (const x of iterate()) {
   console.info(x)
 }
 
-// {values: [1, 2, 3, 4]}
+// {Symbol(list items): [1, 2, 3, 4]}
 ```
 
 There are also utilities for traversing/manipulating a list, which are named the same as Array.prototype functions
