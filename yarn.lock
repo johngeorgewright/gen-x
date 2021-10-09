@@ -6651,6 +6651,7 @@ fsevents@^2.1.2:
     prettier: ^2.1.2
     semantic-release: ^18.0.0
     semantic-release-monorepo: ^7.0.5
+    typescript: ^4.4.3
     yo: ^4.3.0
   languageName: unknown
   linkType: soft
