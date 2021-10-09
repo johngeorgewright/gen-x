@@ -55,5 +55,10 @@
     "*.{md,json,js,jsx,ts,tsx,yml,yaml}": [
       "prettier --ignore-path .gitignore --write"
     ]
+  },
+  "dependencies": {
+    "@gen-x/silo": "workspace:packages/silo",
+    "@johngw/async-iterator": "^3.0.0",
+    "add": "^2.0.6"
   }
 }

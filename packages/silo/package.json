@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/johngeorgewright/gen-x#readme",
   "devDependencies": {
+    "@gen-x/core": "^2.0.1",
+    "@gen-x/run": "^0.0.0",
+    "@gen-x/util": "^3.2.0",
+    "@johngw/async-iterator": "^3.0.0",
     "@types/jest": "^27.0.2",
     "jest": "^27.2.4",
     "rimraf": "^3.0.2",
