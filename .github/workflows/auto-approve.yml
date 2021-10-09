@@ -1,20 +1,16 @@
-name: 🤖 Dependabot
+name: Bots
 
 on:
   pull_request_target:
-    types: [opened]
+    types: [opened, edited]
 
 jobs:
-  auto-merge:
-    name: 🤖 Auto Merge
-    if: github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]'
+  auto-approve:
+    name: Auto Approve
     runs-on: ubuntu-latest
+    if: github.actor == 'renovate[bot]'
     steps:
-      - name: 🚚 Checkout project
-        uses: actions/checkout@v2
-
-      - name: 🤖 Auto Merge
-        uses: ahmadnassri/action-dependabot-auto-merge@v2
+      - uses: actions/checkout@v2
+      - uses: hmarr/auto-approve-action@v2
         with:
-          target: minor
-          github-token: ${{ secrets.PUSH_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}

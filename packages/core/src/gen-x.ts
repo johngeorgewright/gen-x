@@ -28,6 +28,14 @@ const genX: GenX['genX'] = (...operators: Operator<any, any>[]) =>
         }
 
         return
+      } else if (isIterator(value)) {
+        const pipe = pipeRest(i, operators)
+
+        for (let v = await value.next(); !v.done; v = await value.next()) {
+          yield* pipe(v)
+        }
+
+        return
       } else if (global.ReadableStream && isReadableStream(value)) {
         yield* await generateFromReader(
           pipeRest(i, operators),
@@ -49,7 +57,7 @@ function pipeRest(index: number, operators: Operator<any, any>[]) {
   // Hack cast as TS doesn't know the length
   // "Expected 0-100 arguments, but got 0 or more."
   const rest = operators.slice(index + 1) as [Operator<any, any>]
-  return genX(...rest)
+  return genX(...rest) as (x: any) => AsyncGenerator<any, any, unknown>
 }
 
 async function generateFromReader<T>(
@@ -70,6 +78,10 @@ async function generateFromReader<T>(
 
 function isIterable(x: any): x is Iterable<any> {
   return !!x[Symbol.iterator]
+}
+
+function isIterator(x: any): x is Iterator<any> | AsyncIterator<any> {
+  return typeof x === 'object' && x !== null && typeof x.next === 'function'
 }
 
 function isAsyncIterable(x: any): x is AsyncIterable<any> {
