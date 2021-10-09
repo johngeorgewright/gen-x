@@ -1,2 +1,2 @@
-export { default as createStackSilo } from './stack'
-export { default as createForkableSilo } from './forkable'
+export { default as stackSilo } from './stack'
+export { default as forkableSilo } from './forkable'

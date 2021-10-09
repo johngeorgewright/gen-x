@@ -1,9 +1,9 @@
 import genX from '@gen-x/core'
-import { silo } from '..'
-import run from '../run'
+import run from '@gen-x/run'
+import { stackSilo } from '.'
 
 test('spreading output', async () => {
-  const s = silo<number>()
+  const s = stackSilo<number>()
 
   const iterator1 = genX(function* () {
     for (let i = 0; i < 5; i++) {

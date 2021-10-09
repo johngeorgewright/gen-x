@@ -22,5 +22,9 @@
     "rimraf": "^3.0.2",
     "ts-jest": "^27.0.5",
     "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "@gen-x/core": "workspace:packages/core",
+    "@gen-x/run": "workspace:packages/run"
   }
 }

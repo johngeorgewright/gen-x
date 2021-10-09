@@ -1,6 +1,6 @@
 import genX from '@gen-x/core'
-import { forkableSilo } from '..'
-import run from '../run'
+import { forkableSilo } from '.'
+import run from '@gen-x/run'
 
 test('forking multiple outputs', async () => {
   const silo = forkableSilo<number>()

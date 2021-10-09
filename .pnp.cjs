@@ -27,10 +27,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/core"
       },
       {
-        "name": "@gen-x/curry",
-        "reference": "workspace:packages/curry"
-      },
-      {
         "name": "@gen-x/filter",
         "reference": "workspace:packages/filter"
       },
@@ -47,6 +43,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/run"
       },
       {
+        "name": "@gen-x/silo",
+        "reference": "workspace:packages/silo"
+      },
+      {
         "name": "@gen-x/uniq",
         "reference": "workspace:packages/uniq"
       }
@@ -55,11 +55,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.{1,2}(?:\\/|$))(?:(?:(?!(?:^|\\/)\\.{1,2}(?:\\/|$)).)*?)|$))$)",
     "fallbackExclusionList": [
       ["@gen-x/core", ["workspace:packages/core"]],
-      ["@gen-x/curry", ["workspace:packages/curry"]],
       ["@gen-x/filter", ["workspace:packages/filter"]],
       ["@gen-x/generator", ["workspace:packages/generator"]],
       ["@gen-x/list", ["workspace:packages/list"]],
       ["@gen-x/run", ["workspace:packages/run"]],
+      ["@gen-x/silo", ["workspace:packages/silo"]],
       ["@gen-x/uniq", ["workspace:packages/uniq"]],
       ["gen-x", ["workspace:."]]
     ],
@@ -1275,28 +1275,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT",
         }]
       ]],
-      ["@gen-x/curry", [
-        ["workspace:packages/curry", {
-          "packageLocation": "./packages/curry/",
-          "packageDependencies": [
-            ["@gen-x/curry", "workspace:packages/curry"],
-            ["@semantic-release/commit-analyzer", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:9.0.1"],
-            ["@semantic-release/git", "virtual:bb0c4e513c9d6f87080de5fa625b5b654d3ff3ddf1ea55a205a8593b449454da72d98681c95c5ee78fa6faa2889d25910de662b128156625852feba3728ea8bd#npm:10.0.0"],
-            ["@semantic-release/github", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:8.0.1"],
-            ["@semantic-release/npm", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:8.0.0"],
-            ["@semantic-release/release-notes-generator", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:10.0.2"],
-            ["@types/jest", "npm:27.0.2"],
-            ["jest", "npm:26.6.3"],
-            ["rimraf", "npm:3.0.2"],
-            ["semantic-release", "npm:18.0.0"],
-            ["semantic-release-monorepo", "virtual:bb0c4e513c9d6f87080de5fa625b5b654d3ff3ddf1ea55a205a8593b449454da72d98681c95c5ee78fa6faa2889d25910de662b128156625852feba3728ea8bd#npm:7.0.5"],
-            ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:26.5.6"],
-            ["ts-toolbelt", "npm:9.6.0"],
-            ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
       ["@gen-x/filter", [
         ["workspace:packages/filter", {
           "packageLocation": "./packages/filter/",
@@ -1379,6 +1357,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release", "npm:18.0.0"],
             ["semantic-release-monorepo", "virtual:bb0c4e513c9d6f87080de5fa625b5b654d3ff3ddf1ea55a205a8593b449454da72d98681c95c5ee78fa6faa2889d25910de662b128156625852feba3728ea8bd#npm:7.0.5"],
             ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:26.5.6"],
+            ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@gen-x/silo", [
+        ["workspace:packages/silo", {
+          "packageLocation": "./packages/silo/",
+          "packageDependencies": [
+            ["@gen-x/silo", "workspace:packages/silo"],
+            ["@gen-x/core", "workspace:packages/core"],
+            ["@gen-x/run", "workspace:packages/run"],
+            ["@types/jest", "npm:27.0.2"],
+            ["jest", "virtual:04913ac4ebf76b486fbd2d7fc295f6237679cf16d804ce69a5154e5385f00f3db4e48f33ed32d736eeb77502d095e4d62cbefb0ddecc515faa723bfb2f8beada#npm:27.2.5"],
+            ["rimraf", "npm:3.0.2"],
+            ["ts-jest", "virtual:04913ac4ebf76b486fbd2d7fc295f6237679cf16d804ce69a5154e5385f00f3db4e48f33ed32d736eeb77502d095e4d62cbefb0ddecc515faa723bfb2f8beada#npm:27.0.5"],
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"]
           ],
           "linkType": "SOFT",
@@ -17583,15 +17577,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "@types/swc__wasm",
             "@types/typescript",
             "typescript"
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["ts-toolbelt", [
-        ["npm:9.6.0", {
-          "packageLocation": "./.yarn/cache/ts-toolbelt-npm-9.6.0-a95699c8d0-9f35fd95d8.zip/node_modules/ts-toolbelt/",
-          "packageDependencies": [
-            ["ts-toolbelt", "npm:9.6.0"]
           ],
           "linkType": "HARD",
         }]

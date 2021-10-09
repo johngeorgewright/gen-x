@@ -771,26 +771,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@gen-x/curry@workspace:packages/curry":
-  version: 0.0.0-use.local
-  resolution: "@gen-x/curry@workspace:packages/curry"
-  dependencies:
-    "@semantic-release/commit-analyzer": ^9.0.1
-    "@semantic-release/git": ^10.0.0
-    "@semantic-release/github": ^8.0.1
-    "@semantic-release/npm": ^8.0.0
-    "@semantic-release/release-notes-generator": ^10.0.2
-    "@types/jest": ^27.0.0
-    jest: ^26.1.0
-    rimraf: ^3.0.2
-    semantic-release: ^18.0.0
-    semantic-release-monorepo: ^7.0.5
-    ts-jest: ^26.1.1
-    ts-toolbelt: ^9.1.7
-    typescript: ^4.1.3
-  languageName: unknown
-  linkType: soft
-
 "@gen-x/filter@workspace:packages/filter":
   version: 0.0.0-use.local
   resolution: "@gen-x/filter@workspace:packages/filter"
@@ -867,6 +847,20 @@ __metadata:
     semantic-release-monorepo: ^7.0.5
     ts-jest: ^26.1.1
     typescript: ^4.1.2
+  languageName: unknown
+  linkType: soft
+
+"@gen-x/silo@workspace:packages/silo":
+  version: 0.0.0-use.local
+  resolution: "@gen-x/silo@workspace:packages/silo"
+  dependencies:
+    "@gen-x/core": "workspace:packages/core"
+    "@gen-x/run": "workspace:packages/run"
+    "@types/jest": ^27.0.2
+    jest: ^27.2.4
+    rimraf: ^3.0.2
+    ts-jest: ^27.0.5
+    typescript: ^4.4.3
   languageName: unknown
   linkType: soft
 
@@ -2948,7 +2942,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:27.0.2, @types/jest@npm:^27.0.0":
+"@types/jest@npm:27.0.2, @types/jest@npm:^27.0.0, @types/jest@npm:^27.0.2":
   version: 27.0.2
   resolution: "@types/jest@npm:27.0.2"
   dependencies:
@@ -9787,7 +9781,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest@npm:27.2.5":
+"jest@npm:27.2.5, jest@npm:^27.2.4":
   version: 27.2.5
   resolution: "jest@npm:27.2.5"
   dependencies:
@@ -15437,7 +15431,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:27.0.5":
+"ts-jest@npm:27.0.5, ts-jest@npm:^27.0.5":
   version: 27.0.5
   resolution: "ts-jest@npm:27.0.5"
   dependencies:
@@ -15545,13 +15539,6 @@ __metadata:
     ts-node-transpile-only: dist/bin-transpile.js
     ts-script: dist/bin-script-deprecated.js
   checksum: 356e2647b8b1e6ab00380c0537fa569b63bd9b6f006cc40fd650f81fae1817bd8fecc075300036950d8f45c1d85b95be33cd1e48a1a424a7d86c3dbb42bf60e5
-  languageName: node
-  linkType: hard
-
-"ts-toolbelt@npm:^9.1.7":
-  version: 9.6.0
-  resolution: "ts-toolbelt@npm:9.6.0"
-  checksum: 9f35fd95d895a5d32ea9fd2e532a695b0bae6cbff6832b77292efa188a0ed1ed6e54f63f74a8920390f3d909a7a3adb20a144686372a8e78b420246a9bd3d58a
   languageName: node
   linkType: hard
 
@@ -15694,7 +15681,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@4.4.3, typescript@^4.0.3, typescript@^4.1.2, typescript@^4.1.3, typescript@^4.4.3":
+"typescript@4.4.3, typescript@^4.0.3, typescript@^4.1.2, typescript@^4.4.3":
   version: 4.4.3
   resolution: "typescript@npm:4.4.3"
   bin:
@@ -15704,7 +15691,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@4.4.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.0.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.1.2#~builtin<compat/typescript>, typescript@patch:typescript@^4.1.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.4.3#~builtin<compat/typescript>":
+"typescript@patch:typescript@4.4.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.0.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.1.2#~builtin<compat/typescript>, typescript@patch:typescript@^4.4.3#~builtin<compat/typescript>":
   version: 4.4.3
   resolution: "typescript@patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"
   bin:

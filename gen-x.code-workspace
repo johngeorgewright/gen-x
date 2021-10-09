@@ -1,37 +1,13 @@
 {
   "folders": [
-    {
-      "name": "✨ gen-x",
-      "path": "."
-    },
-    {
-      "name": "📦 @gen-x/core",
-      "path": "packages/core"
-    },
-    {
-      "name": "📦 @gen-x/curry",
-      "path": "packages/curry"
-    },
-    {
-      "name": "📦 @gen-x/filter",
-      "path": "packages/filter"
-    },
-    {
-      "name": "📦 @gen-x/generator",
-      "path": "packages/generator"
-    },
-    {
-      "name": "📦 @gen-x/list",
-      "path": "packages/list"
-    },
-    {
-      "name": "📦 @gen-x/run",
-      "path": "packages/run"
-    },
-    {
-      "name": "📦 @gen-x/uniq",
-      "path": "packages/uniq"
-    }
+    { "name": "✨ gen-x", "path": "." },
+    { "name": "📦 @gen-x/core", "path": "packages/core" },
+    { "name": "📦 @gen-x/filter", "path": "packages/filter" },
+    { "name": "📦 @gen-x/generator", "path": "packages/generator" },
+    { "name": "📦 @gen-x/list", "path": "packages/list" },
+    { "name": "📦 @gen-x/run", "path": "packages/run" },
+    { "name": "📦 @gen-x/silo", "path": "packages/silo" },
+    { "name": "📦 @gen-x/uniq", "path": "packages/uniq" }
   ],
   "settings": {
     "search.exclude": { "**/dist": true, "**/.yarn": true, "**/.pnp.*": true },
