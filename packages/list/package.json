@@ -4,9 +4,11 @@
   "description": "list handling for gen-x",
   "main": "dist/list.js",
   "scripts": {
-    "prebuild": "rimraf dist",
+    "prebuild": "rimraf generators",
     "build": "tsc",
-    "postbuild": "rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
+    "clean": "rimraf dist",
+    "clean:tests": "rimraf 'dist/**/?(__tests__|__mocks__|__setup__)'",
+    "postbuild": "rimraf 'generators/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
     "start": "tsc --watch --preserveWatchOutput",
     "test": "jest"
   },

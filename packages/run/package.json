@@ -4,9 +4,9 @@
   "description": "run a gen-x pipeline",
   "main": "dist/run.js",
   "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "tsc",
-    "postbuild": "rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
+    "build": "yarn clean && tsc && yarn clean:tests",
+    "clean": "rimraf dist",
+    "clean:tests": "rimraf 'dist/**/?(__tests__|__mocks__|__setup__)'",
     "start": "tsc --watch --preserveWatchOutput",
     "test": "jest"
   },
