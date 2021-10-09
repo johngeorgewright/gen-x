@@ -9,6 +9,7 @@
     "clean": "rimraf dist",
     "clean:tests": "rimraf 'dist/**/?(__tests__|__mocks__|__setup__)'",
     "postbuild": "rimraf 'generators/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
+    "release": "yarn semantic-release -e semantic-release-monorepo",
     "start": "tsc --watch --preserveWatchOutput",
     "test": "jest"
   },
