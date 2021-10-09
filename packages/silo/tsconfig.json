@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES6",
     "module": "commonjs",
-    "lib": ["es2018", "esnext.asynciterable"],
+    "lib": ["dom", "es2018", "esnext.asynciterable"],
     "declaration": true,
     "sourceMap": true,
+    "outDir": "./dist",
     "downlevelIteration": true,
     "strict": true,
     "noUnusedLocals": true,

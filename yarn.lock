@@ -771,26 +771,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@gen-x/curry@workspace:packages/curry":
-  version: 0.0.0-use.local
-  resolution: "@gen-x/curry@workspace:packages/curry"
-  dependencies:
-    "@semantic-release/commit-analyzer": ^9.0.1
-    "@semantic-release/git": ^10.0.0
-    "@semantic-release/github": ^8.0.1
-    "@semantic-release/npm": ^8.0.0
-    "@semantic-release/release-notes-generator": ^10.0.2
-    "@types/jest": ^27.0.0
-    jest: ^26.1.0
-    rimraf: ^3.0.2
-    semantic-release: ^18.0.0
-    semantic-release-monorepo: ^7.0.5
-    ts-jest: ^26.1.1
-    ts-toolbelt: ^9.1.7
-    typescript: ^4.1.3
-  languageName: unknown
-  linkType: soft
-
 "@gen-x/filter@workspace:packages/filter":
   version: 0.0.0-use.local
   resolution: "@gen-x/filter@workspace:packages/filter"
@@ -850,7 +830,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@gen-x/run@workspace:packages/run":
+"@gen-x/run@^0.0.0, @gen-x/run@workspace:packages/run":
   version: 0.0.0-use.local
   resolution: "@gen-x/run@workspace:packages/run"
   dependencies:
@@ -867,6 +847,22 @@ __metadata:
     semantic-release-monorepo: ^7.0.5
     ts-jest: ^26.1.1
     typescript: ^4.1.2
+  languageName: unknown
+  linkType: soft
+
+"@gen-x/silo@workspace:packages/silo":
+  version: 0.0.0-use.local
+  resolution: "@gen-x/silo@workspace:packages/silo"
+  dependencies:
+    "@gen-x/core": ^2.0.1
+    "@gen-x/run": ^0.0.0
+    "@gen-x/util": ^3.2.0
+    "@johngw/async-iterator": ^3.0.0
+    "@types/jest": ^27.0.2
+    jest: ^27.2.4
+    rimraf: ^3.0.2
+    ts-jest: ^27.0.5
+    typescript: ^4.4.3
   languageName: unknown
   linkType: soft
 
@@ -889,6 +885,15 @@ __metadata:
     typescript: ^4.1.2
   languageName: unknown
   linkType: soft
+
+"@gen-x/util@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "@gen-x/util@npm:3.2.0"
+  peerDependencies:
+    "@gen-x/core": ^2.0.1
+  checksum: 1b09b1f5a426e6efc96fa50bda71cbd0a031fd2a30600c08bf744918231acedd9747da25b0b17aeda135149494a5ae7bd79a9781c6b55d7450c136fb81f2a67e
+  languageName: node
+  linkType: hard
 
 "@isaacs/string-locale-compare@npm:*, @isaacs/string-locale-compare@npm:^1.0.1":
   version: 1.1.0
@@ -1310,6 +1315,38 @@ __metadata:
     "@types/yargs": ^16.0.0
     chalk: ^4.0.0
   checksum: 322603c24354a5333b5b7a670464422a46e0244a5a96a35552a7018eb4ac2e84c3b7657336b0ea6aa114963f9b6d0da8b8f6f963cb044fea9e7bc04d464b0ab1
+  languageName: node
+  linkType: hard
+
+"@johngw/async-iterator@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@johngw/async-iterator@npm:3.0.0"
+  dependencies:
+    "@johngw/async": 4.0.2
+    "@johngw/object": 1.1.5
+    node-abort-controller: ^3.0.0
+    tslib: ^2.2.0
+  checksum: cd539100eb1604be658874a6e1ddf24d34e93f3738df4f9711c0076afb367968246ca14ba9e2d0547906dcaffb39a06089674a4bf859cf5dd6a39a5ffd034e43
+  languageName: node
+  linkType: hard
+
+"@johngw/async@npm:4.0.2":
+  version: 4.0.2
+  resolution: "@johngw/async@npm:4.0.2"
+  dependencies:
+    "@johngw/object": 1.1.5
+    node-abort-controller: ^3.0.0
+    tslib: ^2.2.0
+  checksum: f7a32ab86c085570b42a24c194ad1aa5d731a9fde36af05809879c1073d3ec4f75210c9019698922bb17b6354f708ac84e6064e26c814c48bb44101f835745df
+  languageName: node
+  linkType: hard
+
+"@johngw/object@npm:1.1.5":
+  version: 1.1.5
+  resolution: "@johngw/object@npm:1.1.5"
+  dependencies:
+    tslib: ^2.2.0
+  checksum: 585093f249dfd8a62f152d9e247a87ce46036f7bfbc45b37eb3fbf0a3d36654b2aa54617433b29ad3a9bd785be8cac699853c3e5e30225cb5b61b59ce8b90004
   languageName: node
   linkType: hard
 
@@ -2948,7 +2985,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:27.0.2, @types/jest@npm:^27.0.0":
+"@types/jest@npm:27.0.2, @types/jest@npm:^27.0.0, @types/jest@npm:^27.0.2":
   version: 27.0.2
   resolution: "@types/jest@npm:27.0.2"
   dependencies:
@@ -3268,6 +3305,13 @@ __metadata:
   bin:
     acorn: bin/acorn
   checksum: 2e4c1dbed3da327684863debf31d341bf8882c6893c506653872c00977eee45675feb9129255d6c74c88424d2b20d889ca6de5b39776e5e3cccfc756b3ca1da8
+  languageName: node
+  linkType: hard
+
+"add@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "add@npm:2.0.6"
+  checksum: e2d23d40494565dfed4acd65e478570c444db5ac6c053551ed429c39ea0f2c99d83df63e7befec936df601827d2254d06a2fb6f7dcfd2022e810b25eab818b8c
   languageName: node
   linkType: hard
 
@@ -6939,11 +6983,14 @@ __metadata:
     "@commitlint/cli": ^13.1.0
     "@commitlint/config-conventional": ^13.1.0
     "@commitlint/config-lerna-scopes": ^13.1.0
+    "@gen-x/silo": "workspace:packages/silo"
+    "@johngw/async-iterator": ^3.0.0
     "@semantic-release/commit-analyzer": ^9.0.1
     "@semantic-release/git": ^10.0.0
     "@semantic-release/github": ^8.0.1
     "@semantic-release/npm": ^8.0.0
     "@semantic-release/release-notes-generator": ^10.0.2
+    add: ^2.0.6
     commitizen: ^4.2.1
     cz-lerna-changelog: ^2.0.3
     husky: ^7.0.1
@@ -9787,7 +9834,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest@npm:27.2.5":
+"jest@npm:27.2.5, jest@npm:^27.2.4":
   version: 27.2.5
   resolution: "jest@npm:27.2.5"
   dependencies:
@@ -11412,6 +11459,13 @@ __metadata:
     lower-case: ^2.0.2
     tslib: ^2.0.3
   checksum: 0b2ebc113dfcf737d48dde49cfebf3ad2d82a8c3188e7100c6f375e30eafbef9e9124aadc3becef237b042fd5eb0aad2fd78669c20972d045bbe7fea8ba0be5c
+  languageName: node
+  linkType: hard
+
+"node-abort-controller@npm:^3.0.0":
+  version: 3.0.1
+  resolution: "node-abort-controller@npm:3.0.1"
+  checksum: 2b3d75c65249fea99e8ba22da3a8bc553f034f44dd12f5f4b38b520f718b01c88718c978f0c24c2a460fc01de9a80b567028f547b94440cb47adeacfeb82c2ee
   languageName: node
   linkType: hard
 
@@ -15437,7 +15491,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:27.0.5":
+"ts-jest@npm:27.0.5, ts-jest@npm:^27.0.5":
   version: 27.0.5
   resolution: "ts-jest@npm:27.0.5"
   dependencies:
@@ -15548,14 +15602,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-toolbelt@npm:^9.1.7":
-  version: 9.6.0
-  resolution: "ts-toolbelt@npm:9.6.0"
-  checksum: 9f35fd95d895a5d32ea9fd2e532a695b0bae6cbff6832b77292efa188a0ed1ed6e54f63f74a8920390f3d909a7a3adb20a144686372a8e78b420246a9bd3d58a
-  languageName: node
-  linkType: hard
-
-"tslib@npm:2.3.1, tslib@npm:^2, tslib@npm:^2.0.3":
+"tslib@npm:2.3.1, tslib@npm:^2, tslib@npm:^2.0.3, tslib@npm:^2.2.0":
   version: 2.3.1
   resolution: "tslib@npm:2.3.1"
   checksum: de17a98d4614481f7fcb5cd53ffc1aaf8654313be0291e1bfaee4b4bb31a20494b7d218ff2e15017883e8ea9626599b3b0e0229c18383ba9dce89da2adf15cb9
@@ -15694,7 +15741,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@4.4.3, typescript@^4.0.3, typescript@^4.1.2, typescript@^4.1.3, typescript@^4.4.3":
+"typescript@4.4.3, typescript@^4.0.3, typescript@^4.1.2, typescript@^4.4.3":
   version: 4.4.3
   resolution: "typescript@npm:4.4.3"
   bin:
@@ -15704,7 +15751,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@4.4.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.0.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.1.2#~builtin<compat/typescript>, typescript@patch:typescript@^4.1.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.4.3#~builtin<compat/typescript>":
+"typescript@patch:typescript@4.4.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.0.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.1.2#~builtin<compat/typescript>, typescript@patch:typescript@^4.4.3#~builtin<compat/typescript>":
   version: 4.4.3
   resolution: "typescript@patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"
   bin:

@@ -32,7 +32,7 @@ const genX: GenX['genX'] = (...operators: Operator<any, any>[]) =>
         const pipe = pipeRest(i, operators)
 
         for (let v = await value.next(); !v.done; v = await value.next()) {
-          yield* pipe(v)
+          yield* pipe(v.value)
         }
 
         return
@@ -57,7 +57,9 @@ function pipeRest(index: number, operators: Operator<any, any>[]) {
   // Hack cast as TS doesn't know the length
   // "Expected 0-100 arguments, but got 0 or more."
   const rest = operators.slice(index + 1) as [Operator<any, any>]
-  return genX(...rest) as (x: any) => AsyncGenerator<any, any, unknown>
+  return genX(...rest) as (
+    x: Operator<any, any>
+  ) => AsyncGenerator<any, any, unknown>
 }
 
 async function generateFromReader<T>(
