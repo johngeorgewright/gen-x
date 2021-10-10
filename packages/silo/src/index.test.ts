@@ -8,14 +8,8 @@ test('stacked output', async () => {
   const iterator2 = genX(output, (input) => input * 2)()
   const iterator3 = genX(output, (input) => input * 3)()
 
-  run(
-    genX(function* () {
-      for (let i = 0; i < 5; i++) {
-        yield i
-      }
-      s.finish()
-    }, s.in)
-  )
+  await run(genX(() => [0, 1, 2, 3, 4], s.in))
+  s.finish()
 
   expect(await iterator2.next()).toEqual({ value: 0, done: false })
   expect(await iterator3.next()).toEqual({ value: 3, done: false })
@@ -31,19 +25,8 @@ test('forking multiple outputs', async () => {
   const iterator2 = genX(silo.fork(), (input) => input * 2)()
   const iterator3 = genX(silo.fork(), (input) => input * 3)()
 
-  run(
-    genX(
-      function* () {
-        for (let i = 0; i < 5; i++) {
-          yield i
-        }
-      },
-      (i) => {
-        silo.in(i)
-        if (i === 4) silo.finish()
-      }
-    )
-  )
+  await run(genX(() => [0, 1, 2, 3, 4], silo.in))
+  silo.finish()
 
   expect(await iterator2.next()).toEqual({ value: 0, done: false })
   expect(await iterator3.next()).toEqual({ value: 0, done: false })

@@ -17,7 +17,8 @@ const input = genX(function* () {
 
 const output = genX(data.fork(), (input) => input * 2)()
 
-run(input)
+await run(input)
+data.finish() // Call at some point to prevent the output waiting forever
 
 for await (const v of output) {
   console.info(v)
@@ -26,9 +27,5 @@ for await (const v of output) {
   // 4
   // 6
   // 8
-
-  if (v === 4) {
-    data.finish() // Call at some point to prevent hanging forever
-  }
 }
 ```
