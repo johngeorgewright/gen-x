@@ -14,27 +14,16 @@ const genX: GenX['genX'] = (...operators: Operator<any, any>[]) =>
         value = await value
       } else if (isIterable(value) && typeof value !== 'string') {
         const pipe = pipeRest(i, operators)
-
-        for (const item of value) {
-          yield* pipe(item)
-        }
-
+        for (const item of value) yield* pipe(item)
         return
       } else if (isAsyncIterable(value)) {
         const pipe = pipeRest(i, operators)
-
-        for await (const item of value) {
-          yield* pipe(item)
-        }
-
+        for await (const item of value) yield* pipe(item)
         return
       } else if (isIterator(value)) {
         const pipe = pipeRest(i, operators)
-
-        for (let v = await value.next(); !v.done; v = await value.next()) {
+        for (let v = await value.next(); !v.done; v = await value.next())
           yield* pipe(v.value)
-        }
-
         return
       } else if (global.ReadableStream && isReadableStream(value)) {
         yield* await generateFromReader(
