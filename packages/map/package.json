@@ -1,6 +1,6 @@
 {
   "name": "@gen-x/map",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Maps values",
   "main": "dist/index.js",
   "scripts": {

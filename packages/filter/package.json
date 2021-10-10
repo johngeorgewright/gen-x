@@ -1,6 +1,6 @@
 {
   "name": "@gen-x/filter",
-  "version": "0.0.0",
+  "version": "1.0.2",
   "description": "Filter results in a gen-x pipeline",
   "main": "dist/filter.js",
   "scripts": {
