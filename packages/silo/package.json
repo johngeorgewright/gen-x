@@ -7,6 +7,7 @@
     "prebuild": "rimraf dist",
     "build": "tsc",
     "postbuild": "rimraf 'dist/**/?(__tests__|__mocks__|__setup__|*.test.*)'",
+    "release": "yarn semantic-release -e semantic-release-monorepo",
     "start": "tsc --watch --preserveWatchOutput",
     "test": "jest"
   },
