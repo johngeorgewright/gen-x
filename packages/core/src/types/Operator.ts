@@ -12,7 +12,7 @@ export type OperatorInput<T> = T extends Iterable<infer V>
   ? V
   : T extends ReadableStream<infer V>
   ? V
-  : T extends ReadableStreamReader<infer V>
+  : T extends ReadableStreamDefaultReader<infer V>
   ? V
   : T extends NodeJSReadableStream
   ? any
