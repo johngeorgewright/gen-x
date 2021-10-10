@@ -47,11 +47,7 @@ export function forEach<T>(
   { items }: List<T>,
   fn: (item: T, index: number) => void | symbol
 ) {
-  for (let i = 0; i < items.length; i++) {
-    if (fn(items[i], i) === Break) {
-      break
-    }
-  }
+  for (let i = 0; i < items.length; i++) if (fn(items[i], i) === Break) break
 }
 
 export function from<T>(arrayLike: ArrayLike<T>) {
@@ -107,15 +103,13 @@ export function reduce<T, X>(
 
 export function reverse<T>({ items }: List<T>) {
   const reversed: T[] = Array(items.length)
-  for (let i = 0, j = items.length - 1; i < items.length; i++, j--) {
+  for (let i = 0, j = items.length - 1; i < items.length; i++, j--)
     reversed[j] = items[i]
-  }
   return create(...reversed)
 }
 
 export function shift<T>({ items }: List<T>) {
-  const array = [...items]
-  return array.shift()
+  return items.length ? items[0] : undefined
 }
 
 export function slice<T>({ items }: List<T>, start?: number, end?: number) {
