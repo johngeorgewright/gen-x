@@ -33,5 +33,8 @@
     "semantic-release-monorepo": "^7.0.5",
     "ts-jest": "^26.1.1",
     "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "tslib": "2.3.1"
   }
 }

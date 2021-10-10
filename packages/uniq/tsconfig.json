@@ -7,6 +7,7 @@
     "sourceMap": true,
     "outDir": "./dist",
     "downlevelIteration": true,
+    "importHelpers": true,
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
