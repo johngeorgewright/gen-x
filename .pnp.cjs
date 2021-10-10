@@ -1277,6 +1277,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release-monorepo", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:7.0.5"],
             ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:26.5.6"],
             ["ts-node", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:10.2.1"],
+            ["tslib", "npm:2.3.1"],
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"],
             ["web-streams-polyfill", "npm:3.1.1"]
           ],
@@ -1300,6 +1301,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release", "npm:18.0.0"],
             ["semantic-release-monorepo", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:7.0.5"],
             ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:26.5.6"],
+            ["tslib", "npm:2.3.1"],
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"]
           ],
           "linkType": "SOFT",
@@ -1343,6 +1345,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release", "npm:18.0.0"],
             ["semantic-release-monorepo", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:7.0.5"],
             ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:26.5.6"],
+            ["tslib", "npm:2.3.1"],
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"]
           ],
           "linkType": "SOFT",
@@ -1388,6 +1391,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release", "npm:18.0.0"],
             ["semantic-release-monorepo", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:7.0.5"],
             ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:26.5.6"],
+            ["tslib", "npm:2.3.1"],
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"]
           ],
           "linkType": "SOFT",
@@ -1400,12 +1404,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@gen-x/silo", "workspace:packages/silo"],
             ["@gen-x/core", "workspace:packages/core"],
             ["@gen-x/run", "workspace:packages/run"],
-            ["@gen-x/util", "virtual:3b13902204fe3eedb334e381907badbb461410d927afaef2dd2a5059a3072edab4219a809f54f5bcdf1a6b94df542cbcd948054115d833c98d10a39fbe8282e3#npm:3.2.0"],
             ["@johngw/async-iterator", "npm:3.0.0"],
+            ["@semantic-release/commit-analyzer", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:9.0.1"],
+            ["@semantic-release/git", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:10.0.0"],
+            ["@semantic-release/github", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:8.0.1"],
+            ["@semantic-release/npm", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:8.0.0"],
+            ["@semantic-release/release-notes-generator", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:10.0.2"],
             ["@types/jest", "npm:27.0.2"],
             ["jest", "virtual:3b13902204fe3eedb334e381907badbb461410d927afaef2dd2a5059a3072edab4219a809f54f5bcdf1a6b94df542cbcd948054115d833c98d10a39fbe8282e3#npm:27.2.5"],
             ["rimraf", "npm:3.0.2"],
+            ["semantic-release", "npm:18.0.0"],
+            ["semantic-release-monorepo", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:7.0.5"],
             ["ts-jest", "virtual:3b13902204fe3eedb334e381907badbb461410d927afaef2dd2a5059a3072edab4219a809f54f5bcdf1a6b94df542cbcd948054115d833c98d10a39fbe8282e3#npm:27.0.5"],
+            ["tslib", "npm:2.3.1"],
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"]
           ],
           "linkType": "SOFT",
@@ -1428,31 +1439,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release", "npm:18.0.0"],
             ["semantic-release-monorepo", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:7.0.5"],
             ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:26.5.6"],
+            ["tslib", "npm:2.3.1"],
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"]
           ],
           "linkType": "SOFT",
-        }]
-      ]],
-      ["@gen-x/util", [
-        ["npm:3.2.0", {
-          "packageLocation": "./.yarn/cache/@gen-x-util-npm-3.2.0-c985688101-1b09b1f5a4.zip/node_modules/@gen-x/util/",
-          "packageDependencies": [
-            ["@gen-x/util", "npm:3.2.0"]
-          ],
-          "linkType": "SOFT",
-        }],
-        ["virtual:3b13902204fe3eedb334e381907badbb461410d927afaef2dd2a5059a3072edab4219a809f54f5bcdf1a6b94df542cbcd948054115d833c98d10a39fbe8282e3#npm:3.2.0", {
-          "packageLocation": "./.yarn/__virtual__/@gen-x-util-virtual-c10e45d2fc/0/cache/@gen-x-util-npm-3.2.0-c985688101-1b09b1f5a4.zip/node_modules/@gen-x/util/",
-          "packageDependencies": [
-            ["@gen-x/util", "virtual:3b13902204fe3eedb334e381907badbb461410d927afaef2dd2a5059a3072edab4219a809f54f5bcdf1a6b94df542cbcd948054115d833c98d10a39fbe8282e3#npm:3.2.0"],
-            ["@gen-x/core", "workspace:packages/core"],
-            ["@types/gen-x__core", null]
-          ],
-          "packagePeers": [
-            "@gen-x/core",
-            "@types/gen-x__core"
-          ],
-          "linkType": "HARD",
         }]
       ]],
       ["@isaacs/string-locale-compare", [
