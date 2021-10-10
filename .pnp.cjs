@@ -39,6 +39,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/list"
       },
       {
+        "name": "@gen-x/map",
+        "reference": "workspace:packages/map"
+      },
+      {
         "name": "@gen-x/run",
         "reference": "workspace:packages/run"
       },
@@ -58,6 +62,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@gen-x/filter", ["workspace:packages/filter"]],
       ["@gen-x/generator", ["workspace:packages/generator"]],
       ["@gen-x/list", ["workspace:packages/list"]],
+      ["@gen-x/map", ["workspace:packages/map"]],
       ["@gen-x/run", ["workspace:packages/run"]],
       ["@gen-x/silo", ["workspace:packages/silo"]],
       ["@gen-x/uniq", ["workspace:packages/uniq"]],
@@ -1338,6 +1343,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semantic-release", "npm:18.0.0"],
             ["semantic-release-monorepo", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:7.0.5"],
             ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:26.5.6"],
+            ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@gen-x/map", [
+        ["workspace:packages/map", {
+          "packageLocation": "./packages/map/",
+          "packageDependencies": [
+            ["@gen-x/map", "workspace:packages/map"],
+            ["@gen-x/core", "workspace:packages/core"],
+            ["@semantic-release/commit-analyzer", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:9.0.1"],
+            ["@semantic-release/git", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:10.0.0"],
+            ["@semantic-release/github", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:8.0.1"],
+            ["@semantic-release/npm", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:8.0.0"],
+            ["@semantic-release/release-notes-generator", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:10.0.2"],
+            ["@types/jest", "npm:27.0.2"],
+            ["jest", "virtual:3b13902204fe3eedb334e381907badbb461410d927afaef2dd2a5059a3072edab4219a809f54f5bcdf1a6b94df542cbcd948054115d833c98d10a39fbe8282e3#npm:27.2.5"],
+            ["rimraf", "npm:3.0.2"],
+            ["semantic-release", "npm:18.0.0"],
+            ["semantic-release-monorepo", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:7.0.5"],
+            ["ts-jest", "virtual:3b13902204fe3eedb334e381907badbb461410d927afaef2dd2a5059a3072edab4219a809f54f5bcdf1a6b94df542cbcd948054115d833c98d10a39fbe8282e3#npm:27.0.5"],
+            ["tslib", "npm:2.3.1"],
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"]
           ],
           "linkType": "SOFT",

@@ -830,6 +830,27 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@gen-x/map@workspace:packages/map":
+  version: 0.0.0-use.local
+  resolution: "@gen-x/map@workspace:packages/map"
+  dependencies:
+    "@gen-x/core": "workspace:packages/core"
+    "@semantic-release/commit-analyzer": 9.0.1
+    "@semantic-release/git": 10.0.0
+    "@semantic-release/github": 8.0.1
+    "@semantic-release/npm": 8.0.0
+    "@semantic-release/release-notes-generator": 10.0.2
+    "@types/jest": 27.0.2
+    jest: 27.2.5
+    rimraf: 3.0.2
+    semantic-release: 18.0.0
+    semantic-release-monorepo: 7.0.5
+    ts-jest: 27.0.5
+    tslib: 2.3.1
+    typescript: 4.4.3
+  languageName: unknown
+  linkType: soft
+
 "@gen-x/run@^0.0.0, @gen-x/run@workspace:packages/run":
   version: 0.0.0-use.local
   resolution: "@gen-x/run@workspace:packages/run"
@@ -2650,23 +2671,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/commit-analyzer@npm:^6.1.0":
-  version: 6.3.3
-  resolution: "@semantic-release/commit-analyzer@npm:6.3.3"
-  dependencies:
-    conventional-changelog-angular: ^5.0.0
-    conventional-commits-filter: ^2.0.0
-    conventional-commits-parser: ^3.0.7
-    debug: ^4.0.0
-    import-from: ^3.0.0
-    lodash: ^4.17.4
-  peerDependencies:
-    semantic-release: ">=15.8.0 <16.0.0"
-  checksum: 4ae4895dd97288293442e60ca82d8a6bda442dd6f1120b63231f5a7ef65c3749fb5051e4b790bc0daa0f9401236fb8ceaba576ca14fe1eab478dedba5e9d8a25
-  languageName: node
-  linkType: hard
-
-"@semantic-release/commit-analyzer@npm:^9.0.0, @semantic-release/commit-analyzer@npm:^9.0.1":
+"@semantic-release/commit-analyzer@npm:9.0.1, @semantic-release/commit-analyzer@npm:^9.0.0, @semantic-release/commit-analyzer@npm:^9.0.1":
   version: 9.0.1
   resolution: "@semantic-release/commit-analyzer@npm:9.0.1"
   dependencies:
@@ -2680,6 +2685,22 @@ __metadata:
   peerDependencies:
     semantic-release: ">=18.0.0-beta.1"
   checksum: 4b38f235c7f3c424717693663e7ceac48319687b62d0a28429d04f03add183632fb64905847bdc499d0cee306b8d5e228018a0b495d260c09fd9f1209c40c100
+  languageName: node
+  linkType: hard
+
+"@semantic-release/commit-analyzer@npm:^6.1.0":
+  version: 6.3.3
+  resolution: "@semantic-release/commit-analyzer@npm:6.3.3"
+  dependencies:
+    conventional-changelog-angular: ^5.0.0
+    conventional-commits-filter: ^2.0.0
+    conventional-commits-parser: ^3.0.7
+    debug: ^4.0.0
+    import-from: ^3.0.0
+    lodash: ^4.17.4
+  peerDependencies:
+    semantic-release: ">=15.8.0 <16.0.0"
+  checksum: 4ae4895dd97288293442e60ca82d8a6bda442dd6f1120b63231f5a7ef65c3749fb5051e4b790bc0daa0f9401236fb8ceaba576ca14fe1eab478dedba5e9d8a25
   languageName: node
   linkType: hard
 
@@ -2697,7 +2718,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/git@npm:^10.0.0":
+"@semantic-release/git@npm:10.0.0, @semantic-release/git@npm:^10.0.0":
   version: 10.0.0
   resolution: "@semantic-release/git@npm:10.0.0"
   dependencies:
@@ -2715,7 +2736,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/github@npm:^8.0.0, @semantic-release/github@npm:^8.0.1":
+"@semantic-release/github@npm:8.0.1, @semantic-release/github@npm:^8.0.0, @semantic-release/github@npm:^8.0.1":
   version: 8.0.1
   resolution: "@semantic-release/github@npm:8.0.1"
   dependencies:
@@ -2741,7 +2762,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/npm@npm:^8.0.0":
+"@semantic-release/npm@npm:8.0.0, @semantic-release/npm@npm:^8.0.0":
   version: 8.0.0
   resolution: "@semantic-release/npm@npm:8.0.0"
   dependencies:
@@ -2764,7 +2785,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/release-notes-generator@npm:^10.0.0, @semantic-release/release-notes-generator@npm:^10.0.2":
+"@semantic-release/release-notes-generator@npm:10.0.2, @semantic-release/release-notes-generator@npm:^10.0.0, @semantic-release/release-notes-generator@npm:^10.0.2":
   version: 10.0.2
   resolution: "@semantic-release/release-notes-generator@npm:10.0.2"
   dependencies:
@@ -13991,7 +14012,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release-monorepo@npm:^7.0.5":
+"semantic-release-monorepo@npm:7.0.5, semantic-release-monorepo@npm:^7.0.5":
   version: 7.0.5
   resolution: "semantic-release-monorepo@npm:7.0.5"
   dependencies:
