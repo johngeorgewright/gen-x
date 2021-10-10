@@ -1,6 +1,6 @@
 {
   "name": "@gen-x/uniq",
-  "version": "0.0.0",
+  "version": "1.0.2",
   "description": "Filter uniq items in a gen-x pipeline",
   "main": "dist/uniq.js",
   "scripts": {
