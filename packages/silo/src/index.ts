@@ -1,5 +1,5 @@
 import { EventIterator } from '@johngw/async-iterator'
-import { withCounter } from './util'
+import { withCounter } from '@johngw/function'
 
 export default function createSilo<T>() {
   const stacks = new Map<number, EventIterator<T>>()

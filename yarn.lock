@@ -882,6 +882,7 @@ __metadata:
     "@gen-x/core": "workspace:packages/core"
     "@gen-x/run": "workspace:packages/run"
     "@johngw/async-iterator": ^3.0.0
+    "@johngw/function": ^1.0.0
     "@semantic-release/commit-analyzer": ^9.0.1
     "@semantic-release/git": ^10.0.0
     "@semantic-release/github": ^8.0.1
@@ -1362,6 +1363,15 @@ __metadata:
     node-abort-controller: ^3.0.0
     tslib: ^2.2.0
   checksum: f7a32ab86c085570b42a24c194ad1aa5d731a9fde36af05809879c1073d3ec4f75210c9019698922bb17b6354f708ac84e6064e26c814c48bb44101f835745df
+  languageName: node
+  linkType: hard
+
+"@johngw/function@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@johngw/function@npm:1.0.0"
+  dependencies:
+    tslib: ^2.3.1
+  checksum: c2a319c47f95203a61e146f9fc89057acd9a3c25cf0f7bd38d8b01d29f240d099908bf56f214ecf00ad85b4a08a612f967505ad1516be3b86c7af49e320872ea
   languageName: node
   linkType: hard
 
@@ -15626,7 +15636,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:2.3.1, tslib@npm:^2, tslib@npm:^2.0.3, tslib@npm:^2.2.0":
+"tslib@npm:2.3.1, tslib@npm:^2, tslib@npm:^2.0.3, tslib@npm:^2.2.0, tslib@npm:^2.3.1":
   version: 2.3.1
   resolution: "tslib@npm:2.3.1"
   checksum: de17a98d4614481f7fcb5cd53ffc1aaf8654313be0291e1bfaee4b4bb31a20494b7d218ff2e15017883e8ea9626599b3b0e0229c18383ba9dce89da2adf15cb9

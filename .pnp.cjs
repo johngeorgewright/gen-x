@@ -1405,6 +1405,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@gen-x/core", "workspace:packages/core"],
             ["@gen-x/run", "workspace:packages/run"],
             ["@johngw/async-iterator", "npm:3.0.0"],
+            ["@johngw/function", "npm:1.0.0"],
             ["@semantic-release/commit-analyzer", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:9.0.1"],
             ["@semantic-release/git", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:10.0.0"],
             ["@semantic-release/github", "virtual:26bef7164f48d044764cd43116294384229ad2f2c35b46556537f1ef43382b779f272bad9f935bedb8d5f0cd3bb5d71fbb788a0376f8f210aee6a1927e0d4392#npm:8.0.1"],
@@ -1906,6 +1907,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@johngw/async", "npm:4.0.2"],
             ["@johngw/object", "npm:1.1.5"],
             ["node-abort-controller", "npm:3.0.1"],
+            ["tslib", "npm:2.3.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@johngw/function", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/@johngw-function-npm-1.0.0-a807f09a4a-c2a319c47f.zip/node_modules/@johngw/function/",
+          "packageDependencies": [
+            ["@johngw/function", "npm:1.0.0"],
             ["tslib", "npm:2.3.1"]
           ],
           "linkType": "HARD",
