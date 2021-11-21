@@ -3,7 +3,7 @@
     { "name": "✨ gen-x", "path": "." },
     { "name": "📦 @gen-x/core", "path": "packages/core" },
     { "name": "📦 @gen-x/filter", "path": "packages/filter" },
-    { "name": "📦 @gen-x/generator", "path": "packages/generator" },
+    { "name": "🛠 @gen-x/generator", "path": "packages/generator" },
     { "name": "📦 @gen-x/list", "path": "packages/list" },
     { "name": "📦 @gen-x/map", "path": "packages/map" },
     { "name": "📦 @gen-x/run", "path": "packages/run" },
