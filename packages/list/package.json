@@ -1,6 +1,6 @@
 {
   "name": "@gen-x/list",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "list handling for gen-x",
   "main": "dist/list.js",
   "scripts": {
