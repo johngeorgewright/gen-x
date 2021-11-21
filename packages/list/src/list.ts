@@ -108,8 +108,8 @@ export function reverse<T>({ items }: List<T>) {
   return create(...reversed)
 }
 
-export function shift<T>({ items }: List<T>) {
-  return items.length ? items[0] : undefined
+export function shift<T>(list: List<T>) {
+  return slice(list, 1)
 }
 
 export function slice<T>({ items }: List<T>, start?: number, end?: number) {
