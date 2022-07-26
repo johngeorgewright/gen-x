@@ -432,7 +432,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:^13.1.0":
+"@commitlint/cli@npm:13.2.1":
   version: 13.2.1
   resolution: "@commitlint/cli@npm:13.2.1"
   dependencies:
@@ -451,7 +451,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-conventional@npm:^13.1.0":
+"@commitlint/config-conventional@npm:13.2.0":
   version: 13.2.0
   resolution: "@commitlint/config-conventional@npm:13.2.0"
   dependencies:
@@ -460,7 +460,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-lerna-scopes@npm:^13.1.0":
+"@commitlint/config-lerna-scopes@npm:13.2.0":
   version: 13.2.0
   resolution: "@commitlint/config-lerna-scopes@npm:13.2.0"
   dependencies:
@@ -746,29 +746,29 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@gen-x/core@workspace:packages/core"
   dependencies:
-    "@semantic-release/commit-analyzer": ^9.0.1
-    "@semantic-release/exec": ^6.0.3
-    "@semantic-release/git": ^10.0.0
-    "@semantic-release/github": ^8.0.1
-    "@semantic-release/release-notes-generator": ^10.0.2
-    "@types/ejs": ^3.0.4
-    "@types/jest": ^27.0.0
-    "@types/lodash.last": ^3.0.6
-    "@types/lodash.range": ^3.2.6
-    "@types/node": ^16.10.3
-    concurrently: ^6.0.0
-    cz-conventional-changelog: ^3.3.0
-    jest: ^26.4.2
-    lodash.last: ^3.0.0
-    lodash.range: ^3.2.0
-    rimraf: ^3.0.2
+    "@semantic-release/commit-analyzer": 9.0.1
+    "@semantic-release/exec": 6.0.3
+    "@semantic-release/git": 10.0.0
+    "@semantic-release/github": 8.0.1
+    "@semantic-release/release-notes-generator": 10.0.2
+    "@types/ejs": 3.1.0
+    "@types/jest": 27.0.2
+    "@types/lodash.last": 3.0.6
+    "@types/lodash.range": 3.2.6
+    "@types/node": 16.10.3
+    concurrently: 6.3.0
+    cz-conventional-changelog: 3.3.0
+    jest: 26.6.3
+    lodash.last: 3.0.0
+    lodash.range: 3.2.0
+    rimraf: 3.0.2
     semantic-release: ^18.0.0
-    semantic-release-monorepo: ^7.0.5
-    ts-jest: ^26.4.0
-    ts-node: ^10.2.0
+    semantic-release-monorepo: 7.0.5
+    ts-jest: 26.5.6
+    ts-node: 10.2.1
     tslib: 2.3.1
-    typescript: ^4.0.3
-    web-streams-polyfill: ^3.0.0
+    typescript: 4.4.3
+    web-streams-polyfill: 3.1.1
   languageName: unknown
   linkType: soft
 
@@ -777,19 +777,19 @@ __metadata:
   resolution: "@gen-x/filter@workspace:packages/filter"
   dependencies:
     "@gen-x/core": ^2.0.1
-    "@semantic-release/commit-analyzer": ^9.0.1
-    "@semantic-release/exec": ^6.0.3
-    "@semantic-release/git": ^10.0.0
-    "@semantic-release/github": ^8.0.1
-    "@semantic-release/release-notes-generator": ^10.0.2
-    "@types/jest": ^27.0.0
-    jest: ^26.1.0
-    rimraf: ^3.0.2
+    "@semantic-release/commit-analyzer": 9.0.1
+    "@semantic-release/exec": 6.0.3
+    "@semantic-release/git": 10.0.0
+    "@semantic-release/github": 8.0.1
+    "@semantic-release/release-notes-generator": 10.0.2
+    "@types/jest": 27.0.2
+    jest: 26.6.3
+    rimraf: 3.0.2
     semantic-release: ^18.0.0
-    semantic-release-monorepo: ^7.0.5
-    ts-jest: ^26.1.1
+    semantic-release-monorepo: 7.0.5
+    ts-jest: 26.5.6
     tslib: 2.3.1
-    typescript: ^4.1.2
+    typescript: 4.4.3
   languageName: unknown
   linkType: soft
 
@@ -817,19 +817,19 @@ __metadata:
   resolution: "@gen-x/list@workspace:packages/list"
   dependencies:
     "@gen-x/core": ^2.0.1
-    "@semantic-release/commit-analyzer": ^9.0.1
-    "@semantic-release/exec": ^6.0.3
-    "@semantic-release/git": ^10.0.0
-    "@semantic-release/github": ^8.0.1
-    "@semantic-release/release-notes-generator": ^10.0.2
-    "@types/jest": ^27.0.0
-    jest: ^26.1.0
-    rimraf: ^3.0.2
+    "@semantic-release/commit-analyzer": 9.0.1
+    "@semantic-release/exec": 6.0.3
+    "@semantic-release/git": 10.0.0
+    "@semantic-release/github": 8.0.1
+    "@semantic-release/release-notes-generator": 10.0.2
+    "@types/jest": 27.0.2
+    jest: 26.6.3
+    rimraf: 3.0.2
     semantic-release: ^18.0.0
-    semantic-release-monorepo: ^7.0.5
-    ts-jest: ^26.1.1
+    semantic-release-monorepo: 7.0.5
+    ts-jest: 26.5.6
     tslib: 2.3.1
-    typescript: ^4.1.2
+    typescript: 4.4.3
   languageName: unknown
   linkType: soft
 
@@ -839,7 +839,7 @@ __metadata:
   dependencies:
     "@gen-x/core": "workspace:packages/core"
     "@semantic-release/commit-analyzer": 9.0.1
-    "@semantic-release/exec": ^6.0.3
+    "@semantic-release/exec": 6.0.3
     "@semantic-release/git": 10.0.0
     "@semantic-release/github": 8.0.1
     "@semantic-release/release-notes-generator": 10.0.2
@@ -859,19 +859,19 @@ __metadata:
   resolution: "@gen-x/run@workspace:packages/run"
   dependencies:
     "@gen-x/core": ^2.0.1
-    "@semantic-release/commit-analyzer": ^9.0.1
-    "@semantic-release/exec": ^6.0.3
-    "@semantic-release/git": ^10.0.0
-    "@semantic-release/github": ^8.0.1
-    "@semantic-release/release-notes-generator": ^10.0.2
-    "@types/jest": ^27.0.0
-    jest: ^26.1.0
-    rimraf: ^3.0.2
+    "@semantic-release/commit-analyzer": 9.0.1
+    "@semantic-release/exec": 6.0.3
+    "@semantic-release/git": 10.0.0
+    "@semantic-release/github": 8.0.1
+    "@semantic-release/release-notes-generator": 10.0.2
+    "@types/jest": 27.0.2
+    jest: 26.6.3
+    rimraf: 3.0.2
     semantic-release: ^18.0.0
-    semantic-release-monorepo: ^7.0.5
-    ts-jest: ^26.1.1
+    semantic-release-monorepo: 7.0.5
+    ts-jest: 26.5.6
     tslib: 2.3.1
-    typescript: ^4.1.2
+    typescript: 4.4.3
   languageName: unknown
   linkType: soft
 
@@ -881,21 +881,21 @@ __metadata:
   dependencies:
     "@gen-x/core": "workspace:packages/core"
     "@gen-x/run": "workspace:packages/run"
-    "@johngw/async-iterator": ^3.0.0
+    "@johngw/async-iterator": 3.0.0
     "@johngw/function": ^1.0.0
-    "@semantic-release/commit-analyzer": ^9.0.1
-    "@semantic-release/exec": ^6.0.3
-    "@semantic-release/git": ^10.0.0
-    "@semantic-release/github": ^8.0.1
-    "@semantic-release/release-notes-generator": ^10.0.2
-    "@types/jest": ^27.0.2
-    jest: ^27.2.4
-    rimraf: ^3.0.2
+    "@semantic-release/commit-analyzer": 9.0.1
+    "@semantic-release/exec": 6.0.3
+    "@semantic-release/git": 10.0.0
+    "@semantic-release/github": 8.0.1
+    "@semantic-release/release-notes-generator": 10.0.2
+    "@types/jest": 27.0.2
+    jest: 27.2.5
+    rimraf: 3.0.2
     semantic-release: ^18.0.0
-    semantic-release-monorepo: ^7.0.5
-    ts-jest: ^27.0.5
+    semantic-release-monorepo: 7.0.5
+    ts-jest: 27.0.5
     tslib: 2.3.1
-    typescript: ^4.4.3
+    typescript: 4.4.3
   languageName: unknown
   linkType: soft
 
@@ -904,19 +904,19 @@ __metadata:
   resolution: "@gen-x/uniq@workspace:packages/uniq"
   dependencies:
     "@gen-x/core": ^2.0.1
-    "@semantic-release/commit-analyzer": ^9.0.1
-    "@semantic-release/exec": ^6.0.3
-    "@semantic-release/git": ^10.0.0
-    "@semantic-release/github": ^8.0.1
-    "@semantic-release/release-notes-generator": ^10.0.2
-    "@types/jest": ^27.0.0
-    jest: ^26.1.0
-    rimraf: ^3.0.2
+    "@semantic-release/commit-analyzer": 9.0.1
+    "@semantic-release/exec": 6.0.3
+    "@semantic-release/git": 10.0.0
+    "@semantic-release/github": 8.0.1
+    "@semantic-release/release-notes-generator": 10.0.2
+    "@types/jest": 27.0.2
+    jest: 26.6.3
+    rimraf: 3.0.2
     semantic-release: ^18.0.0
-    semantic-release-monorepo: ^7.0.5
-    ts-jest: ^26.1.1
+    semantic-release-monorepo: 7.0.5
+    ts-jest: 26.5.6
     tslib: 2.3.1
-    typescript: ^4.1.2
+    typescript: 4.4.3
   languageName: unknown
   linkType: soft
 
@@ -1343,7 +1343,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@johngw/async-iterator@npm:^3.0.0":
+"@johngw/async-iterator@npm:3.0.0, @johngw/async-iterator@npm:^3.0.0":
   version: 3.0.0
   resolution: "@johngw/async-iterator@npm:3.0.0"
   dependencies:
@@ -2684,7 +2684,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/commit-analyzer@npm:9.0.1, @semantic-release/commit-analyzer@npm:^9.0.0, @semantic-release/commit-analyzer@npm:^9.0.1":
+"@semantic-release/commit-analyzer@npm:9.0.1, @semantic-release/commit-analyzer@npm:^9.0.0":
   version: 9.0.1
   resolution: "@semantic-release/commit-analyzer@npm:9.0.1"
   dependencies:
@@ -2731,7 +2731,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/exec@npm:^6.0.3":
+"@semantic-release/exec@npm:6.0.3":
   version: 6.0.3
   resolution: "@semantic-release/exec@npm:6.0.3"
   dependencies:
@@ -2747,7 +2747,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/git@npm:10.0.0, @semantic-release/git@npm:^10.0.0":
+"@semantic-release/git@npm:10.0.0":
   version: 10.0.0
   resolution: "@semantic-release/git@npm:10.0.0"
   dependencies:
@@ -2765,7 +2765,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/github@npm:8.0.1, @semantic-release/github@npm:^8.0.0, @semantic-release/github@npm:^8.0.1":
+"@semantic-release/github@npm:8.0.1, @semantic-release/github@npm:^8.0.0":
   version: 8.0.1
   resolution: "@semantic-release/github@npm:8.0.1"
   dependencies:
@@ -2814,7 +2814,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/release-notes-generator@npm:10.0.2, @semantic-release/release-notes-generator@npm:^10.0.0, @semantic-release/release-notes-generator@npm:^10.0.2":
+"@semantic-release/release-notes-generator@npm:10.0.2, @semantic-release/release-notes-generator@npm:^10.0.0":
   version: 10.0.2
   resolution: "@semantic-release/release-notes-generator@npm:10.0.2"
   dependencies:
@@ -2967,7 +2967,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ejs@npm:*, @types/ejs@npm:^3.0.4":
+"@types/ejs@npm:*, @types/ejs@npm:3.1.0":
   version: 3.1.0
   resolution: "@types/ejs@npm:3.1.0"
   checksum: 2905e401a1cf632ff0001bbb3e647b4f96f1db31ac34ed0b04f2670500d74e60e705526ae87da6e2fe13744ea5b21d521de3c6695d02b21f9121d13402c554da
@@ -3035,7 +3035,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:27.0.2, @types/jest@npm:^27.0.0, @types/jest@npm:^27.0.2":
+"@types/jest@npm:27.0.2":
   version: 27.0.2
   resolution: "@types/jest@npm:27.0.2"
   dependencies:
@@ -3061,7 +3061,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash.last@npm:^3.0.6":
+"@types/lodash.last@npm:3.0.6":
   version: 3.0.6
   resolution: "@types/lodash.last@npm:3.0.6"
   dependencies:
@@ -3070,7 +3070,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash.range@npm:^3.2.6":
+"@types/lodash.range@npm:3.2.6":
   version: 3.2.6
   resolution: "@types/lodash.range@npm:3.2.6"
   dependencies:
@@ -3131,7 +3131,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>= 8, @types/node@npm:^16.10.3":
+"@types/node@npm:*, @types/node@npm:16.10.3, @types/node@npm:>= 8":
   version: 16.10.3
   resolution: "@types/node@npm:16.10.3"
   checksum: 3fd429bce8a4acb497dcc62b536782a5e87ccf7cd91d64a78b263ae5d66cb72bf84be9eeeff6f84ae0567b065a40b267caa66d311f9e094990a5847bbd168a29
@@ -4978,7 +4978,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commitizen@npm:^4.0.3, commitizen@npm:^4.2.1":
+"commitizen@npm:4.2.4, commitizen@npm:^4.0.3":
   version: 4.2.4
   resolution: "commitizen@npm:4.2.4"
   dependencies:
@@ -5066,7 +5066,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"concurrently@npm:^6.0.0":
+"concurrently@npm:6.3.0":
   version: 6.3.0
   resolution: "concurrently@npm:6.3.0"
   dependencies:
@@ -5483,7 +5483,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cz-conventional-changelog@npm:^3.3.0":
+"cz-conventional-changelog@npm:3.3.0":
   version: 3.3.0
   resolution: "cz-conventional-changelog@npm:3.3.0"
   dependencies:
@@ -5514,7 +5514,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cz-lerna-changelog@npm:^2.0.3":
+"cz-lerna-changelog@npm:2.0.3":
   version: 2.0.3
   resolution: "cz-lerna-changelog@npm:2.0.3"
   dependencies:
@@ -7030,30 +7030,30 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "gen-x@workspace:."
   dependencies:
-    "@commitlint/cli": ^13.1.0
-    "@commitlint/config-conventional": ^13.1.0
-    "@commitlint/config-lerna-scopes": ^13.1.0
+    "@commitlint/cli": 13.2.1
+    "@commitlint/config-conventional": 13.2.0
+    "@commitlint/config-lerna-scopes": 13.2.0
     "@gen-x/silo": "workspace:packages/silo"
     "@johngw/async-iterator": ^3.0.0
-    "@semantic-release/commit-analyzer": ^9.0.1
-    "@semantic-release/exec": ^6.0.3
-    "@semantic-release/git": ^10.0.0
-    "@semantic-release/github": ^8.0.1
-    "@semantic-release/release-notes-generator": ^10.0.2
+    "@semantic-release/commit-analyzer": 9.0.1
+    "@semantic-release/exec": 6.0.3
+    "@semantic-release/git": 10.0.0
+    "@semantic-release/github": 8.0.1
+    "@semantic-release/release-notes-generator": 10.0.2
     add: ^2.0.6
-    commitizen: ^4.2.1
-    cz-lerna-changelog: ^2.0.3
-    husky: ^7.0.1
-    isbinaryfile: ^4.0.8
-    json-parse-even-better-errors: ^2.3.1
-    lerna: ^3.22.1
-    lint-staged: ^11.1.2
-    mkdirp-infer-owner: ^2.0.0
-    prettier: ^2.1.2
-    semantic-release: ^18.0.0
-    semantic-release-monorepo: ^7.0.5
-    typescript: ^4.4.3
-    yo: ^4.3.0
+    commitizen: 4.2.4
+    cz-lerna-changelog: 2.0.3
+    husky: 7.0.2
+    isbinaryfile: 4.0.8
+    json-parse-even-better-errors: 2.3.1
+    lerna: 3.22.1
+    lint-staged: 11.2.1
+    mkdirp-infer-owner: 2.0.0
+    prettier: 2.4.1
+    semantic-release: 18.0.0
+    semantic-release-monorepo: 7.0.5
+    typescript: 4.4.3
+    yo: 4.3.0
   languageName: unknown
   linkType: soft
 
@@ -7873,7 +7873,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^7.0.1":
+"husky@npm:7.0.2":
   version: 7.0.2
   resolution: "husky@npm:7.0.2"
   bin:
@@ -8853,7 +8853,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"isbinaryfile@npm:^4.0.8":
+"isbinaryfile@npm:4.0.8, isbinaryfile@npm:^4.0.8":
   version: 4.0.8
   resolution: "isbinaryfile@npm:4.0.8"
   checksum: 606e3bb648d1a0dee23459d1d937bb2560e66a5281ec7c9ff50e585402d73321ac268d0f34cb7393125b3ebc4c7962d39e50a01cdb8904b52fce08b7ccd2bf9f
@@ -9884,7 +9884,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest@npm:27.2.5, jest@npm:^27.2.4":
+"jest@npm:26.6.3":
+  version: 26.6.3
+  resolution: "jest@npm:26.6.3"
+  dependencies:
+    "@jest/core": ^26.6.3
+    import-local: ^3.0.2
+    jest-cli: ^26.6.3
+  bin:
+    jest: bin/jest.js
+  checksum: 3a9b4c70e9bd5391e7367a0036045c1d3545c2a39e1439a71fb4b59b1748bc34e2ccb324faa1046b99bffc8dc2ed7b3c59016c462255b2646f5fa9300351f914
+  languageName: node
+  linkType: hard
+
+"jest@npm:27.2.5":
   version: 27.2.5
   resolution: "jest@npm:27.2.5"
   dependencies:
@@ -9899,19 +9912,6 @@ __metadata:
   bin:
     jest: bin/jest.js
   checksum: fe262171655d8caf1e80ce2a412bf5eaf9eb8679fb6b3c0edc903f2795f1c73b33704cf0afd7cf1752bd674eccda5136d5e2ffbccffbee02a5c83743c7ae0141
-  languageName: node
-  linkType: hard
-
-"jest@npm:^26.1.0, jest@npm:^26.4.2":
-  version: 26.6.3
-  resolution: "jest@npm:26.6.3"
-  dependencies:
-    "@jest/core": ^26.6.3
-    import-local: ^3.0.2
-    jest-cli: ^26.6.3
-  bin:
-    jest: bin/jest.js
-  checksum: 3a9b4c70e9bd5391e7367a0036045c1d3545c2a39e1439a71fb4b59b1748bc34e2ccb324faa1046b99bffc8dc2ed7b3c59016c462255b2646f5fa9300351f914
   languageName: node
   linkType: hard
 
@@ -10004,7 +10004,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"json-parse-even-better-errors@npm:*, json-parse-even-better-errors@npm:^2.3.0, json-parse-even-better-errors@npm:^2.3.1":
+"json-parse-even-better-errors@npm:*, json-parse-even-better-errors@npm:2.3.1, json-parse-even-better-errors@npm:^2.3.0, json-parse-even-better-errors@npm:^2.3.1":
   version: 2.3.1
   resolution: "json-parse-even-better-errors@npm:2.3.1"
   checksum: 798ed4cf3354a2d9ccd78e86d2169515a0097a5c133337807cdf7f1fc32e1391d207ccfc276518cc1d7d8d4db93288b8a50ba4293d212ad1336e52a8ec0a941f
@@ -10165,7 +10165,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lerna@npm:^3.22.1":
+"lerna@npm:3.22.1":
   version: 3.22.1
   resolution: "lerna@npm:3.22.1"
   dependencies:
@@ -10349,7 +10349,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^11.1.2":
+"lint-staged@npm:11.2.1":
   version: 11.2.1
   resolution: "lint-staged@npm:11.2.1"
   dependencies:
@@ -10548,7 +10548,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash.last@npm:^3.0.0":
+"lodash.last@npm:3.0.0":
   version: 3.0.0
   resolution: "lodash.last@npm:3.0.0"
   checksum: 7e0a2d5abf8e30fa7662cfbf14666883cb7b021e478baa0fec3a9ad74619cfeef12a8cc57d3641c64916247defe69052228bbb61daad441782a927f8b92f27e8
@@ -10583,7 +10583,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash.range@npm:^3.2.0":
+"lodash.range@npm:3.2.0":
   version: 3.2.0
   resolution: "lodash.range@npm:3.2.0"
   checksum: 9355140c0ae66c51e1828fe6b4aa64bfc986bcf3afeae720904cc89e0b15ec8d5e174454cbbf087485447e67e4b1d9000d7e53e89c7deea892d3c0b472461035
@@ -11309,7 +11309,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mkdirp-infer-owner@npm:*, mkdirp-infer-owner@npm:^2.0.0":
+"mkdirp-infer-owner@npm:*, mkdirp-infer-owner@npm:2.0.0, mkdirp-infer-owner@npm:^2.0.0":
   version: 2.0.0
   resolution: "mkdirp-infer-owner@npm:2.0.0"
   dependencies:
@@ -13039,7 +13039,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.4.1, prettier@npm:^2.1.2":
+"prettier@npm:2.4.1":
   version: 2.4.1
   resolution: "prettier@npm:2.4.1"
   bin:
@@ -14041,7 +14041,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release-monorepo@npm:7.0.5, semantic-release-monorepo@npm:^7.0.5":
+"semantic-release-monorepo@npm:7.0.5":
   version: 7.0.5
   resolution: "semantic-release-monorepo@npm:7.0.5"
   dependencies:
@@ -15541,7 +15541,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:27.0.5, ts-jest@npm:^27.0.5":
+"ts-jest@npm:26.5.6":
+  version: 26.5.6
+  resolution: "ts-jest@npm:26.5.6"
+  dependencies:
+    bs-logger: 0.x
+    buffer-from: 1.x
+    fast-json-stable-stringify: 2.x
+    jest-util: ^26.1.0
+    json5: 2.x
+    lodash: 4.x
+    make-error: 1.x
+    mkdirp: 1.x
+    semver: 7.x
+    yargs-parser: 20.x
+  peerDependencies:
+    jest: ">=26 <27"
+    typescript: ">=3.8 <5.0"
+  bin:
+    ts-jest: cli.js
+  checksum: 6f65ad4fe67ab3f0fd4c7f9954acbee863af05b2b3f88dd0f490bbcdc58002960fac908b2cb9f009ec14da6fe13cb00a39e291260d6e555abe72448d1c0a017f
+  languageName: node
+  linkType: hard
+
+"ts-jest@npm:27.0.5":
   version: 27.0.5
   resolution: "ts-jest@npm:27.0.5"
   dependencies:
@@ -15572,30 +15595,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:^26.1.1, ts-jest@npm:^26.4.0":
-  version: 26.5.6
-  resolution: "ts-jest@npm:26.5.6"
-  dependencies:
-    bs-logger: 0.x
-    buffer-from: 1.x
-    fast-json-stable-stringify: 2.x
-    jest-util: ^26.1.0
-    json5: 2.x
-    lodash: 4.x
-    make-error: 1.x
-    mkdirp: 1.x
-    semver: 7.x
-    yargs-parser: 20.x
-  peerDependencies:
-    jest: ">=26 <27"
-    typescript: ">=3.8 <5.0"
-  bin:
-    ts-jest: cli.js
-  checksum: 6f65ad4fe67ab3f0fd4c7f9954acbee863af05b2b3f88dd0f490bbcdc58002960fac908b2cb9f009ec14da6fe13cb00a39e291260d6e555abe72448d1c0a017f
-  languageName: node
-  linkType: hard
-
-"ts-node@npm:^10.2.0":
+"ts-node@npm:10.2.1":
   version: 10.2.1
   resolution: "ts-node@npm:10.2.1"
   dependencies:
@@ -15791,7 +15791,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@4.4.3, typescript@^4.0.3, typescript@^4.1.2, typescript@^4.4.3":
+"typescript@4.4.3, typescript@^4.4.3":
   version: 4.4.3
   resolution: "typescript@npm:4.4.3"
   bin:
@@ -15801,7 +15801,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@4.4.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.0.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.1.2#~builtin<compat/typescript>, typescript@patch:typescript@^4.4.3#~builtin<compat/typescript>":
+"typescript@patch:typescript@4.4.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.4.3#~builtin<compat/typescript>":
   version: 4.4.3
   resolution: "typescript@patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"
   bin:
@@ -16238,7 +16238,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"web-streams-polyfill@npm:^3.0.0":
+"web-streams-polyfill@npm:3.1.1":
   version: 3.1.1
   resolution: "web-streams-polyfill@npm:3.1.1"
   checksum: dac85f0a990fb1ddcd15e2eda8ce4696bc9bc567e34cfdaeb9e740e26417d8649a6f466468907f50fd6e09967c25e0cf1f296c30aef9650ab7b118d5f69fb176
@@ -16837,7 +16837,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yo@npm:^4.3.0":
+"yo@npm:4.3.0":
   version: 4.3.0
   resolution: "yo@npm:4.3.0"
   dependencies:
