@@ -812,12 +812,12 @@ __metadata:
   resolution: "@gen-x/generator@workspace:packages/generator"
   dependencies:
     "@types/jest": 27.0.2
-    "@types/prettier": 2.4.1
+    "@types/prettier": 2.6.4
     "@types/rimraf": 3.0.2
     "@types/yeoman-generator": 5.2.7
     change-case: 4.1.2
     jest: 27.2.5
-    prettier: 2.4.1
+    prettier: 2.7.1
     rimraf: 3.0.2
     ts-jest: 27.0.5
     tslib: 2.3.1
@@ -3460,7 +3460,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prettier@npm:2.4.1, @types/prettier@npm:^2.0.0, @types/prettier@npm:^2.1.5":
+"@types/prettier@npm:2.6.4":
+  version: 2.6.4
+  resolution: "@types/prettier@npm:2.6.4"
+  checksum: a8ec6601cbacf8040782cc883bf1a9393fdcb991ebe88440b0f875bb1556652927ac9fe61a721b6c666ac6252158ba327ce2868559bafa2c86e7dfef4089782a
+  languageName: node
+  linkType: hard
+
+"@types/prettier@npm:^2.0.0, @types/prettier@npm:^2.1.5":
   version: 2.4.1
   resolution: "@types/prettier@npm:2.4.1"
   checksum: df330c2d6fe7c282839b0f17701e069a9c6c96d2ff54704e933a1b3c1b98844d963a7cb00c5629d173604892ceee802312bbaeb8a97f5da21e13db8f653b519e
@@ -7525,7 +7532,7 @@ __metadata:
     lerna: 3.22.1
     lint-staged: 11.2.6
     mkdirp-infer-owner: 2.0.0
-    prettier: 2.4.1
+    prettier: 2.7.1
     semantic-release: 19.0.3
     semantic-release-monorepo: 7.0.5
     typescript: 4.4.3
@@ -13847,12 +13854,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.4.1":
-  version: 2.4.1
-  resolution: "prettier@npm:2.4.1"
+"prettier@npm:2.7.1":
+  version: 2.7.1
+  resolution: "prettier@npm:2.7.1"
   bin:
     prettier: bin-prettier.js
-  checksum: cc6830588b401b0d742862fe9c46bc9118204fb307c3abe0e49e95b35ed23629573807ffdf9cdd65289c252a0bb51fc0171437f6626ee36378dea80f0ee80b91
+  checksum: 55a4409182260866ab31284d929b3cb961e5fdb91fe0d2e099dac92eaecec890f36e524b4c19e6ceae839c99c6d7195817579cdffc8e2c80da0cb794463a748b
   languageName: node
   linkType: hard
 
