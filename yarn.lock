@@ -7340,7 +7340,7 @@ __metadata:
     isbinaryfile: 4.0.10
     json-parse-even-better-errors: 2.3.1
     lerna: 3.22.1
-    lint-staged: 11.2.1
+    lint-staged: 11.2.6
     mkdirp-infer-owner: 2.0.0
     prettier: 2.4.1
     semantic-release: 19.0.3
@@ -10755,9 +10755,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:11.2.1":
-  version: 11.2.1
-  resolution: "lint-staged@npm:11.2.1"
+"lint-staged@npm:11.2.6":
+  version: 11.2.6
+  resolution: "lint-staged@npm:11.2.6"
   dependencies:
     cli-truncate: 2.1.0
     colorette: ^1.4.0
@@ -10775,7 +10775,7 @@ __metadata:
     supports-color: 8.1.1
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 4d41e80c779082c6880c22ac0d13d68730a430d4fec6cd228365eee7647b36808c85aa554ee358fa4bf983a3ae0ca919bf00e4eeea8db65ca46b190f09b18d85
+  checksum: b9071621db351c553579bd18df3d80fb753f851c4f1f72db0aaf12e713eab25b6d8a044dab2957817de7da02054a63f7725a49c763aee09295133f0d554f4d3f
   languageName: node
   linkType: hard
 
