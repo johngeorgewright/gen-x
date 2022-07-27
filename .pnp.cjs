@@ -1278,7 +1278,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/git", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:10.0.0"],
             ["@semantic-release/github", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:8.0.1"],
             ["@semantic-release/release-notes-generator", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:10.0.2"],
-            ["@types/ejs", "npm:3.1.0"],
+            ["@types/ejs", "npm:3.1.1"],
             ["@types/jest", "npm:27.0.2"],
             ["@types/lodash.last", "npm:3.0.6"],
             ["@types/lodash.range", "npm:3.2.6"],
@@ -3873,6 +3873,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-ejs-npm-3.1.0-96d4c31f58-2905e401a1.zip/node_modules/@types/ejs/",
           "packageDependencies": [
             ["@types/ejs", "npm:3.1.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:3.1.1", {
+          "packageLocation": "./.yarn/cache/@types-ejs-npm-3.1.1-0ab41f0e19-12fa444920.zip/node_modules/@types/ejs/",
+          "packageDependencies": [
+            ["@types/ejs", "npm:3.1.1"]
           ],
           "linkType": "HARD",
         }]
