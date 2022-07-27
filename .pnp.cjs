@@ -1420,7 +1420,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@gen-x/silo", "workspace:packages/silo"],
             ["@gen-x/core", "workspace:packages/core"],
             ["@gen-x/run", "workspace:packages/run"],
-            ["@johngw/async-iterator", "npm:3.0.0"],
+            ["@johngw/async-iterator", "npm:3.3.1"],
             ["@johngw/function", "npm:1.0.0"],
             ["@semantic-release/commit-analyzer", "virtual:c91fcd356d35829ced3f9cafcb7d70217b01982491547be46dbf92a34cc1c6f47f5022ecefa553004a9375335550e06b2a45e10dc96f6aba8aa030dc26a07d30#npm:9.0.2"],
             ["@semantic-release/exec", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:6.0.3"],
@@ -1913,6 +1913,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tslib", "npm:2.3.1"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:4.1.1", {
+          "packageLocation": "./.yarn/cache/@johngw-async-npm-4.1.1-63a8fb8c8a-2d001a4348.zip/node_modules/@johngw/async/",
+          "packageDependencies": [
+            ["@johngw/async", "npm:4.1.1"],
+            ["@johngw/object", "npm:1.2.1"],
+            ["node-abort-controller", "npm:3.0.1"],
+            ["tslib", "npm:2.3.1"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@johngw/async-iterator", [
@@ -1922,6 +1932,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@johngw/async-iterator", "npm:3.0.0"],
             ["@johngw/async", "npm:4.0.2"],
             ["@johngw/object", "npm:1.1.5"],
+            ["node-abort-controller", "npm:3.0.1"],
+            ["tslib", "npm:2.3.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:3.3.1", {
+          "packageLocation": "./.yarn/cache/@johngw-async-iterator-npm-3.3.1-95d10154e6-2aad3ed605.zip/node_modules/@johngw/async-iterator/",
+          "packageDependencies": [
+            ["@johngw/async-iterator", "npm:3.3.1"],
+            ["@johngw/async", "npm:4.1.1"],
+            ["@johngw/object", "npm:1.2.1"],
             ["node-abort-controller", "npm:3.0.1"],
             ["tslib", "npm:2.3.1"]
           ],
@@ -1943,6 +1964,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@johngw-object-npm-1.1.5-58c443d9bd-585093f249.zip/node_modules/@johngw/object/",
           "packageDependencies": [
             ["@johngw/object", "npm:1.1.5"],
+            ["tslib", "npm:2.3.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:1.2.1", {
+          "packageLocation": "./.yarn/cache/@johngw-object-npm-1.2.1-02eb656d5d-b6654a790b.zip/node_modules/@johngw/object/",
+          "packageDependencies": [
+            ["@johngw/object", "npm:1.2.1"],
             ["tslib", "npm:2.3.1"]
           ],
           "linkType": "HARD",

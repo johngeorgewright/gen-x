@@ -895,7 +895,7 @@ __metadata:
   dependencies:
     "@gen-x/core": "workspace:packages/core"
     "@gen-x/run": "workspace:packages/run"
-    "@johngw/async-iterator": 3.0.0
+    "@johngw/async-iterator": 3.3.1
     "@johngw/function": ^1.0.0
     "@semantic-release/commit-analyzer": 9.0.2
     "@semantic-release/exec": 6.0.3
@@ -1357,7 +1357,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@johngw/async-iterator@npm:3.0.0, @johngw/async-iterator@npm:^3.0.0":
+"@johngw/async-iterator@npm:3.3.1":
+  version: 3.3.1
+  resolution: "@johngw/async-iterator@npm:3.3.1"
+  dependencies:
+    "@johngw/async": 4.1.1
+    "@johngw/object": 1.2.1
+    node-abort-controller: ^3.0.0
+    tslib: ^2.3.1
+  checksum: 2aad3ed6053aee95e732ccb5864f5ac65edc5609807679e78bd0e6b0c4bae67cbd786b0701969592b59f26092d8ba0e0a6cb5ff0778695e49a66e57a972be858
+  languageName: node
+  linkType: hard
+
+"@johngw/async-iterator@npm:^3.0.0":
   version: 3.0.0
   resolution: "@johngw/async-iterator@npm:3.0.0"
   dependencies:
@@ -1380,6 +1392,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@johngw/async@npm:4.1.1":
+  version: 4.1.1
+  resolution: "@johngw/async@npm:4.1.1"
+  dependencies:
+    "@johngw/object": 1.2.1
+    node-abort-controller: ^3.0.0
+    tslib: ^2.3.1
+  checksum: 2d001a4348a9c9d77a99c3b90cba5f3e15209960ff8448df1c13ff934b19dcf4babe3b71f08a867f39631c125bc6dec096aa3966dbe6eeb51baefd0cd95792ae
+  languageName: node
+  linkType: hard
+
 "@johngw/function@npm:^1.0.0":
   version: 1.0.0
   resolution: "@johngw/function@npm:1.0.0"
@@ -1395,6 +1418,15 @@ __metadata:
   dependencies:
     tslib: ^2.2.0
   checksum: 585093f249dfd8a62f152d9e247a87ce46036f7bfbc45b37eb3fbf0a3d36654b2aa54617433b29ad3a9bd785be8cac699853c3e5e30225cb5b61b59ce8b90004
+  languageName: node
+  linkType: hard
+
+"@johngw/object@npm:1.2.1":
+  version: 1.2.1
+  resolution: "@johngw/object@npm:1.2.1"
+  dependencies:
+    tslib: ^2.3.1
+  checksum: b6654a790b1d426c1fd89ccf59d16bce55163864bd89e65c6980ad1f266133f308e4be23d1d15044f51a75c0055f027eafb976e7c7e5062876abfd06b08ddf0d
   languageName: node
   linkType: hard
 
