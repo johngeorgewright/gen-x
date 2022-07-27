@@ -89,7 +89,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["commitizen", "npm:4.2.5"],
             ["cz-lerna-changelog", "virtual:bb0c4e513c9d6f87080de5fa625b5b654d3ff3ddf1ea55a205a8593b449454da72d98681c95c5ee78fa6faa2889d25910de662b128156625852feba3728ea8bd#npm:2.0.3"],
             ["husky", "npm:7.0.4"],
-            ["isbinaryfile", "npm:4.0.8"],
+            ["isbinaryfile", "npm:4.0.10"],
             ["json-parse-even-better-errors", "npm:2.3.1"],
             ["lerna", "npm:3.22.1"],
             ["lint-staged", "npm:11.2.1"],
@@ -8638,7 +8638,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["commitizen", "npm:4.2.5"],
             ["cz-lerna-changelog", "virtual:bb0c4e513c9d6f87080de5fa625b5b654d3ff3ddf1ea55a205a8593b449454da72d98681c95c5ee78fa6faa2889d25910de662b128156625852feba3728ea8bd#npm:2.0.3"],
             ["husky", "npm:7.0.4"],
-            ["isbinaryfile", "npm:4.0.8"],
+            ["isbinaryfile", "npm:4.0.10"],
             ["json-parse-even-better-errors", "npm:2.3.1"],
             ["lerna", "npm:3.22.1"],
             ["lint-staged", "npm:11.2.1"],
@@ -10696,6 +10696,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["isbinaryfile", [
+        ["npm:4.0.10", {
+          "packageLocation": "./.yarn/cache/isbinaryfile-npm-4.0.10-91d1251522-a6b28db7e2.zip/node_modules/isbinaryfile/",
+          "packageDependencies": [
+            ["isbinaryfile", "npm:4.0.10"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:4.0.8", {
           "packageLocation": "./.yarn/cache/isbinaryfile-npm-4.0.8-62c71dd57b-606e3bb648.zip/node_modules/isbinaryfile/",
           "packageDependencies": [
