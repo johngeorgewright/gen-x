@@ -1283,7 +1283,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/lodash.last", "npm:3.0.7"],
             ["@types/lodash.range", "npm:3.2.7"],
             ["@types/node", "npm:16.10.3"],
-            ["concurrently", "npm:6.3.0"],
+            ["concurrently", "npm:6.5.1"],
             ["cz-conventional-changelog", "npm:3.3.0"],
             ["jest", "npm:26.6.3"],
             ["lodash.last", "npm:3.0.0"],
@@ -6614,10 +6614,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["concurrently", [
-        ["npm:6.3.0", {
-          "packageLocation": "./.yarn/cache/concurrently-npm-6.3.0-4f8a6d7c02-fb68236899.zip/node_modules/concurrently/",
+        ["npm:6.5.1", {
+          "packageLocation": "./.yarn/cache/concurrently-npm-6.5.1-1c75a74f6e-3f4d89b464.zip/node_modules/concurrently/",
           "packageDependencies": [
-            ["concurrently", "npm:6.3.0"],
+            ["concurrently", "npm:6.5.1"],
             ["chalk", "npm:4.1.2"],
             ["date-fns", "npm:2.25.0"],
             ["lodash", "npm:4.17.21"],
