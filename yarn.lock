@@ -770,7 +770,7 @@ __metadata:
     "@types/lodash.last": 3.0.7
     "@types/lodash.range": 3.2.7
     "@types/node": 16.10.3
-    concurrently: 6.3.0
+    concurrently: 6.5.1
     cz-conventional-changelog: 3.3.0
     jest: 26.6.3
     lodash.last: 3.0.0
@@ -5496,9 +5496,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"concurrently@npm:6.3.0":
-  version: 6.3.0
-  resolution: "concurrently@npm:6.3.0"
+"concurrently@npm:6.5.1":
+  version: 6.5.1
+  resolution: "concurrently@npm:6.5.1"
   dependencies:
     chalk: ^4.1.0
     date-fns: ^2.16.1
@@ -5510,7 +5510,7 @@ __metadata:
     yargs: ^16.2.0
   bin:
     concurrently: bin/concurrently.js
-  checksum: fb68236899259a3b0c05d27db608ee9150f11fc785552c14937e5e1421c9448d03704cdc2acb5f842a91c465d50005b4229f348eb9594d84cbef54e5a93ffde7
+  checksum: 3f4d89b464fa5c9fb6f9489b46594c30ba54eff6ff10ab3cb5f30f64b74c83be664623a0f0cc731a3cb3f057a1f4a3292f7d3470c012a292c44aca31f214a3fa
   languageName: node
   linkType: hard
 
