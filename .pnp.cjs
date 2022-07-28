@@ -1667,7 +1667,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/lodash.last", "npm:3.0.7"],
             ["@types/lodash.range", "npm:3.2.7"],
             ["@types/node", "npm:16.10.3"],
-            ["concurrently", "npm:6.5.1"],
+            ["concurrently", "npm:7.3.0"],
             ["cz-conventional-changelog", "npm:3.3.0"],
             ["jest", "npm:26.6.3"],
             ["lodash.last", "npm:3.0.0"],
@@ -7160,18 +7160,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["concurrently", [
-        ["npm:6.5.1", {
-          "packageLocation": "./.yarn/cache/concurrently-npm-6.5.1-1c75a74f6e-3f4d89b464.zip/node_modules/concurrently/",
+        ["npm:7.3.0", {
+          "packageLocation": "./.yarn/cache/concurrently-npm-7.3.0-0123c57666-5de845e494.zip/node_modules/concurrently/",
           "packageDependencies": [
-            ["concurrently", "npm:6.5.1"],
+            ["concurrently", "npm:7.3.0"],
             ["chalk", "npm:4.1.2"],
             ["date-fns", "npm:2.25.0"],
             ["lodash", "npm:4.17.21"],
-            ["rxjs", "npm:6.6.7"],
+            ["rxjs", "npm:7.5.6"],
+            ["shell-quote", "npm:1.7.3"],
             ["spawn-command", "npm:0.0.2"],
             ["supports-color", "npm:8.1.1"],
             ["tree-kill", "npm:1.2.2"],
-            ["yargs", "npm:16.2.0"]
+            ["yargs", "npm:17.5.1"]
           ],
           "linkType": "HARD",
         }]
@@ -17699,6 +17700,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["shell-quote", [
+        ["npm:1.7.3", {
+          "packageLocation": "./.yarn/cache/shell-quote-npm-1.7.3-76a78a6d77-aca58e73a3.zip/node_modules/shell-quote/",
+          "packageDependencies": [
+            ["shell-quote", "npm:1.7.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["shelljs", [
         ["npm:0.7.0", {
           "packageLocation": "./.yarn/cache/shelljs-npm-0.7.0-87bce01960-17f060cc4e.zip/node_modules/shelljs/",
@@ -20467,6 +20477,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["yargs-parser", "npm:20.2.9"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:17.5.1", {
+          "packageLocation": "./.yarn/cache/yargs-npm-17.5.1-0902fa46de-00d58a2c05.zip/node_modules/yargs/",
+          "packageDependencies": [
+            ["yargs", "npm:17.5.1"],
+            ["cliui", "npm:7.0.4"],
+            ["escalade", "npm:3.1.1"],
+            ["get-caller-file", "npm:2.0.5"],
+            ["require-directory", "npm:2.1.1"],
+            ["string-width", "npm:4.2.3"],
+            ["y18n", "npm:5.0.8"],
+            ["yargs-parser", "npm:21.0.1"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["yargs-parser", [
@@ -20492,6 +20516,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/yargs-parser-npm-20.2.9-a1d19e598d-8bb69015f2.zip/node_modules/yargs-parser/",
           "packageDependencies": [
             ["yargs-parser", "npm:20.2.9"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:21.0.1", {
+          "packageLocation": "./.yarn/cache/yargs-parser-npm-21.0.1-b778fd3462-c3ea2ed12c.zip/node_modules/yargs-parser/",
+          "packageDependencies": [
+            ["yargs-parser", "npm:21.0.1"]
           ],
           "linkType": "HARD",
         }]
