@@ -1715,7 +1715,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:27.5.2"],
             ["@types/prettier", "npm:2.6.4"],
             ["@types/rimraf", "npm:3.0.2"],
-            ["@types/yeoman-generator", "npm:5.2.7"],
+            ["@types/yeoman-generator", "npm:5.2.10"],
             ["change-case", "npm:4.1.2"],
             ["jest", "virtual:3b13902204fe3eedb334e381907badbb461410d927afaef2dd2a5059a3072edab4219a809f54f5bcdf1a6b94df542cbcd948054115d833c98d10a39fbe8282e3#npm:27.5.1"],
             ["prettier", "npm:2.7.1"],
@@ -1723,7 +1723,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ts-jest", "virtual:3b13902204fe3eedb334e381907badbb461410d927afaef2dd2a5059a3072edab4219a809f54f5bcdf1a6b94df542cbcd948054115d833c98d10a39fbe8282e3#npm:27.1.5"],
             ["tslib", "npm:2.4.0"],
             ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"],
-            ["yeoman-generator", "virtual:04913ac4ebf76b486fbd2d7fc295f6237679cf16d804ce69a5154e5385f00f3db4e48f33ed32d736eeb77502d095e4d62cbefb0ddecc515faa723bfb2f8beada#npm:5.4.2"]
+            ["yeoman-generator", "virtual:04913ac4ebf76b486fbd2d7fc295f6237679cf16d804ce69a5154e5385f00f3db4e48f33ed32d736eeb77502d095e4d62cbefb0ddecc515faa723bfb2f8beada#npm:5.6.1"]
           ],
           "linkType": "SOFT",
         }]
@@ -4908,6 +4908,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/yeoman-generator", [
+        ["npm:5.2.10", {
+          "packageLocation": "./.yarn/cache/@types-yeoman-generator-npm-5.2.10-003daa2eb7-85744da9b4.zip/node_modules/@types/yeoman-generator/",
+          "packageDependencies": [
+            ["@types/yeoman-generator", "npm:5.2.10"],
+            ["@types/debug", "npm:4.1.7"],
+            ["@types/ejs", "npm:3.1.0"],
+            ["@types/inquirer", "npm:8.1.3"],
+            ["@types/mem-fs-editor", "npm:7.0.1"],
+            ["@types/yeoman-environment", "npm:2.10.5"],
+            ["rxjs", "npm:6.6.7"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:5.2.7", {
           "packageLocation": "./.yarn/cache/@types-yeoman-generator-npm-5.2.7-8d8d356e33-33e3b61425.zip/node_modules/@types/yeoman-generator/",
           "packageDependencies": [
@@ -11215,6 +11228,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/is-plain-obj-npm-1.1.0-1046f64c0b-0ee0480779.zip/node_modules/is-plain-obj/",
           "packageDependencies": [
             ["is-plain-obj", "npm:1.1.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:2.1.0", {
+          "packageLocation": "./.yarn/cache/is-plain-obj-npm-2.1.0-8dffd7ae9c-cec9100678.zip/node_modules/is-plain-obj/",
+          "packageDependencies": [
+            ["is-plain-obj", "npm:2.1.0"]
           ],
           "linkType": "HARD",
         }]
@@ -17690,10 +17710,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:0.8.4", {
-          "packageLocation": "./.yarn/cache/shelljs-npm-0.8.4-e2890f4ce2-27f83206ef.zip/node_modules/shelljs/",
+        ["npm:0.8.5", {
+          "packageLocation": "./.yarn/cache/shelljs-npm-0.8.5-44be43f84a-7babc46f73.zip/node_modules/shelljs/",
           "packageDependencies": [
-            ["shelljs", "npm:0.8.4"],
+            ["shelljs", "npm:0.8.5"],
             ["glob", "npm:7.2.0"],
             ["interpret", "npm:1.4.0"],
             ["rechoir", "npm:0.6.2"]
@@ -17941,6 +17961,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["sort-keys", "npm:2.0.0"],
             ["is-plain-obj", "npm:1.1.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:4.2.0", {
+          "packageLocation": "./.yarn/cache/sort-keys-npm-4.2.0-bf52ceef80-1535ffd5a7.zip/node_modules/sort-keys/",
+          "packageDependencies": [
+            ["sort-keys", "npm:4.2.0"],
+            ["is-plain-obj", "npm:2.1.0"]
           ],
           "linkType": "HARD",
         }]
@@ -20554,17 +20582,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["yeoman-generator", [
-        ["npm:5.4.2", {
-          "packageLocation": "./.yarn/cache/yeoman-generator-npm-5.4.2-f6e44674b5-c9d734ba58.zip/node_modules/yeoman-generator/",
+        ["npm:5.6.1", {
+          "packageLocation": "./.yarn/cache/yeoman-generator-npm-5.6.1-a49b7654c4-ef036210b6.zip/node_modules/yeoman-generator/",
           "packageDependencies": [
-            ["yeoman-generator", "npm:5.4.2"]
+            ["yeoman-generator", "npm:5.6.1"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:04913ac4ebf76b486fbd2d7fc295f6237679cf16d804ce69a5154e5385f00f3db4e48f33ed32d736eeb77502d095e4d62cbefb0ddecc515faa723bfb2f8beada#npm:5.4.2", {
-          "packageLocation": "./.yarn/__virtual__/yeoman-generator-virtual-3e1a7787ce/0/cache/yeoman-generator-npm-5.4.2-f6e44674b5-c9d734ba58.zip/node_modules/yeoman-generator/",
+        ["virtual:04913ac4ebf76b486fbd2d7fc295f6237679cf16d804ce69a5154e5385f00f3db4e48f33ed32d736eeb77502d095e4d62cbefb0ddecc515faa723bfb2f8beada#npm:5.6.1", {
+          "packageLocation": "./.yarn/__virtual__/yeoman-generator-virtual-aa80b392e0/0/cache/yeoman-generator-npm-5.6.1-a49b7654c4-ef036210b6.zip/node_modules/yeoman-generator/",
           "packageDependencies": [
-            ["yeoman-generator", "virtual:04913ac4ebf76b486fbd2d7fc295f6237679cf16d804ce69a5154e5385f00f3db4e48f33ed32d736eeb77502d095e4d62cbefb0ddecc515faa723bfb2f8beada#npm:5.4.2"],
+            ["yeoman-generator", "virtual:04913ac4ebf76b486fbd2d7fc295f6237679cf16d804ce69a5154e5385f00f3db4e48f33ed32d736eeb77502d095e4d62cbefb0ddecc515faa723bfb2f8beada#npm:5.6.1"],
             ["@types/yeoman-environment", null],
             ["chalk", "npm:4.1.2"],
             ["dargs", "npm:7.0.0"],
@@ -20576,7 +20604,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["read-pkg-up", "npm:7.0.1"],
             ["run-async", "npm:2.4.1"],
             ["semver", "npm:7.3.5"],
-            ["shelljs", "npm:0.8.4"],
+            ["shelljs", "npm:0.8.5"],
+            ["sort-keys", "npm:4.2.0"],
             ["text-table", "npm:0.2.0"],
             ["yeoman-environment", null]
           ],

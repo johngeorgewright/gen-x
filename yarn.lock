@@ -1034,7 +1034,7 @@ __metadata:
     "@types/jest": 27.5.2
     "@types/prettier": 2.6.4
     "@types/rimraf": 3.0.2
-    "@types/yeoman-generator": 5.2.7
+    "@types/yeoman-generator": 5.2.10
     change-case: 4.1.2
     jest: 27.5.1
     prettier: 2.7.1
@@ -1042,7 +1042,7 @@ __metadata:
     ts-jest: 27.1.5
     tslib: 2.4.0
     typescript: 4.4.3
-    yeoman-generator: 5.4.2
+    yeoman-generator: 5.6.1
   languageName: unknown
   linkType: soft
 
@@ -3868,7 +3868,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/yeoman-generator@npm:*, @types/yeoman-generator@npm:5.2.7":
+"@types/yeoman-generator@npm:*":
   version: 5.2.7
   resolution: "@types/yeoman-generator@npm:5.2.7"
   dependencies:
@@ -3879,6 +3879,20 @@ __metadata:
     "@types/yeoman-environment": "*"
     rxjs: ^6.4.0
   checksum: 33e3b61425a2e30fb452bbc2587ec46a902942e35be3d9452edb34d3f9384582717af6b7f1346de0a93418735901478ba4674ff08392c7fd2be2086814203554
+  languageName: node
+  linkType: hard
+
+"@types/yeoman-generator@npm:5.2.10":
+  version: 5.2.10
+  resolution: "@types/yeoman-generator@npm:5.2.10"
+  dependencies:
+    "@types/debug": "*"
+    "@types/ejs": "*"
+    "@types/inquirer": "*"
+    "@types/mem-fs-editor": "*"
+    "@types/yeoman-environment": "*"
+    rxjs: ^6.4.0
+  checksum: 85744da9b4565e347c737a8490572d019457e0ef7da5ca3dae9b2c71f31fc973a3381e673ecc195499ad9db3101318af9a9afc4324393461854158953bbaf0ad
   languageName: node
   linkType: hard
 
@@ -9571,6 +9585,13 @@ __metadata:
   version: 1.1.0
   resolution: "is-plain-obj@npm:1.1.0"
   checksum: 0ee04807797aad50859652a7467481816cbb57e5cc97d813a7dcd8915da8195dc68c436010bf39d195226cde6a2d352f4b815f16f26b7bf486a5754290629931
+  languageName: node
+  linkType: hard
+
+"is-plain-obj@npm:^2.0.0":
+  version: 2.1.0
+  resolution: "is-plain-obj@npm:2.1.0"
+  checksum: cec9100678b0a9fe0248a81743041ed990c2d4c99f893d935545cfbc42876cbe86d207f3b895700c690ad2fa520e568c44afc1605044b535a7820c1d40e38daa
   languageName: node
   linkType: hard
 
@@ -15558,16 +15579,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shelljs@npm:^0.8.4":
-  version: 0.8.4
-  resolution: "shelljs@npm:0.8.4"
+"shelljs@npm:^0.8.5":
+  version: 0.8.5
+  resolution: "shelljs@npm:0.8.5"
   dependencies:
     glob: ^7.0.0
     interpret: ^1.0.0
     rechoir: ^0.6.2
   bin:
     shjs: bin/shjs
-  checksum: 27f83206ef6a4f5b74a493726c3e6b4c3e07a9c2aac94c5e692d800a61353c18a8234967bd8523b1346abe718beb563843687fb57f466529ba06db3cae6f0bb3
+  checksum: 7babc46f732a98f4c054ec1f048b55b9149b98aa2da32f6cf9844c434b43c6251efebd6eec120937bd0999e13811ebd45efe17410edb3ca938f82f9381302748
   languageName: node
   linkType: hard
 
@@ -15796,6 +15817,15 @@ __metadata:
   dependencies:
     is-plain-obj: ^1.0.0
   checksum: f0fd827fa9f8f866e98588d2a38c35209afbf1e9a05bb0e4ceeeb8bbf31d923c8902b0a7e0f561590ddb65e58eba6a74f74b991c85360bcc52e83a3f0d1cffd7
+  languageName: node
+  linkType: hard
+
+"sort-keys@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "sort-keys@npm:4.2.0"
+  dependencies:
+    is-plain-obj: ^2.0.0
+  checksum: 1535ffd5a789259fc55107d5c3cec09b3e47803a9407fcaae37e1b9e0b813762c47dfee35b6e71e20ca7a69798d0a4791b2058a07f6cab5ef17b2dae83cedbda
   languageName: node
   linkType: hard
 
@@ -18199,9 +18229,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yeoman-generator@npm:5.4.2":
-  version: 5.4.2
-  resolution: "yeoman-generator@npm:5.4.2"
+"yeoman-generator@npm:5.6.1":
+  version: 5.6.1
+  resolution: "yeoman-generator@npm:5.6.1"
   dependencies:
     chalk: ^4.1.0
     dargs: ^7.0.0
@@ -18213,14 +18243,15 @@ __metadata:
     read-pkg-up: ^7.0.1
     run-async: ^2.0.0
     semver: ^7.2.1
-    shelljs: ^0.8.4
+    shelljs: ^0.8.5
+    sort-keys: ^4.2.0
     text-table: ^0.2.0
   peerDependencies:
     yeoman-environment: ^3.2.0
   peerDependenciesMeta:
     yeoman-environment:
       optional: true
-  checksum: c9d734ba5861385675b3252e2ef30932e638491108b42f5a534f87ce008bb58eca7d4b0c8cbc8150b46383b71a6658acf8f785b05640a41ec783eeeff28c3eae
+  checksum: ef036210b6fb16f32d2615cd7c5d60a3ed17d1be5402ad997eee91ac709880802ad4026c1486bfff1ef891d284c1bbb15ab45caf8e287e175204d204f8d03474
   languageName: node
   linkType: hard
 
