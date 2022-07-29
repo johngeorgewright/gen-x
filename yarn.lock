@@ -964,7 +964,7 @@ __metadata:
     ts-jest: 28.0.7
     tslib: 2.4.0
     typescript: 4.4.3
-    yeoman-generator: 5.6.1
+    yeoman-generator: 5.7.0
   languageName: unknown
   linkType: soft
 
@@ -6646,7 +6646,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"execa@npm:^4.0.0, execa@npm:^4.1.0":
+"execa@npm:^4.0.0":
   version: 4.1.0
   resolution: "execa@npm:4.1.0"
   dependencies:
@@ -16612,13 +16612,6 @@ typescript@^4.6.4:
   languageName: node
   linkType: hard
 
-"yargs-parser@npm:^21.0.0":
-  version: 21.0.1
-  resolution: "yargs-parser@npm:21.0.1"
-  checksum: c3ea2ed12cad0377ce3096b3f138df8267edf7b1aa7d710cd502fe16af417bafe4443dd71b28158c22fcd1be5dfd0e86319597e47badf42ff83815485887323a
-  languageName: node
-  linkType: hard
-
 "yargs@npm:^14.2.2":
   version: 14.2.3
   resolution: "yargs@npm:14.2.3"
@@ -16761,14 +16754,14 @@ typescript@^4.6.4:
   languageName: node
   linkType: hard
 
-"yeoman-generator@npm:5.6.1":
-  version: 5.6.1
-  resolution: "yeoman-generator@npm:5.6.1"
+"yeoman-generator@npm:5.7.0":
+  version: 5.7.0
+  resolution: "yeoman-generator@npm:5.7.0"
   dependencies:
     chalk: ^4.1.0
     dargs: ^7.0.0
     debug: ^4.1.1
-    execa: ^4.1.0
+    execa: ^5.1.1
     github-username: ^6.0.0
     lodash: ^4.17.11
     minimist: ^1.2.5
@@ -16783,7 +16776,7 @@ typescript@^4.6.4:
   peerDependenciesMeta:
     yeoman-environment:
       optional: true
-  checksum: ef036210b6fb16f32d2615cd7c5d60a3ed17d1be5402ad997eee91ac709880802ad4026c1486bfff1ef891d284c1bbb15ab45caf8e287e175204d204f8d03474
+  checksum: 16b779372d89e2bff2b10d73c942f7b30a08ba92f329d1a1f0e485810d2ee1f8aa59ff454bd5398042ec8e6fdc7db89f8dd98040b42f6a92a2eaca579bca1a3f
   languageName: node
   linkType: hard
 
