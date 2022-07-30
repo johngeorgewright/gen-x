@@ -911,7 +911,7 @@ __metadata:
     "@types/jest": 28.1.6
     "@types/lodash.last": 3.0.7
     "@types/lodash.range": 3.2.7
-    "@types/node": 16.10.3
+    "@types/node": 16.11.47
     concurrently: 7.3.0
     cz-conventional-changelog: 3.3.0
     jest: 28.1.3
@@ -3469,10 +3469,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:16.10.3, @types/node@npm:>= 8":
+"@types/node@npm:*, @types/node@npm:>= 8":
   version: 16.10.3
   resolution: "@types/node@npm:16.10.3"
   checksum: 3fd429bce8a4acb497dcc62b536782a5e87ccf7cd91d64a78b263ae5d66cb72bf84be9eeeff6f84ae0567b065a40b267caa66d311f9e094990a5847bbd168a29
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:16.11.47":
+  version: 16.11.47
+  resolution: "@types/node@npm:16.11.47"
+  checksum: 26811000753fd1bb9a90a563fc72942ac3ad5d5b6c97609a090c1e24210e040597ba060e55a7a46cb22cc84dafee112d741f45652139c6166e8ce0c970b4f05a
   languageName: node
   linkType: hard
 
