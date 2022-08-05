@@ -1411,7 +1411,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:28.1.6"],
             ["@types/lodash.last", "npm:3.0.7"],
             ["@types/lodash.range", "npm:3.2.7"],
-            ["@types/node", "npm:16.10.3"],
+            ["@types/node", "npm:16.11.47"],
             ["concurrently", "npm:7.3.0"],
             ["cz-conventional-changelog", "npm:3.3.0"],
             ["jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:28.1.3"],
@@ -1458,7 +1458,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@gen-x/generator", "workspace:packages/generator"],
             ["@types/jest", "npm:28.1.6"],
-            ["@types/prettier", "npm:2.6.4"],
+            ["@types/prettier", "npm:2.7.0"],
             ["@types/rimraf", "npm:3.0.2"],
             ["@types/yeoman-generator", "npm:5.2.10"],
             ["change-case", "npm:4.1.2"],
@@ -4346,6 +4346,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
+        ["npm:16.11.47", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-16.11.47-441c4db84b-2681100075.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:16.11.47"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:18.6.2", {
           "packageLocation": "./.yarn/cache/@types-node-npm-18.6.2-cd106eb850-644c460bae.zip/node_modules/@types/node/",
           "packageDependencies": [
@@ -4380,10 +4387,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:2.6.4", {
-          "packageLocation": "./.yarn/cache/@types-prettier-npm-2.6.4-a589b47e05-a8ec6601cb.zip/node_modules/@types/prettier/",
+        ["npm:2.7.0", {
+          "packageLocation": "./.yarn/cache/@types-prettier-npm-2.7.0-5da1b0a357-bf5d0c7c12.zip/node_modules/@types/prettier/",
           "packageDependencies": [
-            ["@types/prettier", "npm:2.6.4"]
+            ["@types/prettier", "npm:2.7.0"]
           ],
           "linkType": "HARD",
         }]
@@ -17704,7 +17711,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.9"],
             ["@tsconfig/node14", "npm:1.0.1"],
             ["@tsconfig/node16", "npm:1.0.2"],
-            ["@types/node", "npm:16.10.3"],
+            ["@types/node", "npm:16.11.47"],
             ["@types/swc__core", null],
             ["@types/swc__wasm", null],
             ["@types/typescript", null],
