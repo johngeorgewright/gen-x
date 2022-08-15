@@ -1411,7 +1411,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:28.1.7"],
             ["@types/lodash.last", "npm:3.0.7"],
             ["@types/lodash.range", "npm:3.2.7"],
-            ["@types/node", "npm:16.11.48"],
+            ["@types/node", "npm:16.11.49"],
             ["concurrently", "npm:7.3.0"],
             ["cz-conventional-changelog", "npm:3.3.0"],
             ["jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:28.1.3"],
@@ -4346,10 +4346,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:16.11.48", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-16.11.48-08277eebd6-10cd539cb2.zip/node_modules/@types/node/",
+        ["npm:16.11.49", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-16.11.49-21a166a769-05545ee49d.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:16.11.48"]
+            ["@types/node", "npm:16.11.49"]
           ],
           "linkType": "HARD",
         }],
@@ -17839,7 +17839,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.9"],
             ["@tsconfig/node14", "npm:1.0.1"],
             ["@tsconfig/node16", "npm:1.0.2"],
-            ["@types/node", "npm:16.11.48"],
+            ["@types/node", "npm:16.11.49"],
             ["@types/swc__core", null],
             ["@types/swc__wasm", null],
             ["@types/typescript", null],
