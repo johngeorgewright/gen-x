@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/johngeorgewright/gen-x#readme",
   "devDependencies": {
-    "@commitlint/cli": "17.1.0",
+    "@commitlint/cli": "17.1.1",
     "@commitlint/config-conventional": "17.1.0",
     "@commitlint/config-lerna-scopes": "17.0.2",
     "@semantic-release/commit-analyzer": "9.0.2",
