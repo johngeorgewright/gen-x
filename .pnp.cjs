@@ -1414,7 +1414,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/lodash.last", "npm:3.0.7"],
             ["@types/lodash.range", "npm:3.2.7"],
             ["@types/node", "npm:16.11.57"],
-            ["concurrently", "npm:7.3.0"],
+            ["concurrently", "npm:7.4.0"],
             ["cz-conventional-changelog", "npm:3.3.0"],
             ["jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:28.1.3"],
             ["lodash.last", "npm:3.0.0"],
@@ -6585,12 +6585,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["concurrently", [
-        ["npm:7.3.0", {
-          "packageLocation": "./.yarn/cache/concurrently-npm-7.3.0-0123c57666-5de845e494.zip/node_modules/concurrently/",
+        ["npm:7.4.0", {
+          "packageLocation": "./.yarn/cache/concurrently-npm-7.4.0-6a6d8e6457-cc547866ad.zip/node_modules/concurrently/",
           "packageDependencies": [
-            ["concurrently", "npm:7.3.0"],
+            ["concurrently", "npm:7.4.0"],
             ["chalk", "npm:4.1.2"],
-            ["date-fns", "npm:2.25.0"],
+            ["date-fns", "npm:2.29.2"],
             ["lodash", "npm:4.17.21"],
             ["rxjs", "npm:7.5.6"],
             ["shell-quote", "npm:1.7.3"],
@@ -7130,10 +7130,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["date-fns", [
-        ["npm:2.25.0", {
-          "packageLocation": "./.yarn/cache/date-fns-npm-2.25.0-fe211b387d-8896dc1dde.zip/node_modules/date-fns/",
+        ["npm:2.29.2", {
+          "packageLocation": "./.yarn/cache/date-fns-npm-2.29.2-da48c27e93-08bebcceb0.zip/node_modules/date-fns/",
           "packageDependencies": [
-            ["date-fns", "npm:2.25.0"]
+            ["date-fns", "npm:2.29.2"]
           ],
           "linkType": "HARD",
         }]
