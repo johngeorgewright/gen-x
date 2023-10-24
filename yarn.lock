@@ -927,7 +927,7 @@ __metadata:
     "@semantic-release/git": 10.0.1
     "@semantic-release/github": 8.0.6
     "@semantic-release/release-notes-generator": 10.0.3
-    "@types/ejs": 3.1.1
+    "@types/ejs": 3.1.4
     "@types/jest": 29.0.3
     "@types/lodash.last": 3.0.7
     "@types/lodash.range": 3.2.7
@@ -3335,10 +3335,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ejs@npm:3.1.1":
-  version: 3.1.1
-  resolution: "@types/ejs@npm:3.1.1"
-  checksum: 12fa444920aaa70af2fae4424fa62b49c23b31a37129c428b7c9f9068e58c0696b4e5601b0449f87bae8794e039c679a43651c356c34f17d1bb460456dd41441
+"@types/ejs@npm:3.1.4":
+  version: 3.1.4
+  resolution: "@types/ejs@npm:3.1.4"
+  checksum: 7e61b59a4a1a5232e081f0f2408b99ee5664446406004da088b29ac849b1490fbd6fbdf2c2a1aeb5049e690edb80f6c0cbe8387930a114e2c1c7dc0e67d0bc04
   languageName: node
   linkType: hard
 
