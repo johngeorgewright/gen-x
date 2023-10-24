@@ -1441,7 +1441,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/release-notes-generator", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:10.0.3"],
             ["@types/ejs", "npm:3.1.4"],
             ["@types/jest", "npm:29.0.3"],
-            ["@types/lodash.last", "npm:3.0.7"],
+            ["@types/lodash.last", "npm:3.0.8"],
             ["@types/lodash.range", "npm:3.2.7"],
             ["@types/node", "npm:16.11.59"],
             ["concurrently", "npm:7.4.0"],
@@ -4308,10 +4308,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/lodash.last", [
-        ["npm:3.0.7", {
-          "packageLocation": "./.yarn/cache/@types-lodash.last-npm-3.0.7-eed31bc3f9-26974358f1.zip/node_modules/@types/lodash.last/",
+        ["npm:3.0.8", {
+          "packageLocation": "./.yarn/cache/@types-lodash.last-npm-3.0.8-5f8513db5a-680b2e0532.zip/node_modules/@types/lodash.last/",
           "packageDependencies": [
-            ["@types/lodash.last", "npm:3.0.7"],
+            ["@types/lodash.last", "npm:3.0.8"],
             ["@types/lodash", "npm:4.14.175"]
           ],
           "linkType": "HARD",
