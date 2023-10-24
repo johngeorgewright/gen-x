@@ -930,7 +930,7 @@ __metadata:
     "@types/ejs": 3.1.4
     "@types/jest": 29.0.3
     "@types/lodash.last": 3.0.8
-    "@types/lodash.range": 3.2.7
+    "@types/lodash.range": 3.2.8
     "@types/node": 16.11.59
     concurrently: 7.4.0
     cz-conventional-changelog: 3.3.0
@@ -3447,12 +3447,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash.range@npm:3.2.7":
-  version: 3.2.7
-  resolution: "@types/lodash.range@npm:3.2.7"
+"@types/lodash.range@npm:3.2.8":
+  version: 3.2.8
+  resolution: "@types/lodash.range@npm:3.2.8"
   dependencies:
     "@types/lodash": "*"
-  checksum: 036218164b3836b553ddb7c0890c50f63ad43d67d2ed318e0146b86f38f6c6d4d994c81d42bafd61b4395ce5b280c49e4d33997dba9325d46b82d7ff9f5b75ec
+  checksum: 2f78313a651f5977b639cc0adb23f92e0573807bc7277bdf1232e819b1513e821ef5767bf7c7acf420a712c47c3dba1d1b8b9a33eac11d23626c62b7804313ee
   languageName: node
   linkType: hard
 
