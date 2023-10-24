@@ -86,7 +86,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/github", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:8.1.0"],
             ["@semantic-release/release-notes-generator", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:10.0.3"],
             ["add", "npm:2.0.6"],
-            ["commitizen", "npm:4.2.5"],
+            ["commitizen", "npm:4.3.0"],
             ["cz-lerna-changelog", "virtual:bb0c4e513c9d6f87080de5fa625b5b654d3ff3ddf1ea55a205a8593b449454da72d98681c95c5ee78fa6faa2889d25910de662b128156625852feba3728ea8bd#npm:2.0.3"],
             ["husky", "npm:8.0.3"],
             ["isbinaryfile", "npm:4.0.10"],
@@ -6702,10 +6702,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:4.2.5", {
-          "packageLocation": "./.yarn/cache/commitizen-npm-4.2.5-926ae634bf-28f5d10cf3.zip/node_modules/commitizen/",
+        ["npm:4.3.0", {
+          "packageLocation": "./.yarn/cache/commitizen-npm-4.3.0-3695cdaf66-5a54f81ab7.zip/node_modules/commitizen/",
           "packageDependencies": [
-            ["commitizen", "npm:4.2.5"],
+            ["commitizen", "npm:4.3.0"],
             ["cachedir", "npm:2.3.0"],
             ["cz-conventional-changelog", "npm:3.3.0"],
             ["dedent", "npm:0.7.0"],
@@ -6714,10 +6714,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["find-root", "npm:1.1.0"],
             ["fs-extra", "npm:9.1.0"],
             ["glob", "npm:7.2.3"],
-            ["inquirer", "npm:8.2.4"],
+            ["inquirer", "npm:8.2.5"],
             ["is-utf8", "npm:0.2.1"],
             ["lodash", "npm:4.17.21"],
-            ["minimist", "npm:1.2.6"],
+            ["minimist", "npm:1.2.7"],
             ["strip-bom", "npm:4.0.0"],
             ["strip-json-comments", "npm:3.1.1"]
           ],
@@ -9000,7 +9000,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/github", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:8.1.0"],
             ["@semantic-release/release-notes-generator", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:10.0.3"],
             ["add", "npm:2.0.6"],
-            ["commitizen", "npm:4.2.5"],
+            ["commitizen", "npm:4.3.0"],
             ["cz-lerna-changelog", "virtual:bb0c4e513c9d6f87080de5fa625b5b654d3ff3ddf1ea55a205a8593b449454da72d98681c95c5ee78fa6faa2889d25910de662b128156625852feba3728ea8bd#npm:2.0.3"],
             ["husky", "npm:8.0.3"],
             ["isbinaryfile", "npm:4.0.10"],
@@ -10394,10 +10394,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:8.2.4", {
-          "packageLocation": "./.yarn/cache/inquirer-npm-8.2.4-a2a5fb3187-dfcb6529d3.zip/node_modules/inquirer/",
+        ["npm:8.2.5", {
+          "packageLocation": "./.yarn/cache/inquirer-npm-8.2.5-ffce7548f9-f13ee4c444.zip/node_modules/inquirer/",
           "packageDependencies": [
-            ["inquirer", "npm:8.2.4"],
+            ["inquirer", "npm:8.2.5"],
             ["ansi-escapes", "npm:4.3.2"],
             ["chalk", "npm:4.1.2"],
             ["cli-cursor", "npm:3.1.0"],
@@ -13441,6 +13441,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/minimist-npm-1.2.6-f4cee4b4af-d15428cd1e.zip/node_modules/minimist/",
           "packageDependencies": [
             ["minimist", "npm:1.2.6"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:1.2.7", {
+          "packageLocation": "./.yarn/cache/minimist-npm-1.2.7-51d33b1371-7346574a10.zip/node_modules/minimist/",
+          "packageDependencies": [
+            ["minimist", "npm:1.2.7"]
           ],
           "linkType": "HARD",
         }]
