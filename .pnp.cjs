@@ -1588,7 +1588,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@gen-x/core", "workspace:packages/core"],
             ["@gen-x/run", "workspace:packages/run"],
             ["@johngw/async-iterator", "npm:3.3.1"],
-            ["@johngw/function", "npm:1.0.0"],
+            ["@johngw/function", "npm:1.1.2"],
             ["@semantic-release/commit-analyzer", "virtual:93ff9e54e7e85ba03f8777529e2e31fd687b3208f0bfd29f9526626fccebedcf25fd704ae938492bcd5692d38a16927bd020804d445cde5885dc772e9e1e1ff9#npm:9.0.2"],
             ["@semantic-release/exec", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:6.0.3"],
             ["@semantic-release/git", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:10.0.1"],
@@ -1948,11 +1948,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@johngw/function", [
-        ["npm:1.0.0", {
-          "packageLocation": "./.yarn/cache/@johngw-function-npm-1.0.0-a807f09a4a-c2a319c47f.zip/node_modules/@johngw/function/",
+        ["npm:1.1.2", {
+          "packageLocation": "./.yarn/cache/@johngw-function-npm-1.1.2-a6c0234935-1fd99312c0.zip/node_modules/@johngw/function/",
           "packageDependencies": [
-            ["@johngw/function", "npm:1.0.0"],
-            ["tslib", "npm:2.3.1"]
+            ["@johngw/function", "npm:1.1.2"],
+            ["tslib", "npm:2.5.2"]
           ],
           "linkType": "HARD",
         }]
@@ -18482,6 +18482,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/tslib-npm-2.4.0-9cb6dc5030-8c4aa6a3c5.zip/node_modules/tslib/",
           "packageDependencies": [
             ["tslib", "npm:2.4.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:2.5.2", {
+          "packageLocation": "./.yarn/cache/tslib-npm-2.5.2-3f1b58afbb-4d3c1e238b.zip/node_modules/tslib/",
+          "packageDependencies": [
+            ["tslib", "npm:2.5.2"]
           ],
           "linkType": "HARD",
         }]
