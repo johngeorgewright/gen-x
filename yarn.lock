@@ -1360,7 +1360,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@johngw/async-iterator@npm:3.3.1":
+"@johngw/async-iterator@npm:3.3.1, @johngw/async-iterator@npm:^3.0.0":
   version: 3.3.1
   resolution: "@johngw/async-iterator@npm:3.3.1"
   dependencies:
@@ -1369,29 +1369,6 @@ __metadata:
     node-abort-controller: ^3.0.0
     tslib: ^2.3.1
   checksum: 2aad3ed6053aee95e732ccb5864f5ac65edc5609807679e78bd0e6b0c4bae67cbd786b0701969592b59f26092d8ba0e0a6cb5ff0778695e49a66e57a972be858
-  languageName: node
-  linkType: hard
-
-"@johngw/async-iterator@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@johngw/async-iterator@npm:3.0.0"
-  dependencies:
-    "@johngw/async": 4.0.2
-    "@johngw/object": 1.1.5
-    node-abort-controller: ^3.0.0
-    tslib: ^2.2.0
-  checksum: cd539100eb1604be658874a6e1ddf24d34e93f3738df4f9711c0076afb367968246ca14ba9e2d0547906dcaffb39a06089674a4bf859cf5dd6a39a5ffd034e43
-  languageName: node
-  linkType: hard
-
-"@johngw/async@npm:4.0.2":
-  version: 4.0.2
-  resolution: "@johngw/async@npm:4.0.2"
-  dependencies:
-    "@johngw/object": 1.1.5
-    node-abort-controller: ^3.0.0
-    tslib: ^2.2.0
-  checksum: f7a32ab86c085570b42a24c194ad1aa5d731a9fde36af05809879c1073d3ec4f75210c9019698922bb17b6354f708ac84e6064e26c814c48bb44101f835745df
   languageName: node
   linkType: hard
 
@@ -1412,15 +1389,6 @@ __metadata:
   dependencies:
     tslib: ^2.3.1
   checksum: c2a319c47f95203a61e146f9fc89057acd9a3c25cf0f7bd38d8b01d29f240d099908bf56f214ecf00ad85b4a08a612f967505ad1516be3b86c7af49e320872ea
-  languageName: node
-  linkType: hard
-
-"@johngw/object@npm:1.1.5":
-  version: 1.1.5
-  resolution: "@johngw/object@npm:1.1.5"
-  dependencies:
-    tslib: ^2.2.0
-  checksum: 585093f249dfd8a62f152d9e247a87ce46036f7bfbc45b37eb3fbf0a3d36654b2aa54617433b29ad3a9bd785be8cac699853c3e5e30225cb5b61b59ce8b90004
   languageName: node
   linkType: hard
 
@@ -16379,7 +16347,7 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2, tslib@npm:^2.0.3, tslib@npm:^2.2.0, tslib@npm:^2.3.1":
+"tslib@npm:^2, tslib@npm:^2.0.3, tslib@npm:^2.3.1":
   version: 2.3.1
   resolution: "tslib@npm:2.3.1"
   checksum: de17a98d4614481f7fcb5cd53ffc1aaf8654313be0291e1bfaee4b4bb31a20494b7d218ff2e15017883e8ea9626599b3b0e0229c18383ba9dce89da2adf15cb9
