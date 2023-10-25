@@ -79,7 +79,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/config-conventional", "npm:17.8.1"],
             ["@commitlint/config-lerna-scopes", "virtual:bb0c4e513c9d6f87080de5fa625b5b654d3ff3ddf1ea55a205a8593b449454da72d98681c95c5ee78fa6faa2889d25910de662b128156625852feba3728ea8bd#npm:17.8.1"],
             ["@gen-x/silo", "workspace:packages/silo"],
-            ["@johngw/async-iterator", "npm:3.0.0"],
+            ["@johngw/async-iterator", "npm:3.3.1"],
             ["@semantic-release/commit-analyzer", "virtual:93ff9e54e7e85ba03f8777529e2e31fd687b3208f0bfd29f9526626fccebedcf25fd704ae938492bcd5692d38a16927bd020804d445cde5885dc772e9e1e1ff9#npm:9.0.2"],
             ["@semantic-release/exec", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:6.0.3"],
             ["@semantic-release/git", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:10.0.1"],
@@ -1923,16 +1923,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@johngw/async", [
-        ["npm:4.0.2", {
-          "packageLocation": "./.yarn/cache/@johngw-async-npm-4.0.2-a9ac17020f-f7a32ab86c.zip/node_modules/@johngw/async/",
-          "packageDependencies": [
-            ["@johngw/async", "npm:4.0.2"],
-            ["@johngw/object", "npm:1.1.5"],
-            ["node-abort-controller", "npm:3.0.1"],
-            ["tslib", "npm:2.3.1"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:4.1.1", {
           "packageLocation": "./.yarn/cache/@johngw-async-npm-4.1.1-63a8fb8c8a-2d001a4348.zip/node_modules/@johngw/async/",
           "packageDependencies": [
@@ -1945,17 +1935,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@johngw/async-iterator", [
-        ["npm:3.0.0", {
-          "packageLocation": "./.yarn/cache/@johngw-async-iterator-npm-3.0.0-94be5c7ac3-cd539100eb.zip/node_modules/@johngw/async-iterator/",
-          "packageDependencies": [
-            ["@johngw/async-iterator", "npm:3.0.0"],
-            ["@johngw/async", "npm:4.0.2"],
-            ["@johngw/object", "npm:1.1.5"],
-            ["node-abort-controller", "npm:3.0.1"],
-            ["tslib", "npm:2.3.1"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:3.3.1", {
           "packageLocation": "./.yarn/cache/@johngw-async-iterator-npm-3.3.1-95d10154e6-2aad3ed605.zip/node_modules/@johngw/async-iterator/",
           "packageDependencies": [
@@ -1979,14 +1958,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@johngw/object", [
-        ["npm:1.1.5", {
-          "packageLocation": "./.yarn/cache/@johngw-object-npm-1.1.5-58c443d9bd-585093f249.zip/node_modules/@johngw/object/",
-          "packageDependencies": [
-            ["@johngw/object", "npm:1.1.5"],
-            ["tslib", "npm:2.3.1"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:1.2.1", {
           "packageLocation": "./.yarn/cache/@johngw-object-npm-1.2.1-02eb656d5d-b6654a790b.zip/node_modules/@johngw/object/",
           "packageDependencies": [
@@ -9004,7 +8975,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@commitlint/config-conventional", "npm:17.8.1"],
             ["@commitlint/config-lerna-scopes", "virtual:bb0c4e513c9d6f87080de5fa625b5b654d3ff3ddf1ea55a205a8593b449454da72d98681c95c5ee78fa6faa2889d25910de662b128156625852feba3728ea8bd#npm:17.8.1"],
             ["@gen-x/silo", "workspace:packages/silo"],
-            ["@johngw/async-iterator", "npm:3.0.0"],
+            ["@johngw/async-iterator", "npm:3.3.1"],
             ["@semantic-release/commit-analyzer", "virtual:93ff9e54e7e85ba03f8777529e2e31fd687b3208f0bfd29f9526626fccebedcf25fd704ae938492bcd5692d38a16927bd020804d445cde5885dc772e9e1e1ff9#npm:9.0.2"],
             ["@semantic-release/exec", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:6.0.3"],
             ["@semantic-release/git", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:10.0.1"],
