@@ -1384,11 +1384,11 @@ __metadata:
   linkType: hard
 
 "@johngw/function@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@johngw/function@npm:1.0.0"
+  version: 1.1.2
+  resolution: "@johngw/function@npm:1.1.2"
   dependencies:
-    tslib: ^2.3.1
-  checksum: c2a319c47f95203a61e146f9fc89057acd9a3c25cf0f7bd38d8b01d29f240d099908bf56f214ecf00ad85b4a08a612f967505ad1516be3b86c7af49e320872ea
+    tslib: 2.5.2
+  checksum: 1fd99312c034bcea9b0cb88bf44efe2f91a0001d6cbafc36e94a83e950cbd3b6a361028ab37bc6a07b9850a69d21921c6da37ffc4e29a35cda298626b8f9a5ce
   languageName: node
   linkType: hard
 
@@ -16337,6 +16337,13 @@ fsevents@^2.3.2:
   version: 2.4.0
   resolution: "tslib@npm:2.4.0"
   checksum: 8c4aa6a3c5a754bf76aefc38026134180c053b7bd2f81338cb5e5ebf96fefa0f417bff221592bf801077f5bf990562f6264fecbc42cd3309b33872cb6fc3b113
+  languageName: node
+  linkType: hard
+
+"tslib@npm:2.5.2":
+  version: 2.5.2
+  resolution: "tslib@npm:2.5.2"
+  checksum: 4d3c1e238b94127ed0e88aa0380db3c2ddae581dc0f4bae5a982345e9f50ee5eda90835b8bfba99b02df10a5734470be197158c36f9129ac49fdc14a6a9da222
   languageName: node
   linkType: hard
 
