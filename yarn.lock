@@ -935,7 +935,7 @@ __metadata:
     "@semantic-release/release-notes-generator": 10.0.3
     "@types/ejs": 3.1.5
     "@types/jest": 29.0.3
-    "@types/lodash.last": 3.0.8
+    "@types/lodash.last": 3.0.9
     "@types/lodash.range": 3.2.8
     "@types/node": 16.18.95
     concurrently: 7.6.0
@@ -3663,12 +3663,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash.last@npm:3.0.8":
-  version: 3.0.8
-  resolution: "@types/lodash.last@npm:3.0.8"
+"@types/lodash.last@npm:3.0.9":
+  version: 3.0.9
+  resolution: "@types/lodash.last@npm:3.0.9"
   dependencies:
     "@types/lodash": "*"
-  checksum: 680b2e0532458a60c5ec3d119b66490cd928f24bc92622cf48616a1f658b3035c2c088ad8c51107f5b011ba863317058d0853fb4a59e872449b6499f25748954
+  checksum: 970bfb5c66f4f0f57ef673f9d89ffa1599e61bf8c40de8a037a3f2c097fa945d002385c9f0993f44aa33b28f8c218352134e3c4fba89912867ec507241f27d5c
   languageName: node
   linkType: hard
 
