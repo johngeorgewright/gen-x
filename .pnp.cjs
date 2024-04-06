@@ -1498,7 +1498,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:29.0.3"],
             ["@types/prettier", "npm:2.7.3"],
             ["@types/rimraf", "npm:3.0.2"],
-            ["@types/yeoman-generator", "npm:5.2.13"],
+            ["@types/yeoman-generator", "npm:5.2.14"],
             ["change-case", "npm:4.1.2"],
             ["jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.0.3"],
             ["prettier", "npm:2.8.8"],
@@ -4793,10 +4793,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/yeoman-generator", [
-        ["npm:5.2.13", {
-          "packageLocation": "./.yarn/cache/@types-yeoman-generator-npm-5.2.13-10905673cb-e485976203.zip/node_modules/@types/yeoman-generator/",
+        ["npm:5.2.14", {
+          "packageLocation": "./.yarn/cache/@types-yeoman-generator-npm-5.2.14-b0696327a9-9686f2ff62.zip/node_modules/@types/yeoman-generator/",
           "packageDependencies": [
-            ["@types/yeoman-generator", "npm:5.2.13"],
+            ["@types/yeoman-generator", "npm:5.2.14"],
             ["@types/debug", "npm:4.1.7"],
             ["@types/ejs", "npm:3.1.0"],
             ["@types/inquirer", "npm:8.2.3"],
