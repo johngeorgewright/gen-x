@@ -1462,7 +1462,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ts-node", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:10.9.2"],
             ["tslib", "npm:2.6.2"],
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=32657b"],
-            ["web-streams-polyfill", "npm:3.2.1"]
+            ["web-streams-polyfill", "npm:3.3.3"]
           ],
           "linkType": "SOFT",
         }]
@@ -19761,10 +19761,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["web-streams-polyfill", [
-        ["npm:3.2.1", {
-          "packageLocation": "./.yarn/cache/web-streams-polyfill-npm-3.2.1-835bd3857e-b119c78574.zip/node_modules/web-streams-polyfill/",
+        ["npm:3.3.3", {
+          "packageLocation": "./.yarn/cache/web-streams-polyfill-npm-3.3.3-f24b9f8c34-21ab5ea08a.zip/node_modules/web-streams-polyfill/",
           "packageDependencies": [
-            ["web-streams-polyfill", "npm:3.2.1"]
+            ["web-streams-polyfill", "npm:3.3.3"]
           ],
           "linkType": "HARD",
         }]
