@@ -89,7 +89,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["commitizen", "npm:4.3.0"],
             ["cz-lerna-changelog", "virtual:bb0c4e513c9d6f87080de5fa625b5b654d3ff3ddf1ea55a205a8593b449454da72d98681c95c5ee78fa6faa2889d25910de662b128156625852feba3728ea8bd#npm:2.0.3"],
             ["husky", "npm:8.0.3"],
-            ["isbinaryfile", "npm:4.0.10"],
+            ["isbinaryfile", "npm:5.0.2"],
             ["json-parse-even-better-errors", "npm:2.3.1"],
             ["lerna", "npm:3.22.1"],
             ["lint-staged", "npm:13.3.0"],
@@ -9539,7 +9539,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["commitizen", "npm:4.3.0"],
             ["cz-lerna-changelog", "virtual:bb0c4e513c9d6f87080de5fa625b5b654d3ff3ddf1ea55a205a8593b449454da72d98681c95c5ee78fa6faa2889d25910de662b128156625852feba3728ea8bd#npm:2.0.3"],
             ["husky", "npm:8.0.3"],
-            ["isbinaryfile", "npm:4.0.10"],
+            ["isbinaryfile", "npm:5.0.2"],
             ["json-parse-even-better-errors", "npm:2.3.1"],
             ["lerna", "npm:3.22.1"],
             ["lint-staged", "npm:13.3.0"],
@@ -11719,13 +11719,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["isbinaryfile", [
-        ["npm:4.0.10", {
-          "packageLocation": "./.yarn/cache/isbinaryfile-npm-4.0.10-91d1251522-a6b28db7e2.zip/node_modules/isbinaryfile/",
-          "packageDependencies": [
-            ["isbinaryfile", "npm:4.0.10"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:4.0.8", {
           "packageLocation": "./.yarn/cache/isbinaryfile-npm-4.0.8-62c71dd57b-606e3bb648.zip/node_modules/isbinaryfile/",
           "packageDependencies": [
@@ -11737,6 +11730,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/isbinaryfile-npm-5.0.0-e98524e7a5-25cc27388d.zip/node_modules/isbinaryfile/",
           "packageDependencies": [
             ["isbinaryfile", "npm:5.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:5.0.2", {
+          "packageLocation": "./.yarn/cache/isbinaryfile-npm-5.0.2-3cb4869f50-5e3e9d31b0.zip/node_modules/isbinaryfile/",
+          "packageDependencies": [
+            ["isbinaryfile", "npm:5.0.2"]
           ],
           "linkType": "HARD",
         }]
