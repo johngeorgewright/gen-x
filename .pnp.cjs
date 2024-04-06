@@ -1450,7 +1450,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/lodash.last", "npm:3.0.8"],
             ["@types/lodash.range", "npm:3.2.8"],
             ["@types/node", "npm:16.18.95"],
-            ["concurrently", "npm:7.4.0"],
+            ["concurrently", "npm:7.6.0"],
             ["cz-conventional-changelog", "npm:3.3.0"],
             ["jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.0.3"],
             ["lodash.last", "npm:3.0.0"],
@@ -6945,10 +6945,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["concurrently", [
-        ["npm:7.4.0", {
-          "packageLocation": "./.yarn/cache/concurrently-npm-7.4.0-6a6d8e6457-cc547866ad.zip/node_modules/concurrently/",
+        ["npm:7.6.0", {
+          "packageLocation": "./.yarn/cache/concurrently-npm-7.6.0-2eabc58c36-f705c9a796.zip/node_modules/concurrently/",
           "packageDependencies": [
-            ["concurrently", "npm:7.4.0"],
+            ["concurrently", "npm:7.6.0"],
             ["chalk", "npm:4.1.2"],
             ["date-fns", "npm:2.29.2"],
             ["lodash", "npm:4.17.21"],
