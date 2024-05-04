@@ -90,7 +90,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cz-lerna-changelog", "virtual:bb0c4e513c9d6f87080de5fa625b5b654d3ff3ddf1ea55a205a8593b449454da72d98681c95c5ee78fa6faa2889d25910de662b128156625852feba3728ea8bd#npm:2.0.3"],
             ["husky", "npm:8.0.3"],
             ["isbinaryfile", "npm:4.0.10"],
-            ["json-parse-even-better-errors", "npm:2.3.1"],
+            ["json-parse-even-better-errors", "npm:3.0.2"],
             ["lerna", "npm:3.22.1"],
             ["lint-staged", "npm:13.3.0"],
             ["mkdirp-infer-owner", "npm:2.0.0"],
@@ -9540,7 +9540,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cz-lerna-changelog", "virtual:bb0c4e513c9d6f87080de5fa625b5b654d3ff3ddf1ea55a205a8593b449454da72d98681c95c5ee78fa6faa2889d25910de662b128156625852feba3728ea8bd#npm:2.0.3"],
             ["husky", "npm:8.0.3"],
             ["isbinaryfile", "npm:4.0.10"],
-            ["json-parse-even-better-errors", "npm:2.3.1"],
+            ["json-parse-even-better-errors", "npm:3.0.2"],
             ["lerna", "npm:3.22.1"],
             ["lint-staged", "npm:13.3.0"],
             ["mkdirp-infer-owner", "npm:2.0.0"],
@@ -12592,6 +12592,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/json-parse-even-better-errors-npm-3.0.0-3675833c0a-f1970b5220.zip/node_modules/json-parse-even-better-errors/",
           "packageDependencies": [
             ["json-parse-even-better-errors", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:3.0.2", {
+          "packageLocation": "./.yarn/cache/json-parse-even-better-errors-npm-3.0.2-3d985a6781-6f04ea6c9c.zip/node_modules/json-parse-even-better-errors/",
+          "packageDependencies": [
+            ["json-parse-even-better-errors", "npm:3.0.2"]
           ],
           "linkType": "HARD",
         }]
