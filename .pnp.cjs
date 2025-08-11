@@ -86,7 +86,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/github", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:8.1.0"],
             ["@semantic-release/release-notes-generator", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:10.0.3"],
             ["add", "npm:2.0.6"],
-            ["commitizen", "npm:4.3.0"],
+            ["commitizen", "npm:4.3.1"],
             ["cz-lerna-changelog", "virtual:bb0c4e513c9d6f87080de5fa625b5b654d3ff3ddf1ea55a205a8593b449454da72d98681c95c5ee78fa6faa2889d25910de662b128156625852feba3728ea8bd#npm:2.0.3"],
             ["husky", "npm:8.0.3"],
             ["isbinaryfile", "npm:4.0.10"],
@@ -7108,10 +7108,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:4.3.0", {
-          "packageLocation": "./.yarn/cache/commitizen-npm-4.3.0-3695cdaf66-5a54f81ab7.zip/node_modules/commitizen/",
+        ["npm:4.3.1", {
+          "packageLocation": "./.yarn/cache/commitizen-npm-4.3.1-eab8087a7a-bcb42ee0cf.zip/node_modules/commitizen/",
           "packageDependencies": [
-            ["commitizen", "npm:4.3.0"],
+            ["commitizen", "npm:4.3.1"],
             ["cachedir", "npm:2.3.0"],
             ["cz-conventional-changelog", "npm:3.3.0"],
             ["dedent", "npm:0.7.0"],
@@ -9544,7 +9544,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@semantic-release/github", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:8.1.0"],
             ["@semantic-release/release-notes-generator", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:10.0.3"],
             ["add", "npm:2.0.6"],
-            ["commitizen", "npm:4.3.0"],
+            ["commitizen", "npm:4.3.1"],
             ["cz-lerna-changelog", "virtual:bb0c4e513c9d6f87080de5fa625b5b654d3ff3ddf1ea55a205a8593b449454da72d98681c95c5ee78fa6faa2889d25910de662b128156625852feba3728ea8bd#npm:2.0.3"],
             ["husky", "npm:8.0.3"],
             ["isbinaryfile", "npm:4.0.10"],
