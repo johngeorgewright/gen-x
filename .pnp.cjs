@@ -1638,7 +1638,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:3.0.2"],
             ["semantic-release", "npm:19.0.5"],
             ["semantic-release-monorepo", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:7.0.8"],
-            ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.4.1"],
+            ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.4.5"],
             ["ts-node", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:10.9.2"],
             ["tslib", "npm:2.8.1"],
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=32657b"],
@@ -1663,7 +1663,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:3.0.2"],
             ["semantic-release", "npm:19.0.5"],
             ["semantic-release-monorepo", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:7.0.8"],
-            ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.4.1"],
+            ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.4.5"],
             ["tslib", "npm:2.8.1"],
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=32657b"]
           ],
@@ -1683,7 +1683,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.7.0"],
             ["prettier", "npm:2.8.8"],
             ["rimraf", "npm:3.0.2"],
-            ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.4.1"],
+            ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.4.5"],
             ["tslib", "npm:2.8.1"],
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=32657b"],
             ["yeoman-generator", "virtual:04913ac4ebf76b486fbd2d7fc295f6237679cf16d804ce69a5154e5385f00f3db4e48f33ed32d736eeb77502d095e4d62cbefb0ddecc515faa723bfb2f8beada#npm:5.10.0"]
@@ -1707,7 +1707,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:3.0.2"],
             ["semantic-release", "npm:19.0.5"],
             ["semantic-release-monorepo", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:7.0.8"],
-            ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.4.1"],
+            ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.4.5"],
             ["tslib", "npm:2.8.1"],
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=32657b"]
           ],
@@ -1730,7 +1730,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:3.0.2"],
             ["semantic-release", "npm:19.0.5"],
             ["semantic-release-monorepo", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:7.0.8"],
-            ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.4.1"],
+            ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.4.5"],
             ["tslib", "npm:2.8.1"],
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=32657b"]
           ],
@@ -1753,7 +1753,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:3.0.2"],
             ["semantic-release", "npm:19.0.5"],
             ["semantic-release-monorepo", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:7.0.8"],
-            ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.4.1"],
+            ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.4.5"],
             ["tslib", "npm:2.8.1"],
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=32657b"]
           ],
@@ -1779,7 +1779,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:3.0.2"],
             ["semantic-release", "npm:19.0.5"],
             ["semantic-release-monorepo", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:7.0.8"],
-            ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.4.1"],
+            ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.4.5"],
             ["tslib", "npm:2.8.1"],
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=32657b"]
           ],
@@ -1802,7 +1802,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:3.0.2"],
             ["semantic-release", "npm:19.0.5"],
             ["semantic-release-monorepo", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:7.0.8"],
-            ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.4.1"],
+            ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.4.5"],
             ["tslib", "npm:2.8.1"],
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=32657b"]
           ],
@@ -17803,10 +17803,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:7.7.2", {
-          "packageLocation": "./.yarn/cache/semver-npm-7.7.2-dfc3bc5ec9-dd94ba8f1c.zip/node_modules/semver/",
+        ["npm:7.7.3", {
+          "packageLocation": "./.yarn/cache/semver-npm-7.7.3-9cf7b3b46c-f013a3ee46.zip/node_modules/semver/",
           "packageDependencies": [
-            ["semver", "npm:7.7.2"]
+            ["semver", "npm:7.7.3"]
           ],
           "linkType": "HARD",
         }]
@@ -19321,17 +19321,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ts-jest", [
-        ["npm:29.4.1", {
-          "packageLocation": "./.yarn/cache/ts-jest-npm-29.4.1-ab76d85d32-641f17ecb4.zip/node_modules/ts-jest/",
+        ["npm:29.4.5", {
+          "packageLocation": "./.yarn/cache/ts-jest-npm-29.4.5-5dad11fc5b-b2ba677d32.zip/node_modules/ts-jest/",
           "packageDependencies": [
-            ["ts-jest", "npm:29.4.1"]
+            ["ts-jest", "npm:29.4.5"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.4.1", {
-          "packageLocation": "./.yarn/__virtual__/ts-jest-virtual-2c3621599b/0/cache/ts-jest-npm-29.4.1-ab76d85d32-641f17ecb4.zip/node_modules/ts-jest/",
+        ["virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.4.5", {
+          "packageLocation": "./.yarn/__virtual__/ts-jest-virtual-616db0ac77/0/cache/ts-jest-npm-29.4.5-5dad11fc5b-b2ba677d32.zip/node_modules/ts-jest/",
           "packageDependencies": [
-            ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.4.1"],
+            ["ts-jest", "virtual:a5472719d0640dad1142a4632100760ad47fb7258a0bbb640f6b661d39a3d2bd1e5d0815bf1a6554f4dc88ace0f80503cb2c5e00bda4ec2c92c1b67ab1fa05e2#npm:29.4.5"],
             ["@babel/core", null],
             ["@jest/transform", null],
             ["@jest/types", null],
@@ -19352,7 +19352,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["json5", "npm:2.2.3"],
             ["lodash.memoize", "npm:4.1.2"],
             ["make-error", "npm:1.3.6"],
-            ["semver", "npm:7.7.2"],
+            ["semver", "npm:7.7.3"],
             ["type-fest", "npm:4.41.0"],
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=32657b"],
             ["yargs-parser", "npm:21.1.1"]
