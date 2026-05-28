@@ -1127,7 +1127,7 @@ __metadata:
     rimraf: 3.0.2
     semantic-release: 19.0.5
     semantic-release-monorepo: 7.0.8
-    ts-jest: 29.4.6
+    ts-jest: 29.4.11
     ts-node: 10.9.2
     tslib: 2.8.1
     typescript: 4.9.5
@@ -1150,7 +1150,7 @@ __metadata:
     rimraf: 3.0.2
     semantic-release: 19.0.5
     semantic-release-monorepo: 7.0.8
-    ts-jest: 29.4.6
+    ts-jest: 29.4.11
     tslib: 2.8.1
     typescript: 4.9.5
   languageName: unknown
@@ -1168,7 +1168,7 @@ __metadata:
     jest: 29.7.0
     prettier: 2.8.8
     rimraf: 3.0.2
-    ts-jest: 29.4.6
+    ts-jest: 29.4.11
     tslib: 2.8.1
     typescript: 4.9.5
     yeoman-generator: 5.10.0
@@ -1190,7 +1190,7 @@ __metadata:
     rimraf: 3.0.2
     semantic-release: 19.0.5
     semantic-release-monorepo: 7.0.8
-    ts-jest: 29.4.6
+    ts-jest: 29.4.11
     tslib: 2.8.1
     typescript: 4.9.5
   languageName: unknown
@@ -1211,7 +1211,7 @@ __metadata:
     rimraf: 3.0.2
     semantic-release: 19.0.5
     semantic-release-monorepo: 7.0.8
-    ts-jest: 29.4.6
+    ts-jest: 29.4.11
     tslib: 2.8.1
     typescript: 4.9.5
   languageName: unknown
@@ -1232,7 +1232,7 @@ __metadata:
     rimraf: 3.0.2
     semantic-release: 19.0.5
     semantic-release-monorepo: 7.0.8
-    ts-jest: 29.4.6
+    ts-jest: 29.4.11
     tslib: 2.8.1
     typescript: 4.9.5
   languageName: unknown
@@ -1256,7 +1256,7 @@ __metadata:
     rimraf: 3.0.2
     semantic-release: 19.0.5
     semantic-release-monorepo: 7.0.8
-    ts-jest: 29.4.6
+    ts-jest: 29.4.11
     tslib: 2.8.1
     typescript: 4.9.5
   languageName: unknown
@@ -1277,7 +1277,7 @@ __metadata:
     rimraf: 3.0.2
     semantic-release: 19.0.5
     semantic-release-monorepo: 7.0.8
-    ts-jest: 29.4.6
+    ts-jest: 29.4.11
     tslib: 2.8.1
     typescript: 4.9.5
   languageName: unknown
@@ -8810,9 +8810,9 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"handlebars@npm:^4.7.8":
-  version: 4.7.8
-  resolution: "handlebars@npm:4.7.8"
+"handlebars@npm:^4.7.9":
+  version: 4.7.9
+  resolution: "handlebars@npm:4.7.9"
   dependencies:
     minimist: ^1.2.5
     neo-async: ^2.6.2
@@ -8824,7 +8824,7 @@ fsevents@^2.3.2:
       optional: true
   bin:
     handlebars: bin/handlebars
-  checksum: 00e68bb5c183fd7b8b63322e6234b5ac8fbb960d712cb3f25587d559c2951d9642df83c04a1172c918c41bcfc81bfbd7a7718bbce93b893e0135fc99edea93ff
+  checksum: ac39070fc1c3c76a654e4b526383eaf1601976eaa474547b263915b4806977f083600e586ca923709baeed7c82a42640bcc9cc04c37a7efd3fb444f49b8347d6
   languageName: node
   linkType: hard
 
@@ -15911,12 +15911,12 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.7.3":
-  version: 7.7.3
-  resolution: "semver@npm:7.7.3"
+"semver@npm:^7.8.0":
+  version: 7.8.1
+  resolution: "semver@npm:7.8.1"
   bin:
     semver: bin/semver.js
-  checksum: f013a3ee4607857bcd3503b6ac1d80165f7f8ea94f5d55e2d3e33df82fce487aa3313b987abf9b39e0793c83c9fc67b76c36c067625141a9f6f704ae0ea18db2
+  checksum: c6486ac12dc85120fc1daac8001350a4cd8126933720da496b0e8b841f170a35d4856b898b5288dfe7c1771bcadbf32c582254eade40ba16f8b6d296625d2b33
   languageName: node
   linkType: hard
 
@@ -17296,17 +17296,17 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:29.4.6":
-  version: 29.4.6
-  resolution: "ts-jest@npm:29.4.6"
+"ts-jest@npm:29.4.11":
+  version: 29.4.11
+  resolution: "ts-jest@npm:29.4.11"
   dependencies:
     bs-logger: ^0.2.6
     fast-json-stable-stringify: ^2.1.0
-    handlebars: ^4.7.8
+    handlebars: ^4.7.9
     json5: ^2.2.3
     lodash.memoize: ^4.1.2
     make-error: ^1.3.6
-    semver: ^7.7.3
+    semver: ^7.8.0
     type-fest: ^4.41.0
     yargs-parser: ^21.1.1
   peerDependencies:
@@ -17316,7 +17316,7 @@ fsevents@^2.3.2:
     babel-jest: ^29.0.0 || ^30.0.0
     jest: ^29.0.0 || ^30.0.0
     jest-util: ^29.0.0 || ^30.0.0
-    typescript: ">=4.3 <6"
+    typescript: ">=4.3 <7"
   peerDependenciesMeta:
     "@babel/core":
       optional: true
@@ -17332,7 +17332,7 @@ fsevents@^2.3.2:
       optional: true
   bin:
     ts-jest: cli.js
-  checksum: 07ae4102569565ab57036f095152ea75c85032edf15379043ffc8da2dd0e6e93e84d0c50a24e10a5cddacb5ab773df0f3170f02db6c178edd22a5e485bc57dc7
+  checksum: 47ddb0db6193f8fb5aee5d493881daa14a005286ef9ec844ea56e02074900cf89d85ee51eac59a92a90b6a2656d92fe7b20a8dc496aefa658e90bfffb498752c
   languageName: node
   linkType: hard
 
