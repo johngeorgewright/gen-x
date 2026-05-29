@@ -8195,7 +8195,7 @@ fsevents@^2.3.2:
     commitizen: 4.3.1
     cz-lerna-changelog: 2.0.3
     husky: 8.0.3
-    isbinaryfile: 4.0.10
+    isbinaryfile: 6.0.0
     json-parse-even-better-errors: 2.3.1
     lerna: 3.22.1
     lint-staged: 13.3.0
@@ -10245,10 +10245,10 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"isbinaryfile@npm:4.0.10":
-  version: 4.0.10
-  resolution: "isbinaryfile@npm:4.0.10"
-  checksum: a6b28db7e23ac7a77d3707567cac81356ea18bd602a4f21f424f862a31d0e7ab4f250759c98a559ece35ffe4d99f0d339f1ab884ffa9795172f632ab8f88e686
+"isbinaryfile@npm:6.0.0":
+  version: 6.0.0
+  resolution: "isbinaryfile@npm:6.0.0"
+  checksum: 157348f36ec2d65440687628d79869a6d5884f1827e7c7bb531f63dcc185e246e5774ddc02d490d245b968db7cf2f6cae34572b2f94b94000bfb266e5848d373
   languageName: node
   linkType: hard
 
